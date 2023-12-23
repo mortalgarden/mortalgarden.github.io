@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>stray.css</title>
-    </head>
-    <body>
-        .systitle {
+.systitle {
             font-size: 28px;
             font-weight: 700;
             width: full;
@@ -24,5 +18,3 @@
             -webkit-animation-timing-function: linear;
           /* text animation attributes ending */
           }
-    </body>
-</html>
