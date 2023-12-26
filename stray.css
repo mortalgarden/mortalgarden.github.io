@@ -1,6 +1,6 @@
 /* system name css here */
 #profile-title {
-            font-size: 30px;
+            font-size: 28px;
             font-weight: 700;
             width: full;
             text-align: right;
@@ -46,7 +46,7 @@
         display: -webkit-flex;
         display: flex;
         width: 600px;
-        height: 390px;
+        height: 400px;
 }
 .profile div {
         padding: 10px;
