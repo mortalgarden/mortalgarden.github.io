@@ -25,18 +25,18 @@
     /* POP TEXT ANIMATION START */
 @keyframes floats {
     from {transform:translate(0,-5)rotate(8deg);}
-    50% {transform:scale(0,5)rotate(8deg);}
-    to {transform:scale(0,-5)rotate(8deg);}
+    50% {transform:translate(0,5)rotate(8deg);}
+    to {transform:translate(0,-5)rotate(8deg);}
     }
-    @-webkit-keyframes pop {
-    from {-webkit-transform:scale(0,-5)rotate(8deg);}
-    50% {-webkit-transform:scale(0,5)rotate(8deg);}
-    to {-webkit-transform:scale(0,-5)rotate(8deg);}
+    @-webkit-keyframes floats {
+    from {-webkit-transform:translate(0,-5)rotate(8deg);}
+    50% {-webkit-transform:translate(0,5)rotate(8deg);}
+    to {-webkit-transform:translate(0,-5)rotate(8deg);}
     }    
-      @-moz-keyframes pop {
-    from {-moz-transform:scale(0,-5)rotate(8deg);}
-    50% {-moz-transform:scale(0,5)rotate(8deg);}
-    to {-moz-transform:scale(0,-5)rotate(8deg);}
+      @-moz-keyframes floats {
+    from {-moz-transform:translate(0,-5)rotate(8deg);}
+    50% {-moz-transform:translate(0,5)rotate(8deg);}
+    to {-moz-transform:translate(0,-5)rotate(8deg);}
     } 
     /* POP TEXT ANIMATION END */
 
