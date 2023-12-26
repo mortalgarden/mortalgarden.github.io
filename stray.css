@@ -4,9 +4,7 @@
             font-weight: 700;
             width: full;
             text-align: right;
-            top: 100px;
-            left: 15px;
-            position:relative
+            transform: translateY(50px);
           /* POP TEXT ANIMATION ATTRIBUTES START */
             animation: pop;
             animation-duration: 2s;
