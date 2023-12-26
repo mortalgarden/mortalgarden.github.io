@@ -1,4 +1,5 @@
-.systitle {
+/* system name css here */
+#profile-title {
             font-size: 28px;
             font-weight: 700;
             width: full;
@@ -18,6 +19,7 @@
             -webkit-animation-timing-function: linear;
           /* text animation attributes ending */
           }
+        
     /* pop text animation beginning */
 @keyframes pop {
     from {transform:scale(0.95)rotate(5deg);}
@@ -35,3 +37,27 @@
     to {-moz-transform:scale(0.95)rotate(5deg);}
     } 
     /* pop text animation ending */
+
+    /* main page div css */
+.profile {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        width: 590px;
+        height: 370px;
+}
+.profile div {
+        padding: 10px;
+}
+.profile-image {
+        width: 350px;
+        height: auto;
+}
+.profile-about {
+        width: 240px;
+        height: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+}
