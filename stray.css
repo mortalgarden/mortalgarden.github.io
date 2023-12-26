@@ -48,6 +48,9 @@
         width: 650px;
         height: 410px;
 }
+.profile div {
+        align-items: center;
+}
 .profile-image {
         width: 400px;
         height: 400px;
