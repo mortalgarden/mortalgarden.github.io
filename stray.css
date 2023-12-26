@@ -1,6 +1,6 @@
 /* SYSTEM PROFILE TITLE */
 #profile-title {
-            font-size: 28px;
+            font-size: 26px;
             font-weight: 700;
             width: full;
             text-align: right;
@@ -24,19 +24,19 @@
         
     /* POP TEXT ANIMATION START */
 @keyframes pop {
-    from {transform:scale(0.95)rotate(7deg);}
-    50% {transform:scale(1.02)rotate(7deg);}
-    to {transform:scale(0.95)rotate(7deg);}
+    from {transform:scale(0.95)rotate(10deg);}
+    50% {transform:scale(1.02)rotate(10deg);}
+    to {transform:scale(0.95)rotate(10deg);}
     }
     @-webkit-keyframes pop {
-    from {-webkit-transform:scale(0.95)rotate(7deg);}
-    50% {-webkit-transform:scale(1.02)rotate(7deg);}
-    to {-webkit-transform:scale(0.95)rotate(7deg);}
+    from {-webkit-transform:scale(0.95)rotate(10deg);}
+    50% {-webkit-transform:scale(1.02)rotate(10deg);}
+    to {-webkit-transform:scale(0.95)rotate(10deg);}
     }    
       @-moz-keyframes pop {
-    from {-moz-transform:scale(0.95)rotate(7deg);}
-    50% {-moz-transform:scale(1.02)rotate(7deg);}
-    to {-moz-transform:scale(0.95)rotate(7deg);}
+    from {-moz-transform:scale(0.95)rotate(10deg);}
+    50% {-moz-transform:scale(1.02)rotate(10deg);}
+    to {-moz-transform:scale(0.95)rotate(10deg);}
     } 
     /* POP TEXT ANIMATION END */
 
