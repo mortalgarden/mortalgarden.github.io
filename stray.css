@@ -45,8 +45,8 @@
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
-        width: 590px;
-        height: 370px;
+        width: 600px;
+        height: 390px;
 }
 .profile div {
         padding: 10px;
@@ -56,7 +56,7 @@
         height: auto;
 }
 .profile-about {
-        width: 240px;
+        width: auto;
         height: auto;
         padding-left: 5px;
         padding-right: 5px;
