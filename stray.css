@@ -4,6 +4,9 @@
             font-weight: 700;
             width: full;
             text-align: right;
+            top: 25px;
+            left:10px;
+            position:absolute
           /* POP TEXT ANIMATION ATTRIBUTES START */
             animation: pop;
             animation-duration: 2s;
@@ -63,8 +66,10 @@
 .profile-about {
         width: 250px;
         height: auto;
+        padding: inherit;
 }
 .profile-l {
-        margin-bottom: -2;
+        line-height: 1.2;
+        font-size: 15px;
 }
 /* MAIN PAGE DIV CSS END */
