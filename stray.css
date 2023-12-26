@@ -5,6 +5,7 @@
             letter-spacing: 0.5px;
             width: full;
             text-align: right;
+            position: relative;
           /* POP TEXT ANIMATION ATTRIBUTES START */
             animation: pop;
             animation-duration: 2s;
