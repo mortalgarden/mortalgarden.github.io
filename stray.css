@@ -6,7 +6,7 @@
             text-align: right;
             top: 100px;
             left: 15px;
-            position:absolute
+            position:relative
           /* POP TEXT ANIMATION ATTRIBUTES START */
             animation: pop;
             animation-duration: 2s;
