@@ -50,8 +50,6 @@
         display: -webkit-flex;
         display: flex;
         flex-direction: row;
-        justify-content: start;
-        align-items: start;
         width: 650px;
         height: 400px;
 }
