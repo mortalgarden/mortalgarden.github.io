@@ -7,6 +7,9 @@
             text-align: right;
             position: relative; 
           /* POP TEXT ANIMATION ATTRIBUTES START */
+            animation-name: floats;
+            -moz-animation-name: floats;
+            -webkit-animation-name: floats;
             animation: floats;
             animation-duration: 2s;
             animation-iteration-count: infinite;
