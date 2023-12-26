@@ -62,4 +62,6 @@
         height: auto;
         padding-left: 5px;
         padding-right: 5px;
+        vertical-align: middle;
+        vertical-align: -webkit-baseline-middle;
 }
