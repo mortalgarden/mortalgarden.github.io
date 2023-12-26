@@ -51,13 +51,14 @@
 .profile div {
         padding: 10px;
         vertical-align: middle;
+        vertical-align: -webkit-baseline-middle;
 }
 .profile-image {
         width: auto;
         height: auto;
 }
 .profile-about {
-        width: auto;
+        width: 250px;
         height: auto;
         padding-left: 5px;
         padding-right: 5px;
