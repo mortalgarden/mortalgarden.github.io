@@ -1,10 +1,10 @@
-/* system name css here */
+/* SYSTEM PROFILE TITLE */
 #profile-title {
             font-size: 30px;
             font-weight: 700;
             width: full;
             text-align: right;
-          /* text animation attributes beginning */
+          /* POP TEXT ANIMATION ATTRIBUTES START */
             animation: pop;
             animation-duration: 2s;
             animation-iteration-count: infinite;
@@ -17,10 +17,10 @@
             -webkit-animation-duration: 2s;
             -webkit-animation-iteration-count: infinite;
             -webkit-animation-timing-function: linear;
-          /* text animation attributes ending */
+          /* POP TEXT ANIMATION ATTRIBUTES END */
           }
         
-    /* pop text animation beginning */
+    /* POP TEXT ANIMATION START */
 @keyframes pop {
     from {transform:scale(0.95)rotate(5deg);}
     50% {transform:scale(1.02)rotate(5deg);}
@@ -36,28 +36,31 @@
     50% {-moz-transform:scale(1.02)rotate(5deg);}
     to {-moz-transform:scale(0.95)rotate(5deg);}
     } 
-    /* pop text animation ending */
+    /* POP TEXT ANIMATION END */
 
-    /* main page div css */
+
+/* MAIN PAGE DIV CSS START */
 .profile {
         display: -webkit-box;
         display: -moz-box;
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
+        justify-content: center;
         width: 650px;
         height: 410px;
 }
 .profile div {
-        align-content: center;
+        padding: 10px;
 }
 .profile-image {
         width: 400px;
         height: 400px;
-        padding: 5px;
+        padding: inherit;
 }
 .profile-about {
         width: 250px;
         height: auto;
-        padding: 5px;
+        padding: inherit;
 }
+/* MAIN PAGE DIV CSS END */
