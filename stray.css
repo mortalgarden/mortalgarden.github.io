@@ -52,7 +52,7 @@
         padding: 10px;
 }
 .profile-image {
-        width: 350px;
+        width: auto;
         height: auto;
 }
 .profile-about {
