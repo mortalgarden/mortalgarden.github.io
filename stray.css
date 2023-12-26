@@ -22,19 +22,19 @@
         
     /* POP TEXT ANIMATION START */
 @keyframes pop {
-    from {transform:translateY(50px)scale(0.95)rotate(5deg);}
-    50% {transform:translateY(50px)scale(1.02)rotate(5deg);}
-    to {transform:translateY(50px)scale(0.95)rotate(5deg);}
+    from {transform:translateY(100px)scale(0.95)rotate(5deg);}
+    50% {transform:translateY(100px)scale(1.02)rotate(5deg);}
+    to {transform:translateY(100px)scale(0.95)rotate(5deg);}
     }
     @-webkit-keyframes pop {
-    from {-webkit-transform:translateY(50px)scale(0.95)rotate(5deg);}
-    50% {-webkit-transform:translateY(50px)scale(1.02)rotate(5deg);}
-    to {-webkit-transform:translateY(50px)scale(0.95)rotate(5deg);}
+    from {-webkit-transform:translateY(100px)scale(0.95)rotate(5deg);}
+    50% {-webkit-transform:translateY(100px)scale(1.02)rotate(5deg);}
+    to {-webkit-transform:translateY(100px)scale(0.95)rotate(5deg);}
     }    
       @-moz-keyframes pop {
-    from {-moz-transform:translateY(50px)scale(0.95)rotate(5deg);}
-    50% {-moz-transform:translateY(50px)scale(1.02)rotate(5deg);}
-    to {-moz-transform:translateY(50px)scale(0.95)rotate(5deg);}
+    from {-moz-transform:translateY(100px)scale(0.95)rotate(5deg);}
+    50% {-moz-transform:translateY(100px)scale(1.02)rotate(5deg);}
+    to {-moz-transform:translateY(100px)scale(0.95)rotate(5deg);}
     } 
     /* POP TEXT ANIMATION END */
 
