@@ -7,15 +7,15 @@
             text-align: right;
             position: relative; 
           /* POP TEXT ANIMATION ATTRIBUTES START */
-            animation: pop;
+            animation-name: floats;
             animation-duration: 2s;
             animation-iteration-count: infinite;
             animation-timing-function: ease-in-out;
-            -moz-animation: pop;
+            -moz-animation-name: floats;
             -moz-animation-duration: 2s;
             -moz-animation-iteration-count: infinite;
             -moz-animation-timing-function: ease-in-out;
-            -webkit-animation: pop;
+            -webkit-animation-name: floats;
             -webkit-animation-duration: 2s;
             -webkit-animation-iteration-count: infinite;
             -webkit-animation-timing-function: ease-in-out;
@@ -23,17 +23,17 @@
           }
         
     /* POP TEXT ANIMATION START */
-@keyframes pop {
+@keyframes floats {
     from {transform:translate(0,0px);}
     50% {transform:translate(0,-5px);}
     to {transform:translate(0,0px);}
     }
-    @-webkit-keyframes pop {
+    @-webkit-keyframes floats {
     from {-webkit-transform:translate(0,0px);}
     50% {-webkit-transform:translate(0,-5px);}
     to {-webkit-transform:translate(0,0px);}
     }    
-      @-moz-keyframes pop {
+      @-moz-keyframes floats {
     from {-moz-transform:translate(0,0px);}
     50% {-moz-transform:translate(0,-5px);}
     to {-moz-transform:translate(0,0px);}
