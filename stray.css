@@ -24,19 +24,19 @@
         
     /* POP TEXT ANIMATION START */
 @keyframes pop {
-    from {transform:scale(1)rotate(8deg);}
-    50% {transform:scale(10)rotate(8deg);}
-    to {transform:scale(1)rotate(8deg);}
+    from {transform:scale(1);}
+    50% {transform:scale(10);}
+    to {transform:scale(1);}
     }
     @-webkit-keyframes pop {
-    from {-webkit-transform:scale(1)rotate(8deg);}
-    50% {-webkit-transform:scale(10)rotate(8deg);}
-    to {-webkit-transform:scale(1)rotate(8deg);}
+    from {-webkit-transform:scale(1);}
+    50% {-webkit-transform:scale(10);}
+    to {-webkit-transform:scale(1);}
     }    
       @-moz-keyframes pop {
-    from {-moz-transform:scale(1)rotate(8deg);}
-    50% {-moz-transform:scale(10)rotate(8deg);}
-    to {-moz-transform:scale(1)rotate(8deg);}
+    from {-moz-transform:scale(1);}
+    50% {-moz-transform:scale(10);}
+    to {-moz-transform:scale(1);}
     } 
     /* POP TEXT ANIMATION END */
 
