@@ -66,11 +66,11 @@
         padding: inherit;
 }
 .profile-l {
-        line-height: 1px;
+        line-height: 20px;
         font-size: 15px;
 }
 .profile-r {
-        line-height: 1px;
+        line-height: 20px;
         text-align: right;
         font-size: 15px;
 }
