@@ -7,18 +7,15 @@
             text-align: right;
             position: relative; 
           /* POP TEXT ANIMATION ATTRIBUTES START */
-            animation-name: floats;
-            -moz-animation-name: floats;
-            -webkit-animation-name: floats;
-            animation: floats;
+            animation: pop;
             animation-duration: 2s;
             animation-iteration-count: infinite;
             animation-timing-function: linear;
-            -moz-animation: floats;
+            -moz-animation: pop;
             -moz-animation-duration: 2s;
             -moz-animation-iteration-count: infinite;
             -moz-animation-timing-function: linear;
-            -webkit-animation: floats;
+            -webkit-animation: pop;
             -webkit-animation-duration: 2s;
             -webkit-animation-iteration-count: infinite;
             -webkit-animation-timing-function: linear;
@@ -26,17 +23,17 @@
           }
         
     /* POP TEXT ANIMATION START */
-@keyframes floats {
+@keyframes pop {
     from {transform:translate(0,-5)rotate(8deg);}
     50% {transform:translate(0,5)rotate(8deg);}
     to {transform:translate(0,-5)rotate(8deg);}
     }
-    @-webkit-keyframes floats {
+    @-webkit-keyframes pop {
     from {-webkit-transform:translate(0,-5)rotate(8deg);}
     50% {-webkit-transform:translate(0,5)rotate(8deg);}
     to {-webkit-transform:translate(0,-5)rotate(8deg);}
     }    
-      @-moz-keyframes floats {
+      @-moz-keyframes pop {
     from {-moz-transform:translate(0,-5)rotate(8deg);}
     50% {-moz-transform:translate(0,5)rotate(8deg);}
     to {-moz-transform:translate(0,-5)rotate(8deg);}
