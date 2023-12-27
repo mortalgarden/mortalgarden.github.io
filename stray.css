@@ -25,18 +25,18 @@
     /* POP TEXT ANIMATION START */
 @keyframes floats {
     from {transform:translate(0,0px);}
-    50% {transform:translate(0,-5px);}
-    to {transform:translate(0,0px);}
+    50% {transform:translate(0,5px);}
+    to {transform:translate(0,-0px);}
     }
     @-webkit-keyframes floats {
     from {-webkit-transform:translate(0,0px);}
-    50% {-webkit-transform:translate(0,-5px);}
-    to {-webkit-transform:translate(0,0px);}
+    50% {-webkit-transform:translate(0,5px);}
+    to {-webkit-transform:translate(0,-0px);}
     }    
       @-moz-keyframes floats {
     from {-moz-transform:translate(0,0px);}
-    50% {-moz-transform:translate(0,-5px);}
-    to {-moz-transform:translate(0,0px);}
+    50% {-moz-transform:translate(0,5px);}
+    to {-moz-transform:translate(0,-0px);}
     } 
     /* POP TEXT ANIMATION END */
 
