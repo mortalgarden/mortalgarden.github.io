@@ -10,33 +10,33 @@
             animation: pop;
             animation-duration: 2s;
             animation-iteration-count: infinite;
-            animation-timing-function: linear;
+            animation-timing-function: ease-in-out;
             -moz-animation: pop;
             -moz-animation-duration: 2s;
             -moz-animation-iteration-count: infinite;
-            -moz-animation-timing-function: linear;
+            -moz-animation-timing-function: ease-in-out;
             -webkit-animation: pop;
             -webkit-animation-duration: 2s;
             -webkit-animation-iteration-count: infinite;
-            -webkit-animation-timing-function: linear;
+            -webkit-animation-timing-function: ease-in-out;
           /* POP TEXT ANIMATION ATTRIBUTES END */
           }
         
     /* POP TEXT ANIMATION START */
 @keyframes pop {
-    from {transform:scale(0.95);}
-    50% {transform:scale(0.8);}
-    to {transform:scale(0.95);}
+    from {transform:translate(0,0px);}
+    50% {transform:translate(0,-5px);}
+    to {transform:translate(0,0px);}
     }
     @-webkit-keyframes pop {
-    from {-webkit-transform:scale(0.95);}
-    50% {-webkit-transform:scale(0.8);}
-    to {-webkit-transform:scale(0.95);}
+    from {-webkit-transform:translate(0,0px);}
+    50% {-webkit-transform:translate(0,-5px);}
+    to {-webkit-transform:translate(0,0px);}
     }    
       @-moz-keyframes pop {
-    from {-moz-transform:scale(0.95);}
-    50% {-moz-transform:scale(0.8);}
-    to {-moz-transform:scale(0.95);}
+    from {-moz-transform:translate(0,0px);}
+    50% {-moz-transform:translate(0,-5px);}
+    to {-moz-transform:translate(0,0px);}
     } 
     /* POP TEXT ANIMATION END */
 
