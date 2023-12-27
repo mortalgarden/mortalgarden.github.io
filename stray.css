@@ -65,11 +65,14 @@
         height: auto;
         padding: inherit;
 }
-.profile-l {
+.profile-text {
+        position:absolute;
+}
+#profile-l {
         line-height: 20px;
         font-size: 18px;
 }
-.profile-r {
+#profile-r {
         line-height: 20px;
         text-align: right;
         font-size: 18px;
