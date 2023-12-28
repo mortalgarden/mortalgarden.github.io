@@ -1,28 +1,35 @@
 /* BUNDLES.CC/@STRAY CSS */
 
 /* PROFILE CONTAINER CSS START */
+
     .about-body {
         width:550px;
         height:450px;
-        align-content:center;
     }
+
 /* PROFILE CONTAINER CSS END */
 
 /* PRIMARY WOLF IMAGE CSS START */
+
     #about-art {
         height:100%;
         position:absolute;
+        justify-self: center;
     }
+
 /* PRIMARY WOLF IMAGE CSS END */
 
 /* PAGE TITLE CSS START */
+
     .about-title {
         font-size:28px;
         font-weight:800;
     }
+
 /* PAGE TITLE CSS END */
 
 /* PAGE INFO TEXT CSS START */
+
     .about-text {
         position:relative;
     }
@@ -30,6 +37,7 @@
         line-height:20px;
         font-size:18px;
         left:100;
+        width:fit-content
     }
     #about-text-2 {
         line-height:20px;
@@ -37,4 +45,5 @@
         font-size:18px;
         top:100;
     }
+
 /* PAGE INFO TEXT CSS END */
