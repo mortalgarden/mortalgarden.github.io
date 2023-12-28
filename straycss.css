@@ -1,12 +1,14 @@
 /* BUNDLES.CC/@STRAY CSS */
 
+    .about-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 /* PROFILE CONTAINER CSS START */
     .about-body {
         width: 550px;
         height: 450px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 /* PROFILE CONTAINER CSS END */
 
