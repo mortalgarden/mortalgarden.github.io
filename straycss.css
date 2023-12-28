@@ -1,15 +1,14 @@
 /* BUNDLES.CC/@STRAY CSS */
 /* PROFILE CONTAINER CSS START */
     .about-body {
-        max-width: 450px;
         width: 450px;
+        height: 450px;
     }
 /* PROFILE CONTAINER CSS END */
 /* PRIMARY WOLF IMAGE CSS START */
     #about-art {
         width:100%;
         position: absolute;
-        
     }
 /* PRIMARY WOLF IMAGE CSS END */
 
@@ -17,5 +16,4 @@
     .about-title {
         font-size: 28px;
         font-weight: 800;
-        
     }
