@@ -28,7 +28,7 @@
 
     .about-text {
         position:relative;
-        width:100px;
+        width:fit-content;
     }
     #about-text-1 {
         line-height:20px;
