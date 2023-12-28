@@ -1,8 +1,15 @@
 /* BUNDLES.CC/@STRAY CSS */
 /* PRIMARY WOLF IMAGE CSS START */
-    #wolfart {
+    #about-art {
         width:100%;
         position: absolute;
         
     }
 /* PRIMARY WOLF IMAGE CSS END */
+
+/* PAGE TITLE START */
+    .about-title {
+        font-size: 28px;
+        font-weight: 800;
+        
+    }
