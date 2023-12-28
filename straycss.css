@@ -28,18 +28,18 @@
 
     .about-text {
         position:relative;
+        width:fit-content;
     }
     #about-text-1 {
         line-height:20px;
         font-size:18px;
-        width:fit-content;
         position:inherit;
     }
     #about-text-2 {
         line-height:20px;
         text-align:right;
         font-size:18px;
-        position: inherit;
+        position:inherit;
     }
 
 /* PAGE INFO TEXT CSS END */
