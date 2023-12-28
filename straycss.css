@@ -1,4 +1,10 @@
 /* BUNDLES.CC/@STRAY CSS */
+/* PROFILE CONTAINER CSS START */
+    .about-body {
+        max-width: 450px;
+        
+    }
+/* PROFILE CONTAINER CSS END */
 /* PRIMARY WOLF IMAGE CSS START */
     #about-art {
         width:100%;
