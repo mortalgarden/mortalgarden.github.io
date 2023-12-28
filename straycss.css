@@ -2,8 +2,13 @@
 
 /* PROFILE CONTAINER CSS START */
 
-    .about-body {
+    .about {
         width:550px;
+        height:450px;
+        justify-content:center;
+    }
+    .about-body {
+        width:450px;
         height:450px;
     }
 
@@ -14,7 +19,6 @@
     #about-art {
         height:100%;
         position:absolute;
-        justify-self: center;
     }
 
 /* PRIMARY WOLF IMAGE CSS END */
