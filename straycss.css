@@ -19,6 +19,7 @@
     #about-art {
         height:100%;
         position:absolute;
+        justify-content: center;
     }
 
 /* PRIMARY WOLF IMAGE CSS END */
