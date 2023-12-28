@@ -14,7 +14,7 @@
 /* PRIMARY WOLF IMAGE CSS START */
     #about-art {
         width:auto;
-        position: absolute;
+        position: inherit;
     }
 /* PRIMARY WOLF IMAGE CSS END */
 
