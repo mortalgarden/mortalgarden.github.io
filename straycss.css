@@ -1,10 +1,15 @@
 /* BUNDLES.CC/@STRAY CSS */
+
 /* PROFILE CONTAINER CSS START */
     .about-body {
         width: 450px;
         height: 450px;
+        width: 250px;
+        height: auto;
+        padding: 10px;
     }
 /* PROFILE CONTAINER CSS END */
+
 /* PRIMARY WOLF IMAGE CSS START */
     #about-art {
         width:auto;
@@ -12,8 +17,24 @@
     }
 /* PRIMARY WOLF IMAGE CSS END */
 
-/* PAGE TITLE START */
+/* PAGE TITLE CSS START */
     .about-title {
         font-size: 28px;
         font-weight: 800;
     }
+/* PAGE TITLE CSS END */
+
+/* PAGE INFO TEXT CSS START */
+    .about-text {
+        position:relative;
+    }
+    #about-text-1 {
+        line-height: 20px;
+        font-size: 18px;
+    }
+    #about-text-2 {
+        line-height: 20px;
+        text-align: right;
+        font-size: 18px;
+    }
+/* PAGE INFO TEXT CSS END */
