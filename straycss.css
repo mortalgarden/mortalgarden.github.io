@@ -1,11 +1,5 @@
 /* BUNDLES.CC/@STRAY CSS */
 
-    .about-center {
-        display:flex;
-        justify-content:center;
-        align-items:center;
-    }
-
 /* PROFILE CONTAINER CSS START */
     .about-body {
         width:550px;
@@ -16,7 +10,7 @@
 
 /* PRIMARY WOLF IMAGE CSS START */
     #about-art {
-        height:auto;
+        height:100%;
         position:absolute;
     }
 /* PRIMARY WOLF IMAGE CSS END */
