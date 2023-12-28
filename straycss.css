@@ -1,16 +1,13 @@
 /* BUNDLES.CC/@STRAY CSS */
 
 /* PROFILE CONTAINER CSS START */
-    body {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-    }
     .about-body {
         width: 450px;
         height: 450px;
-        
         padding: 10px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
     }
 /* PROFILE CONTAINER CSS END */
 
