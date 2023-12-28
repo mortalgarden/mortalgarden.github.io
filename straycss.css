@@ -28,8 +28,7 @@
 
     .about-text {
         position:relative;
-        right:275px;
-        top:75px;
+        left:275px;
         width:225px;
     }
     #about-text-1 {
