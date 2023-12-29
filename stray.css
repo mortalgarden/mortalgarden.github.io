@@ -1,7 +1,17 @@
 /* BUNDLES.CC/@STRAY CSS */
 /* PROFILE CONTAINER CSS START */
 
-    
+    body {
+        background-color:#000000;
+        color:#f4f1b8;
+        margin:10px;
+    }
+    a:link {
+        color:#fcd34e;
+    }
+    a:visited {
+        color:#bfaf79;
+    }
 
 /* PROFILE CONTAINER CSS END */
 /* PRIMARY WOLF IMAGE CSS START */
@@ -9,7 +19,7 @@
     .main-image {
         height:auto;
         width:550px;
-        position:absolute;
+        position:relative;
     }
 
 /* PRIMARY WOLF IMAGE CSS END */
@@ -18,7 +28,7 @@
     .main-title {
         font-size:28px;
         font-weight:800;
-        position:relative;
+        position:absolute;
 
         animation-name:hovering;
         animation:hovering 2s
@@ -30,7 +40,7 @@
 
     .main-body {
         font-size:17px;
-        position:relative;
+        position:absolute;
     }
 
 /* PAGE INFO TOP-HALF CSS START */
