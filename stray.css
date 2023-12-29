@@ -6,7 +6,7 @@
         color:#f4f1b8;
         margin:10px;
     }
-    a:link {
+    a:link,a:hover {
         color:#fcd34e;
     }
     a:visited {
@@ -31,8 +31,9 @@
         position:absolute;
 
         animation-name:hovering;
-        animation:hovering 2s
-        infinite ease-in-out;
+        animation-duration:2s;
+        animation-iteration-count:infinite;
+        animation-timing-function:ease-in-out;
     }
 
 /* PAGE TITLE CSS END */
