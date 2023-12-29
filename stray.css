@@ -19,7 +19,7 @@
     .main-image {
         height:auto;
         width:550px;
-        position:relative;
+        
     }
 
 /* PRIMARY WOLF IMAGE CSS END */
@@ -28,7 +28,7 @@
     .main-title {
         font-size:28px;
         font-weight:800;
-        position:absolute;
+        
 
         animation-name:hovering;
         animation-duration:2s;
@@ -41,7 +41,7 @@
 
     .main-body {
         font-size:17px;
-        position:absolute;
+        
     }
 
 /* PAGE INFO TOP-HALF CSS START */
