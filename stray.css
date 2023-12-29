@@ -19,7 +19,8 @@
         font-size:28px;
         font-weight:800;
 
-        animation: hovering 2s
+        animation-name:hovering;
+        animation:hovering 2s
         infinite ease-in-out;
     }
 
@@ -33,7 +34,7 @@
 
 /* PAGE INFO TOP-HALF CSS START */
 
-     #text-names {
+    .text-names {
         font-size:18px;
     }
     #text-prns {
@@ -54,10 +55,12 @@
 /* PAGE INFO BOTTOM-HALF CSS END */
 /* PAGE INFO TEXT CSS END */
 
-/* ANIMATION(S) KEYFRAMES */
+/* ANIMATION(S) KEYFRAMES START */
 
     @keyframes hovering {
         0% {translate:(0,0);}
         50% {translate:(0,15);}
         100% {translate:(0,-0);}
     }
+
+/* ANIMATION(S) KEYFRAMES START */
