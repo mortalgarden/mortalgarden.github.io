@@ -1,80 +1,74 @@
-/* SYSTEM PROFILE TITLE */
-#profile-title {
-            font-size: 26px;
-            font-weight: 900;
-            letter-spacing: 0.5px;
-            width: full;
-            text-align: right;
-            position: absolute; 
-          /* POP TEXT ANIMATION ATTRIBUTES START */
-            animation-name: floats;
-            animation-duration: 2s;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-            -moz-animation-name: floats;
-            -moz-animation-duration: 2s;
-            -moz-animation-iteration-count: infinite;
-            -moz-animation-timing-function: ease-in-out;
-            -webkit-animation-name: floats;
-            -webkit-animation-duration: 2s;
-            -webkit-animation-iteration-count: infinite;
-            -webkit-animation-timing-function: ease-in-out;
-          /* POP TEXT ANIMATION ATTRIBUTES END */
-          }
+/* BUNDLES.CC/@STRAY CSS */
+/* PROFILE CONTAINER CSS START */
+
+    .main {
         
-    /* POP TEXT ANIMATION START */
-@keyframes floats {
-    from {transform:translate(0,0px);}
-    50% {transform:translate(0,5px);}
-    to {transform:translate(0,-0px);}
     }
-    @-webkit-keyframes floats {
-    from {-webkit-transform:translate(0,0px);}
-    50% {-webkit-transform:translate(0,5px);}
-    to {-webkit-transform:translate(0,-0px);}
-    }    
-      @-moz-keyframes floats {
-    from {-moz-transform:translate(0,0px);}
-    50% {-moz-transform:translate(0,5px);}
-    to {-moz-transform:translate(0,-0px);}
-    } 
-    /* POP TEXT ANIMATION END */
 
+/* PROFILE CONTAINER CSS END */
+/* PRIMARY WOLF IMAGE CSS START */
 
-/* MAIN PAGE DIV CSS START */
-.profile {
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
+    .main-image {
+        height:auto;
+        width:550px;
+        position:absolute;
+    }
+
+/* PRIMARY WOLF IMAGE CSS END */
+/* PAGE TITLE CSS START */
+
+    .main-title {
+        font-size:28px;
+        font-weight:800;
+
+        animation: hovering 2s
+        infinite ease-in-out;
+    }
+
+/* PAGE TITLE CSS END */
+/* PAGE INFO TEXT CSS START */
+
+    .main-body {
+        font-size:17px;
+        
+    }
+
+/* PAGE INFO TOP-HALF CSS START */
+
+    .main-top {
+        
+    }
+    #text-names {
+        font-size:18px;
+    }
+    #text-prns {
+        font-size:16px;
+    }
+
+/* PAGE INFO TOP-HALF CSS END */
+/* PAGE INFO BOTTOM-HALF CSS START */
+
+    .main-bottom {
         display: flex;
-        flex-direction: row;
-        width: 650px;
-        height: 400px;
-}
-.profile div {
-        padding: 10px;
-}
-.profile-image {
-        width: 400px;
-        height: 400px;
-        padding: inherit;
-}
-.profile-about {
-        width: 250px;
-        height: auto;
-        padding: inherit;
-}
-.profile-text {
-        position:relative;
-}
-#profile-l {
-        line-height: 20px;
-        font-size: 18px;
-}
-#profile-r {
-        line-height: 20px;
-        text-align: right;
-        font-size: 18px;
-}
-/* MAIN PAGE DIV CSS END */
+    }
+    .main-bottom-1 {
+
+    }
+    .main-bottom-2 {
+
+    }
+    #button-img {
+        width: 50px;
+        height:auto;
+    }
+
+/* PAGE INFO BOTTOM-HALF CSS END */
+/* PAGE INFO TEXT CSS END */
+
+/* ANIMATION(S) KEYFRAMES */
+
+    @keyframes hovering {
+        0% {translate:(0,0);}
+        50% {translate:(0,15);}
+        100% {translate:(0,-0);}
+    }
