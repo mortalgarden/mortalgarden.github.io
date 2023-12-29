@@ -18,6 +18,7 @@
     .main-title {
         font-size:28px;
         font-weight:800;
+        position:relative;
 
         animation-name:hovering;
         animation:hovering 2s
@@ -29,7 +30,7 @@
 
     .main-body {
         font-size:17px;
-        
+        position:relative;
     }
 
 /* PAGE INFO TOP-HALF CSS START */
