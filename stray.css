@@ -1,9 +1,7 @@
 /* BUNDLES.CC/@STRAY CSS */
 /* PROFILE CONTAINER CSS START */
 
-    .main {
-        
-    }
+    
 
 /* PROFILE CONTAINER CSS END */
 /* PRIMARY WOLF IMAGE CSS START */
@@ -35,10 +33,7 @@
 
 /* PAGE INFO TOP-HALF CSS START */
 
-    .main-top {
-        
-    }
-    #text-names {
+     #text-names {
         font-size:18px;
     }
     #text-prns {
@@ -50,12 +45,6 @@
 
     .main-bottom {
         display: flex;
-    }
-    .main-bottom-1 {
-
-    }
-    .main-bottom-2 {
-
     }
     #button-img {
         width: 50px;
