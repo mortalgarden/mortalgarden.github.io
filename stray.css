@@ -35,6 +35,9 @@
 
 /* PAGE INFO TOP-HALF CSS START */
 
+    .main-top {
+        position:inherit;
+    }
     .text-names {
         font-size:18px;
     }
@@ -47,10 +50,17 @@
 
     .main-bottom {
         display: flex;
+        position:inherit;
     }
     #button-img {
         width: 50px;
         height:auto;
+    }
+    .main-bottom-1 {
+        position:inherit;
+    }
+    .main-bottom-2 {
+        position:inherit;
     }
 
 /* PAGE INFO BOTTOM-HALF CSS END */
