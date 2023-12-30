@@ -15,7 +15,6 @@
     .main {
         width:850px;
         height:550px;
-        position:fixed;
     }
 
 
@@ -25,7 +24,6 @@
     .main-image {
         height:auto;
         width:550px;
-        position:absolute;
     }
 
 /* PRIMARY WOLF IMAGE CSS END */
@@ -35,12 +33,13 @@
         font-size:28px;
         font-weight:800;
         
-        animation-name:hvr;
-        -moz-animation-name:hvr;
-        -webkit-animation-name:hvr;
-        animation:hvr 2s infinite ease-in-out;
-        -moz-animation:hvr 2s infinite ease-in-out;
-        -webkit-animation:hvr 2s infinite ease-in-out;
+        animation-name:updown;
+        -moz-animation-name:updown;
+        -webkit-animation-name:updown;
+
+        animation:updown 2s infinite ease-in-out;
+        -moz-animation:updown 2s infinite ease-in-out;
+        -webkit-animation:updown 2s infinite ease-in-out;
     }
 
 /* PAGE TITLE CSS END */
@@ -80,17 +79,17 @@
 
 /* ANIMATION(S) KEYFRAMES START */
 
-    @keyframes hvr {
+    @keyframes updown {
         from {translate:(0,0);}
         50% {translate:(0,15);}
         to {translate:(0,-0);}
     }
-    @-moz-keyframes hvr {
+    @-moz-keyframes updown {
         from {translate:(0,0);}
         50% {translate:(0,15);}
         to {translate:(0,-0);}
     }
-    @-webkit-keyframes hvr {
+    @-webkit-keyframes updown {
         from {translate:(0,0);}
         50% {translate:(0,15);}
         to {translate:(0,-0);}
