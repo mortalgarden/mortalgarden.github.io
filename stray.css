@@ -81,9 +81,9 @@
 /* ANIMATION(S) KEYFRAMES START */
 
     @keyframes hovering {
-        0% {translate:(0,0);}
+        from {translate:(0,0);}
         50% {translate:(0,15);}
-        100% {translate:(0,-0);}
+        to {translate:(0,-0);}
     }
 
 /* ANIMATION(S) KEYFRAMES START */
