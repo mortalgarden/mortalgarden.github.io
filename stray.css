@@ -62,7 +62,7 @@
 /* PAGE INFO BOTTOM-HALF CSS START */
 
     .main-bottom {
-        display: flex;
+        display:flex;
     }
     #button-img {
         width: 50px;
