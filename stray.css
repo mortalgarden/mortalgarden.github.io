@@ -19,7 +19,7 @@
     .main-image {
         height:auto;
         width:550px;
-        
+        position:relative;
     }
 
 /* PRIMARY WOLF IMAGE CSS END */
@@ -41,7 +41,7 @@
 
     .main-body {
         font-size:17px;
-        
+        position:absolute;
     }
 
 /* PAGE INFO TOP-HALF CSS START */
@@ -66,6 +66,7 @@
     #button-img {
         width: 50px;
         height:auto;
+        margin-right:10px;
     }
     .main-bottom-1 {
         position:inherit;
