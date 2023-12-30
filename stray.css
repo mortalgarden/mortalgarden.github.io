@@ -24,6 +24,7 @@
     .main-image {
         height:auto;
         width:550px;
+        position:absolute;
     }
 
 /* PRIMARY WOLF IMAGE CSS END */
