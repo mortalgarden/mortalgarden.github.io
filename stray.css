@@ -25,7 +25,8 @@
         height:auto;
         width:550px;
         position:fixed;
-        align-self: center;
+        bottom:20%;
+        right:30%;
     }
 
 /* PRIMARY WOLF IMAGE CSS END */
@@ -46,8 +47,8 @@
     .main-body {
         font-size:17px;
         position:relative;
-        right:10%;
-        top:5%;
+        right:0%;
+        top:0%;
     }
 
 /* PAGE INFO TOP-HALF CSS START */
