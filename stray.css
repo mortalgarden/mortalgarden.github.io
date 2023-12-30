@@ -76,19 +76,19 @@
 /* ANIMATION(S) KEYFRAMES START */
 
     @keyframes hvr {
-        to {translate:(0,0);}
+        from {translate:(0,0);}
         50% {translate:(0,15);}
-        from {translate:(0,-0);}
+        to {translate:(0,-0);}
     }
     @-moz-keyframes hvr {
-        to {translate:(0,0);}
+        from {translate:(0,0);}
         50% {translate:(0,15);}
-        from {translate:(0,-0);}
+        to {translate:(0,-0);}
     }
     @-webkit-keyframes hvr {
-        to {translate:(0,0);}
+        from {translate:(0,0);}
         50% {translate:(0,15);}
-        from {translate:(0,-0);}
+        to {translate:(0,-0);}
     }
     
 /* ANIMATION(S) KEYFRAMES START */
