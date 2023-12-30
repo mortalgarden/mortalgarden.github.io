@@ -25,6 +25,7 @@
         height:auto;
         width:550px;
         position:fixed;
+        align-self: center;
     }
 
 /* PRIMARY WOLF IMAGE CSS END */
