@@ -15,7 +15,7 @@
     .main {
         width:750px;
         height:550px;
-        position:relative;
+        position:fixed;
     }
 
 
