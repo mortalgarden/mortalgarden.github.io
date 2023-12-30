@@ -12,13 +12,18 @@
         color:#bfaf79;
     }
 
+    .main {
+        width:850px;
+        height:600px;
+    }
+
+
 /* PROFILE CONTAINER CSS END */
 /* PRIMARY WOLF IMAGE CSS START */
 
     .main-image {
         height:auto;
         width:550px;
-        position:relative;
     }
 
 /* PRIMARY WOLF IMAGE CSS END */
@@ -41,14 +46,10 @@
 
     .main-body {
         font-size:17px;
-        position:relative;
     }
 
 /* PAGE INFO TOP-HALF CSS START */
 
-    .main-top {
-        position:absolute;
-    }
     .text-names {
         font-size:18px;
     }
@@ -61,20 +62,13 @@
 
     .main-bottom {
         display: flex;
-        position:absolute;
     }
     #button-img {
         width: 50px;
         height:auto;
         margin-right:20px;
     }
-    .main-bottom-1 {
-        position:inherit;
-    }
-    .main-bottom-2 {
-        position:inherit;
-    }
-
+    
 /* PAGE INFO BOTTOM-HALF CSS END */
 /* PAGE INFO TEXT CSS END */
 
