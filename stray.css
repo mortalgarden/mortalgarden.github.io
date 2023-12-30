@@ -1,7 +1,7 @@
 /* BUNDLES.CC/@STRAY CSS */
 /* PROFILE CONTAINER CSS START */
 
-    body {
+    .body {
         background-color:#000000;
         color:#f4f1b8;
         margin:10px;
@@ -31,6 +31,7 @@
         
 
         animation-name:hovering;
+        animation:hovering;
         animation-duration:2s;
         animation-iteration-count:infinite;
         animation-timing-function:ease-in-out;
