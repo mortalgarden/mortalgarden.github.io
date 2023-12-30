@@ -41,13 +41,13 @@
 
     .main-body {
         font-size:17px;
-        position:absolute;
+        position:relative;
     }
 
 /* PAGE INFO TOP-HALF CSS START */
 
     .main-top {
-        position:inherit;
+        position:absolute;
     }
     .text-names {
         font-size:18px;
@@ -61,7 +61,7 @@
 
     .main-bottom {
         display: flex;
-        position:inherit;
+        position:absolute;
     }
     #button-img {
         width: 50px;
