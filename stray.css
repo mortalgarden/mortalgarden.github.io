@@ -33,12 +33,9 @@
         font-size:28px;
         font-weight:800;
         
-
-        animation-name:hovering;
-        animation:hovering;
-        animation-duration:2s;
-        animation-iteration-count:infinite;
-        animation-timing-function:ease-in-out;
+        animation:hvr 2s infinite ease-in-out;
+        -moz-animation:hvr 2s infinite ease-in-out;
+        -webkit-animation:hvr 2s infinite ease-in-out;
     }
 
 /* PAGE TITLE CSS END */
@@ -46,6 +43,9 @@
 
     .main-body {
         font-size:17px;
+        position:relative;
+        right:25%;
+        top:10%;
     }
 
 /* PAGE INFO TOP-HALF CSS START */
@@ -68,16 +68,26 @@
         height:auto;
         margin-right:20px;
     }
-    
+
 /* PAGE INFO BOTTOM-HALF CSS END */
 /* PAGE INFO TEXT CSS END */
 
 /* ANIMATION(S) KEYFRAMES START */
 
-    @keyframes hovering {
+    @keyframes hvr {
         to {translate:(0,0);}
         50% {translate:(0,15);}
         from {translate:(0,-0);}
     }
-
+    @-moz-keyframes hvr {
+        to {translate:(0,0);}
+        50% {translate:(0,15);}
+        from {translate:(0,-0);}
+    }
+    @-webkit-keyframes hvr {
+        to {translate:(0,0);}
+        50% {translate:(0,15);}
+        from {translate:(0,-0);}
+    }
+    
 /* ANIMATION(S) KEYFRAMES START */
