@@ -3,7 +3,7 @@
 
     #home {
         background-color:#000000;
-        color:#f4f1b8;
+        color:#f4ebb8;
     }
     a:link,a:hover {
         color:#fcd34e;
@@ -15,6 +15,7 @@
     .main {
         width:750px;
         height:550px;
+        position:fixed;
     }
 
 
@@ -34,6 +35,9 @@
         font-size:28px;
         font-weight:800;
         
+        animation-name:hvr;
+        -moz-animation-name:hvr;
+        -webkit-animation-name:hvr;
         animation:hvr 2s infinite ease-in-out;
         -moz-animation:hvr 2s infinite ease-in-out;
         -webkit-animation:hvr 2s infinite ease-in-out;
@@ -45,8 +49,8 @@
     .main-body {
         font-size:17px;
         position:relative;
-        right:0%;
-        top:0%;
+        right:25%;
+        top:10%;
     }
 
 /* PAGE INFO TOP-HALF CSS START */
@@ -68,6 +72,7 @@
         width: 50px;
         height:auto;
         margin:right 25px;
+        padding-block-end: 25px;
     }
 
 /* PAGE INFO BOTTOM-HALF CSS END */
