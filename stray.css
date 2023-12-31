@@ -17,7 +17,8 @@
 /* PRIMARY WOLF IMAGE CSS START */
 
     .main-image {
-        width:350px;
+        width:450px;
+        translate:10%;
     }
 
 /* PRIMARY WOLF IMAGE CSS END */
@@ -50,6 +51,8 @@
     .main-body {
         font-size:17px;
         position:relative;
+        bottom:50%;
+        left:20%;
     }
 
 /* PAGE INFO TOP-HALF CSS START */
