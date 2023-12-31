@@ -12,16 +12,11 @@
         color:#bfaf79;
     }
 
-    .main-body {
-        position:fixed;
-    }
-
 /* PROFILE CONTAINER CSS END */
 /* PRIMARY WOLF IMAGE CSS START */
 
     .main-image {
         width:400px;
-        position:absolute;
     }
 
 /* PRIMARY WOLF IMAGE CSS END */
