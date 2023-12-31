@@ -12,6 +12,9 @@
         color:#bfaf79;
     }
 
+    .main-body {
+        height:fit-content;
+    }
 
 /* PROFILE CONTAINER CSS END */
 /* PRIMARY WOLF IMAGE CSS START */
@@ -48,7 +51,7 @@
 /* PAGE TITLE CSS END */
 /* PAGE INFO TEXT CSS START */
 
-    .main-body {
+    .main-info {
         font-size:17px;
         position:relative;
         top:20%;
