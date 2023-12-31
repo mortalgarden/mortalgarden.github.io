@@ -14,7 +14,7 @@
 
     .main-body {
         height:fit-content;
-        position:relative;
+        position:fixed;
     }
 
 /* PROFILE CONTAINER CSS END */
