@@ -25,17 +25,24 @@
 /* PAGE TITLE CSS START */
 
     .main-title {
+        animation-name:updown;
+        animation-duration:2s;
+        animation-timing-function:ease-in-out;
+        animation-iteration-count:infinite;
+
+        -moz-animation-name:updown;
+        -moz-animation-duration:2s;
+        -moz-animation-timing-function:ease-in-out;
+        -moz-animation-iteration-count:infinite;
+
+        -webkit-animation-name:updown;
+        -webkit-animation-duration:2s;
+        -webkit-animation-timing-function:ease-in-out;
+        -webkit-animation-iteration-count:infinite;
+
         font-size:28px;
         font-weight:800;
-        position:inherit;
-        
-        animation-name:updown;
-        -moz-animation-name:updown;
-        -webkit-animation-name:updown;
-
-        animation:updown 2s infinite ease-in-out;
-        -moz-animation:updown 2s infinite ease-in-out;
-        -webkit-animation:updown 2s infinite ease-in-out;
+        position:relative;
     }
 
 /* PAGE TITLE CSS END */
@@ -44,8 +51,8 @@
     .main-body {
         font-size:17px;
         position:relative;
-        right:55%;
-        top:10%;
+        right:75%;
+        top:25%;
     }
 
 /* PAGE INFO TOP-HALF CSS START */
