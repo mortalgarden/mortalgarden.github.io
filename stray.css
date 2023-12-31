@@ -27,6 +27,7 @@
     .main-title {
         font-size:28px;
         font-weight:800;
+        position:inherit;
         
         animation-name:updown;
         -moz-animation-name:updown;
@@ -66,7 +67,7 @@
         width: 50px;
         height:auto;
         margin:right 25px;
-        padding-block-end: 45px;
+        padding-right:25px;
     }
 
 /* PAGE INFO BOTTOM-HALF CSS END */
