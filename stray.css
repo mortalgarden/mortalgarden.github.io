@@ -24,8 +24,11 @@
         background-color:#333333;
         color:#f4ebb8;
     }
-    a:link,a:hover {
+    a:link {
         color:#fcd34e;
+    }
+    a:hover {
+        color:#fca54e
     }
     a:visited {
         color:#bfaf79;
