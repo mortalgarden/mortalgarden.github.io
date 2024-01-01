@@ -34,6 +34,10 @@
         color:#bfaf79;
     }
 
+    .main-body {
+        display:flex;
+    }
+
 /* PROFILE CONTAINER CSS END */
 /* PRIMARY WOLF IMAGE CSS START */
 
@@ -73,6 +77,7 @@
         position:relative;
         top:25%;
         right:55%;
+        width:fit-content;
     }
 
 /* PAGE INFO TOP-HALF CSS START */
