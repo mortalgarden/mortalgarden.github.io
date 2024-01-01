@@ -1,4 +1,23 @@
 /* BUNDLES.CC/@STRAY CSS */
+/* ANIMATION(S) KEYFRAMES START */
+
+@keyframes updown {
+    from {translate:(0,0);}
+    50% {translate:(0,15);}
+    to {translate:(0,-0);}
+}
+@-moz-keyframes updown {
+    from {translate:(0,0);}
+    50% {translate:(0,15);}
+    to {translate:(0,-0);}
+}
+@-webkit-keyframes updown {
+    from {translate:(0,0);}
+    50% {translate:(0,15);}
+    to {translate:(0,-0);}
+}
+
+/* ANIMATION(S) KEYFRAMES START */
 /* PROFILE CONTAINER CSS START */
 
     #home {
@@ -81,23 +100,3 @@
 
 /* PAGE INFO BOTTOM-HALF CSS END */
 /* PAGE INFO TEXT CSS END */
-
-/* ANIMATION(S) KEYFRAMES START */
-
-    @keyframes updown {
-        from {translate:(0,0);}
-        50% {translate:(0,15);}
-        to {translate:(0,-0);}
-    }
-    @-moz-keyframes updown {
-        from {translate:(0,0);}
-        50% {translate:(0,15);}
-        to {translate:(0,-0);}
-    }
-    @-webkit-keyframes updown {
-        from {translate:(0,0);}
-        50% {translate:(0,15);}
-        to {translate:(0,-0);}
-    }
-    
-/* ANIMATION(S) KEYFRAMES START */
