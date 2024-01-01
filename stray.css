@@ -38,7 +38,7 @@
         -webkit-animation-timing-function:ease-in-out;
         -webkit-animation-iteration-count:infinite;
 
-        font-size:28px;
+        font-size:26px;
         font-weight:800;
         position:relative;
     }
@@ -47,7 +47,7 @@
 /* PAGE INFO TEXT CSS START */
 
     .main-info {
-        font-size:17px;
+        font-size:16px;
         position:relative;
         top:20%;
         right:45%;
@@ -55,11 +55,15 @@
 
 /* PAGE INFO TOP-HALF CSS START */
 
+    .main-top {
+        position:relative;
+        right:5%;
+    }
     .text-names {
-        font-size:18px;
+        font-size:17px;
     }
     #text-prns {
-        font-size:16px;
+        font-size:15px;
     }
 
 /* PAGE INFO TOP-HALF CSS END */
@@ -72,7 +76,7 @@
         width: 50px;
         height:auto;
         position:relative;
-        right:20px;
+        right:15px;
     }
 
 /* PAGE INFO BOTTOM-HALF CSS END */
