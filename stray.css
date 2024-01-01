@@ -20,7 +20,7 @@
 /* ANIMATION(S) KEYFRAMES START */
 /* PROFILE CONTAINER CSS START */
 
-    #home, #test {
+    #home #test {
         background-color:#000000;
         color:#f4ebb8;
     }
