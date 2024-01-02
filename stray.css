@@ -20,7 +20,7 @@
 /* ANIMATION(S) KEYFRAMES START */
 /* PROFILE CONTAINER CSS START */
 
-    #home #test {
+    #test {
         background-color:#000000;
         color:#f4ebb8;
     }
@@ -84,7 +84,7 @@
 
     .main-top {
         position:inherit;
-        right:10%;
+        right:15%;
     }
     .text-names {
         font-size:17px;
