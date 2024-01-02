@@ -99,9 +99,8 @@
 /* PAGE INFO BOTTOM-HALF CSS START */
 
     .main-bottom {
-        position:inherit;
         display:flex;
-        justify-content:space-around;
+        justify-content:space-evenly;
     }
     #button-img {
         width: 50px;
