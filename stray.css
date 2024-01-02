@@ -75,17 +75,14 @@
     .main-info {
         font-size:16px;
         position:relative;
+        top:55%;
+        right:25%;
     }
 
 /* PAGE INFO TOP-HALF CSS START */
 
     .main-text {
-        font-size:16px;
-        position:relative;
-        top:55%;
-        right:25%;
-        width:245px;
-        display:flex;
+        width:250px;
     }
     .text-names {
         font-size:17px;
@@ -97,9 +94,14 @@
 /* PAGE INFO TOP-HALF CSS END */
 /* PAGE INFO BOTTOM-HALF CSS START */
 
+    .main-bottom {
+        display:flex;
+        justify-content:space-between;
+    }
     #button-img {
         width: 50px;
         height:auto;
+        position:absolute;
     }
 
 /* PAGE INFO BOTTOM-HALF CSS END */
