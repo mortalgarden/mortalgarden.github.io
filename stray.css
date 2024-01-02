@@ -75,8 +75,8 @@
     .main-info {
         font-size:16px;
         position:relative;
-        top:25%;
-        right:55%;
+        top:35%;
+        right:25%;
         width:fit-content;
     }
 
@@ -85,7 +85,6 @@
     .main-top {
         position:relative;
         right:10%;
-        top:5%;
     }
     .text-names {
         font-size:17px;
