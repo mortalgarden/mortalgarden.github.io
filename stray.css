@@ -96,7 +96,7 @@
 
     .main-bottom {
         display:flex;
-        justify-content:space-between;
+        justify-content:space-evenly;
     }
     #button-img {
         width: 50px;
