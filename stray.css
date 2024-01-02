@@ -24,13 +24,13 @@
         background-color:#000000;
         color:#f4ebb8;
     }
-    a:link {
+    a:link #test {
         color:#fcd34e;
     }
-    a:hover {
+    a:hover #test {
         color:#fca54e
     }
-    a:visited {
+    a:visited #test {
         color:#bfaf79;
     }
 
