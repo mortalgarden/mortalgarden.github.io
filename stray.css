@@ -75,15 +75,11 @@
     .main-info {
         font-size:16px;
         position:relative;
-        top:55%;
-        right:25%;
-        width:245px;
-        display:flex;
     }
 
 /* PAGE INFO TOP-HALF CSS START */
 
-    .main-top {
+    .main-text {
         font-size:16px;
         position:relative;
         top:55%;
