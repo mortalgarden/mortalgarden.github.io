@@ -24,14 +24,14 @@
         background-color:#000000;
         color:#f4ebb8;
     }
-    a:link #test {
+    a:link {
         color:#fcd34e;
     }
-    a:hover #test {
+    a:hover {
         color:#fca54e
     }
-    a:visited #test {
-        color:#bfaf79;
+    a:visited {
+        color:#ffdd92;
     }
 
     .main-body {
@@ -53,16 +53,19 @@
         animation-duration:2s;
         animation-timing-function:ease-in-out;
         animation-iteration-count:infinite;
+        animation-play-state:running;
 
         -moz-animation-name:updown;
         -moz-animation-duration:2s;
         -moz-animation-timing-function:ease-in-out;
         -moz-animation-iteration-count:infinite;
+        -moz-animation-play-state:running;
 
         -webkit-animation-name:updown;
         -webkit-animation-duration:2s;
         -webkit-animation-timing-function:ease-in-out;
         -webkit-animation-iteration-count:infinite;
+        -webkit-animation-play-state:running;
 
         font-size:26px;
         font-weight:800;
@@ -83,6 +86,7 @@
 
     .main-text {
         width:250px;
+        position:inherit;
     }
     .text-names {
         font-size:17px;
@@ -95,8 +99,9 @@
 /* PAGE INFO BOTTOM-HALF CSS START */
 
     .main-bottom {
+        position:inherit;
         display:flex;
-        justify-content:space-evenly;
+        justify-content:space-around;
     }
     #button-img {
         width: 50px;
