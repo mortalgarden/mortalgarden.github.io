@@ -20,7 +20,7 @@
 /* ANIMATION(S) KEYFRAMES START */
 /* PROFILE CONTAINER CSS START */
 
-    #test {
+    #home {
         background-color:#000000;
         color:#f4ebb8;
     }
@@ -101,7 +101,7 @@
     .main-bottom {
         display:flex;
         position:absolute;
-        justify-content:space-around;
+        justify-content:space-evenly;
     }
     #button-img {
         width: 50px;
