@@ -100,7 +100,7 @@
 
     .main-bottom {
         display:flex;
-        position:unset;
+        position:static;
         justify-content:space-evenly;
     }
     #button-img {
