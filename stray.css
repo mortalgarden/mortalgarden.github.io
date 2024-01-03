@@ -101,7 +101,7 @@
     .main-bottom {
         display:flex;
         position:static;
-        justify-content:space-evenly;
+        justify-content:space-between;
     }
     #button-img {
         width: 50px;
