@@ -100,8 +100,8 @@
 
     .main-bottom {
         display:flex;
-        position:static;
-        justify-content:space-between;
+        position:absolute;
+        justify-content:space-around;
     }
     #button-img {
         width: 50px;
