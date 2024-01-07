@@ -40,6 +40,16 @@ a:visited {
     animation-duration:3s;
     animation-iteration-count:infinite;
     animation-timing-function:ease-in-out;
+
+    -moz-animation-name:updown;
+    -moz-animation-duration:3s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:ease-in-out;
+
+    -webkit-animation-name:updown;
+    -webkit-animation-duration:3s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:ease-in-out;
 }
 
 /* PAGE TITLE CSS END */
@@ -51,6 +61,17 @@ a:visited {
     to {transform:rotate(7deg)translate(0,-0px);}
 }
 
+@-moz-keyframes updown {
+    from {transform:rotate(7deg)translate(0,0px);}
+    50% {transform:rotate(7deg)translate(0,15px);}
+    to {transform:rotate(7deg)translate(0,-0px);}
+}
+
+@-webkit-keyframes updown {
+    from {transform:rotate(7deg)translate(0,0px);}
+    50% {transform:rotate(7deg)translate(0,15px);}
+    to {transform:rotate(7deg)translate(0,-0px);}
+}
 
 /* ANIMATION(S) KEYFRAMES END */
 /* PAGE INFO TEXT CSS START */
