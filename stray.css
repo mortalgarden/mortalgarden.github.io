@@ -1,112 +1,104 @@
 /* BUNDLES.CC/@STRAY CSS */
-/* ANIMATION(S) KEYFRAMES START */
-
-@keyframes updown {
-    from {translate:(0,0);}
-    50% {translate:(0,15);}
-    to {translate:(0,-0);}
-}
-@-moz-keyframes updown {
-    from {translate:(0,0);}
-    50% {translate:(0,15);}
-    to {translate:(0,-0);}
-}
-@-webkit-keyframes updown {
-    from {translate:(0,0);}
-    50% {translate:(0,15);}
-    to {translate:(0,-0);}
-}
-
-/* ANIMATION(S) KEYFRAMES START */
 /* PROFILE CONTAINER CSS START */
 
-    #home {
-        background-color:#000000;
-        color:#f4ebb8;
-    }
-    a:link {
-        color:#fcd34e;
-    }
-    a:hover {
-        color:#fca54e
-    }
-    a:visited {
-        color:#ffdd92;
-    }
+body {
+    background-color:#000000;
+    color:#f4ebb8;
+}
+a:link {
+    color:#fcd34e;
+}
+a:hover {
+    color:#fca54e
+}
+a:visited {
+    color:#ffdd92;
+}
 
-    .main-body {
-        display:flex;
-    }
+.main-body {
+    display:flex;
+}
 
 /* PROFILE CONTAINER CSS END */
 /* PRIMARY WOLF IMAGE CSS START */
 
-    .main-image {
-        width:400px;
-    }
+.main-image {
+    width:400px;
+}
 
 /* PRIMARY WOLF IMAGE CSS END */
 /* PAGE TITLE CSS START */
 
-    .main-title {
-        animation-name:updown;
-        animation-duration:2s;
-        animation-timing-function:ease-in-out;
-        animation-iteration-count:infinite;
-        animation-play-state:running;
+.main-title {
+    font-size:28px;
+    font-weight:800;
+    position:relative;
+    top:30%;
+    left:5%;
 
-        -moz-animation-name:updown;
-        -moz-animation-duration:2s;
-        -moz-animation-timing-function:ease-in-out;
-        -moz-animation-iteration-count:infinite;
-        -moz-animation-play-state:running;
-
-        -webkit-animation-name:updown;
-        -webkit-animation-duration:2s;
-        -webkit-animation-timing-function:ease-in-out;
-        -webkit-animation-iteration-count:infinite;
-        -webkit-animation-play-state:running;
-
-        font-size:26px;
-        font-weight:800;
-        position:relative;
-    }
+    animation-name:updown;
+    animation-duration:3s;
+    animation-iteration-count:infinite;
+    animation-timing-function:ease-in-out;
+}
 
 /* PAGE TITLE CSS END */
+/* ANIMATION(S) KEYFRAMES START */
+
+@keyframes updown {
+    from {transform:rotate(7deg)translate(0,0px);}
+    50% {transform:rotate(7deg)translate(0,15px);}
+    to {transform:rotate(7deg)translate(0,-0px);}
+}
+
+
+/* ANIMATION(S) KEYFRAMES END */
 /* PAGE INFO TEXT CSS START */
 
-    .main-info {
-        font-size:16px;
-        position:relative;
-        top:55%;
-        right:25%;
-    }
+.main-info {
+    font-size:15px;
+    position:relative;
+    top:30%;
+    right:16%;
+}
 
 /* PAGE INFO TOP-HALF CSS START */
 
-    .main-text {
-        width:250px;
-        position:inherit;
-    }
-    .text-names {
-        font-size:17px;
-    }
-    #text-prns {
-        font-size:15px;
-    }
+.main-text {
+    width:250px;
+    position:inherit;
+    top:inherit;
+    right:inherit
+}
+.main-names {
+    position:inherit;
+    top:inherit;
+    right:inherit;
+    margin-bottom:2px;
+}
+.text-names {
+    font-size:18px;
+}
+#text-prns {
+    font-size:15px;
+}
 
 /* PAGE INFO TOP-HALF CSS END */
 /* PAGE INFO BOTTOM-HALF CSS START */
 
-    .main-bottom {
-        display:flex;
-        justify-content:space-evenly;
-    }
-    #button-img {
-        width: 50px;
-        height:auto;
-        position:absolute;
-    }
+.main-bottom {
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    margin-top:2px;
+    position:inherit;
+    top:inherit;
+    right:inherit;
+}
+#button-img {
+    width: 45px;
+    height:auto;
+}
 
 /* PAGE INFO BOTTOM-HALF CSS END */
 /* PAGE INFO TEXT CSS END */
