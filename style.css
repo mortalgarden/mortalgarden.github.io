@@ -19,20 +19,22 @@
 
     .main-body {
         display:flex;
+        justify-content:center;
     }
 
 /* PROFILE CONTAINER CSS END */
 /* PRIMARY WOLF IMAGE CSS START */
 
     .main-image {
-        width:400px;
+        max-width:45%;
+        position:relative;
     }
 
 /* PRIMARY WOLF IMAGE CSS END */
 /* PAGE TITLE CSS START */
 
     .main-title {
-        font-size:28px;
+        font-size:calc(1rem + 1vw);
         font-weight:800;
         position:relative;
         top:30%;
@@ -58,7 +60,8 @@
 /* PAGE INFO TEXT CSS START */
 
     .main-info {
-        font-size:15px;
+        font-size:calc(0.4rem + 1vw);
+        font-weight:500;
         position:relative;
         top:30%;
         right:16%;
@@ -66,11 +69,14 @@
 
 /* PAGE INFO TOP-HALF CSS START */
 
-    .main-text {
+    .main-top {
         width:250px;
         position:inherit;
         top:inherit;
         right:inherit
+    }
+    #top-text {
+        max-width:250px;
     }
     .main-names {
         position:inherit;
@@ -79,16 +85,17 @@
         margin-bottom:2px;
     }
     .text-names {
-        font-size:18px;
+        font-size:calc(0.7rem + 1vw);
     }
     #text-prns {
-        font-size:15px;
+        font-size:calc(0.5rem + 1vw);
     }
 
 /* PAGE INFO TOP-HALF CSS END */
 /* PAGE INFO BOTTOM-HALF CSS START */
 
     .main-bottom {
+        max-width:250px;
         display:flex;
         justify-content:space-evenly;
         align-items:center;
@@ -97,9 +104,13 @@
         top:inherit;
         right:inherit;
     }
+    #bottom-text {
+        width:250px;
+    }
     #button-img {
-        width: 45px;
+        width:calc(2.5rem + 1vw);
         height:auto;
+        margin-right:calc(0.5rem + 1vw);
     }
 
 /* PAGE INFO BOTTOM-HALF CSS END */
