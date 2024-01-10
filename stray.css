@@ -18,7 +18,7 @@ a:visited {
 .main-body {
     display:flex;
     width:fit-content;
-    viewport-fit:calc(2rem + 1vw);
+    contain:calc(2rem + 1vw);
 }
 
 /* PROFILE CONTAINER CSS END */
