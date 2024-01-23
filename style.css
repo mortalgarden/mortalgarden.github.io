@@ -1,10 +1,5 @@
     /* BASE STYLES START*/
-body, html {
 
-    height: 100%;
-    width: 100%;
-
-}
 
 html {
 
@@ -19,7 +14,7 @@ body {
     font-family: "Besley", serif;
     font-weight: 500;
     font-size: 1.3rem;
-    color: #faebd7;
+    color: #faf1e5;
     
 /* TEXT STYLE END */
 
