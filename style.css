@@ -97,6 +97,22 @@ span.prompt {
     font-weight: 900;
     
 }
+.page {
+    display: grid;
+    grid-template-areas:
+      "content sidebar";
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+  }
+   
+  article {
+    grid-area: content;
+  }
+  
+  aside {
+    grid-area: sidebar;
+  }
+  
     /* SHARED MAGPOD STYLES END */
     /* THE MAGNUS ARCHIVES STYLES START */
 
