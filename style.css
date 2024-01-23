@@ -19,6 +19,15 @@ body {
 /* TEXT STYLE END */
 
 }
+a:link {
+    color: #eee6c1;
+}
+a:visited {
+    color: #d8d3bc;
+}
+a:hover {
+    color: #e9ebb9;
+}
     /* BASE STYLES END */
     /* INDEX STYLES START */
 #index-box {
