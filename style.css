@@ -28,15 +28,17 @@ body {
     /* INDEX STYLES START */
 #index-box {
 
-    width: 400px;
-    height: 100px;
+    width: 220px;
+    height: 140px;
     position: absolute;
     margin: auto;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
     /* INDEX STYLES END */
