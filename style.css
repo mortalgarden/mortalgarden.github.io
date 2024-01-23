@@ -1,0 +1,36 @@
+    /* BASE STYLES START*/
+html {
+
+    font-size: 14px;
+    height: 100%;
+
+}
+body {
+
+    background-color: #08080a;
+    height: 100%;
+
+/* TEXT STYLE START */
+    font-family: "Besley", serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: #faebd7;
+    
+/* TEXT STYLE END */
+
+}
+    /* BASE STYLES END */
+    /* INDEX STYLES START */
+#index-box div {
+
+    width: 15rem;
+    height: fit-content;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+}
+    /* INDEX STYLES END */
