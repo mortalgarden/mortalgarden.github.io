@@ -96,4 +96,8 @@ h3.protocol, .tmpquote, .tmpepdesc {
     font-size: 1rem;
     
 }
+.tmpquote {
+    font-weight: 700;
+    font-size: 1rem;
+}
     /* THE MAGNUS PROTOCOL STYLES END */
