@@ -74,7 +74,7 @@ h2.protocol, h3.protocol, .tmpquote {
 }
 span.protocol {
 
-    font-weight: 600;
+    font-weight: 700;
     color: #be2828;
 
 }
@@ -86,13 +86,14 @@ h3.protocol, .tmpquote, .tmpepdesc {
 .tmpnum {
 
     font-family: "Besley", serif;
-    font-weight: 800;
+    font-weight: 900;
+    
 
 }
 .tmpepdesc {
 
     color: #a68888;
-    font-size: 0.75rem;
+    font-size: 1rem;
     
 }
     /* THE MAGNUS PROTOCOL STYLES END */
