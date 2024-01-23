@@ -69,13 +69,13 @@ a:hover {
     /* THE MAGNUS PROTOCOL STYLES START */
 h2.protocol, h3.protocol, .tmpquote {
 
-    color: #cc5c5c;
+    color: #dc6464;
 
 }
 span.protocol {
 
     font-weight: 700;
-    color: #be2828;
+    color: #d62a2a;
 
 }
 h3.protocol, .tmpquote, .tmpepdesc {
@@ -92,7 +92,7 @@ h3.protocol, .tmpquote, .tmpepdesc {
 }
 .tmpepdesc {
 
-    color: #a68888;
+    color: #d1a2a2;
     font-size: 1rem;
     
 }
