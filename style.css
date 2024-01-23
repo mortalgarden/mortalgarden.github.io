@@ -29,6 +29,7 @@ body {
 #index-box {
 
     width: 20rem;
+    height: fit-content;
     position: absolute;
     margin: 0 auto;
     top: 0;
