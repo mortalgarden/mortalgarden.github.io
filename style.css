@@ -1,6 +1,4 @@
     /* BASE STYLES START*/
-
-
 html {
 
     font-size: 14px;
@@ -20,13 +18,19 @@ body {
 
 }
 a:link {
+
     color: #eee6c1;
+
 }
 a:visited {
+
     color: #d8d3bc;
+
 }
 a:hover {
+
     color: #e9ebb9;
+
 }
     /* BASE STYLES END */
     /* INDEX STYLES START */
@@ -51,21 +55,44 @@ a:hover {
 
 }
     /* INDEX STYLES END */
+    /* SHARED MAGPOD STYLES START */
+ .sections {
+
+    text-align: justify;
+
+}
+    /* SHARED MAGPOD STYLES END */
     /* THE MAGNUS ARCHIVES STYLES START */
 
 
     /* THE MAGNUS ARCHIVES STYLES END */
     /* THE MAGNUS PROTOCOL STYLES START */
-h2.protocol {
+h2.protocol, h3.protocol, .tmpquote {
+
     color: #cc5c5c;
+
 }
-.episodenum {
+span.protocol {
+
+    font-weight: 600;
+    color: #be2828;
+
+}
+h3.protocol, .tmpquote, .tmpepdesc {
+
+    font-style: italic;
+
+}
+.tmpnum {
+
     font-family: "Besley", serif;
     font-weight: 800;
+
 }
-.tmp-episodedesc {
-    font-style: italic;
+.tmpepdesc {
+
     color: #a68888;
-    font-size: 1rem;
+    font-size: 0.75rem;
+    
 }
     /* THE MAGNUS PROTOCOL STYLES END */
