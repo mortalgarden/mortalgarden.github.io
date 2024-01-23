@@ -59,6 +59,7 @@ a:hover {
  p.sections {
 
     text-align: justify;
+    font-size: 1.1rem;
 
 }
 div.sections {
@@ -67,45 +68,58 @@ div.sections {
     
 
 }
+h2 {
+
+    font-size: 1.7rem;
+
+}
+h3 {
+
+    font-size: 1.4rem;
+    font-style: italic;
+
+}
+h6 {
+
+    font-weight: 700;
+    font-size: 1.1rem;
+    font-style: italic;
+
+}
+span.prompt {
+
+    font-weight: 700;
+    font-size: 1.2rem;
+
+}
+.epnum {
+
+    font-weight: 900;
+    
+}
     /* SHARED MAGPOD STYLES END */
     /* THE MAGNUS ARCHIVES STYLES START */
 
 
     /* THE MAGNUS ARCHIVES STYLES END */
     /* THE MAGNUS PROTOCOL STYLES START */
-h3.protocol, h4.protocol, .tmpquote {
+h2.protocol, h3.protocol, h6.protocol {
 
     color: #dc6464;
 
 }
 span.protocol {
 
-    font-weight: 700;
     color: #ec2a2a;
 
 }
-h4.protocol, .tmpquote, .tmpepdesc {
 
-    font-style: italic;
-
-}
-.tmpnum {
-
-    font-family: "Besley", serif;
-    font-weight: 900;
-    
-
-}
 .tmpepdesc {
 
     color: #d1a2a2;
     font-size: 1rem;
+    font-style: italic;
     
 }
-.tmpquote {
 
-    font-weight: 700;
-    font-size: 1rem;
-
-}
     /* THE MAGNUS PROTOCOL STYLES END */
