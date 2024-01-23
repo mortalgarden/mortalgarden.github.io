@@ -56,9 +56,15 @@ a:hover {
 }
     /* INDEX STYLES END */
     /* SHARED MAGPOD STYLES START */
- .sections {
+ p.sections {
 
     text-align: justify;
+
+}
+div.sections {
+
+    display: flex;
+    
 
 }
     /* SHARED MAGPOD STYLES END */
@@ -67,7 +73,7 @@ a:hover {
 
     /* THE MAGNUS ARCHIVES STYLES END */
     /* THE MAGNUS PROTOCOL STYLES START */
-h2.protocol, h3.protocol, .tmpquote {
+h3.protocol, h4.protocol, .tmpquote {
 
     color: #dc6464;
 
@@ -78,7 +84,7 @@ span.protocol {
     color: #ec2a2a;
 
 }
-h3.protocol, .tmpquote, .tmpepdesc {
+h4.protocol, .tmpquote, .tmpepdesc {
 
     font-style: italic;
 
@@ -97,7 +103,9 @@ h3.protocol, .tmpquote, .tmpepdesc {
     
 }
 .tmpquote {
+
     font-weight: 700;
     font-size: 1rem;
+
 }
     /* THE MAGNUS PROTOCOL STYLES END */
