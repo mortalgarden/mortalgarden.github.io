@@ -135,6 +135,10 @@ span.protocol {
     color: #d1a2a2;
     font-size: 1rem;
     font-style: italic;
+    text-align: right;
+    position: relative;
+    bottom: 10%;
+    left: 5%;
     
 }
 
