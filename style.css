@@ -61,10 +61,11 @@ h2.protocol {
 }
 .episodenum {
     font-family: "Besley", serif;
-    font-weight: 600;
+    font-weight: 800;
 }
 .tmp-episodedesc {
     font-style: italic;
     color: #a68888;
+    font-size: 1rem;
 }
     /* THE MAGNUS PROTOCOL STYLES END */
