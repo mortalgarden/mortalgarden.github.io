@@ -51,3 +51,20 @@ a:hover {
 
 }
     /* INDEX STYLES END */
+    /* THE MAGNUS ARCHIVES STYLES START */
+
+
+    /* THE MAGNUS ARCHIVES STYLES END */
+    /* THE MAGNUS PROTOCOL STYLES START */
+h2.protocol {
+    color: #cc5c5c;
+}
+.episodenum {
+    font-family: "Besley", serif;
+    font-weight: 600;
+}
+.tmp-episodedesc {
+    font-style: italic;
+    color: #a68888;
+}
+    /* THE MAGNUS PROTOCOL STYLES END */
