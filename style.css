@@ -21,9 +21,9 @@ body {
 }
     /* BASE STYLES END */
     /* INDEX STYLES START */
-#index-box div {
+#index-box {
 
-    width: 15rem;
+    width: 5rem;
     height: fit-content;
     position: absolute;
     margin: auto;
