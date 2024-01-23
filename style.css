@@ -28,9 +28,9 @@ body {
     /* INDEX STYLES START */
 #index-box {
 
-    width: 15rem;
+    width: 20rem;
     position: absolute;
-    margin: auto;
+    margin: 0 auto;
     top: 0;
     right: 0;
     bottom: 0;
