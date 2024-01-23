@@ -28,8 +28,8 @@ body {
     /* INDEX STYLES START */
 #index-box {
 
-    width: calc(450px + 2vw);
-    height: calc(300px + 2vh);
+    width: 400px;
+    height: 200px;
     position: absolute;
     margin: auto;
     top: 0;
