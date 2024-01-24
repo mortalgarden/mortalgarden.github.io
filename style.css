@@ -99,9 +99,9 @@
     aside {
 
         display: inherit;
-        flex-flow: row wrap;
         justify-content: center;
         align-items: center;
+        font-size: 1rem;
 
     }
     aside div {
