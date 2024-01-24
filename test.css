@@ -72,6 +72,7 @@
         text-indent: 5rem;
         font-size: 1.4rem;
         font-style: italic;
+        margin-bottom: 1rem;
     
     }
     h6 {
@@ -79,7 +80,7 @@
         font-weight: 700;
         font-size: 1.1rem;
         font-style: italic;
-        text-align: left;
+        text-align: right;
         position: relative;
         left: 25%;
     
@@ -109,12 +110,6 @@
         margin-top: 2rem;
     
     }
-    section.info {
-
-        position: relative;
-        bottom: 5%;
-
-    }
     section.info p {
     
         text-align: justify;
@@ -131,7 +126,7 @@
     
         text-indent: 2.5rem;
         line-height: 1.75rem;
-        margin-top: 0rem;
+        margin-top: -1rem;
     
     }
         /* SHARED MAGPOD STYLES END */
@@ -157,8 +152,8 @@
         font-style: italic;
         text-align: right;
         position: relative;
-        bottom: 10%;
-        right: 30%;
+        bottom: 15%;
+        right: 35%;
         
     }
     
