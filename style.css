@@ -101,6 +101,7 @@ span.prompt {
 span.analysis {
 
     text-indent: 5rem;
+    line-height: normal;
 
 }
 .epnum {
@@ -108,13 +109,6 @@ span.analysis {
     font-weight: 900;
     
 }
-.page {
-    display: grid;
-    grid-template-areas:
-      "content sidebar";
-    grid-template-columns: 3fr 1fr;
-    gap: 20px;
-  }
 
   
     /* SHARED MAGPOD STYLES END */
