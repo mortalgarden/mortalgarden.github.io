@@ -56,16 +56,14 @@ a:hover {
 }
     /* INDEX STYLES END */
     /* SHARED MAGPOD STYLES START */
- p.sections {
+ section {
+    display: flex;
+    flex-wrap: wrap;
+ } 
+p.sections {
 
     text-align: justify;
     font-size: 1.1rem;
-
-}
-div.sections {
-
-    display: flex;
-    
 
 }
 h2 {
@@ -84,6 +82,7 @@ h6 {
     font-weight: 700;
     font-size: 1.1rem;
     font-style: italic;
+    text-align: left;
 
 }
 span.prompt {
@@ -138,7 +137,7 @@ span.protocol {
     text-align: right;
     position: relative;
     bottom: 10%;
-    left: 5%;
+    right: 30%;
     
 }
 
