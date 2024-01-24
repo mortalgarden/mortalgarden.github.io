@@ -115,16 +115,16 @@
         margin-top: 2rem;
     
     }
+    .prompt {
+    
+        font-weight: 700;
+        font-size: 1.2rem;
+    
+    }
     section.info p {
     
         text-align: justify;
         font-size: 1.1rem;
-    
-    }
-    .prompt, p.prompt {
-    
-        font-weight: 700;
-        font-size: 1.2rem;
     
     }
     p.analysis {
