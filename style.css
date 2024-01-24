@@ -83,10 +83,15 @@
         text-align: right;
     
     }
-    b, i {
+    i {
 
         color: #dad1c4;
         
+    }
+    b {
+
+        color: #ccc4b8;
+
     }
     body.flex {
     
@@ -120,7 +125,7 @@
     }
     div.sect {
     
-        line-height: 1rem;
+        line-height: 1.3rem;
         margin-top: 2rem;
     
     }
