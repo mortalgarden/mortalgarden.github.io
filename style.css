@@ -100,9 +100,10 @@
 
         display: inherit;
         justify-content: center;
-        align-items: center;
         flex-flow: column;
         font-size: 1rem;
+        width: 375px;
+        position:sticky;
 
     }
     aside div {
