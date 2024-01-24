@@ -56,16 +56,6 @@ a:hover {
 }
     /* INDEX STYLES END */
     /* SHARED MAGPOD STYLES START */
- section {
-    display: flex;
-    flex-wrap: wrap;
- } 
-p.sections {
-
-    text-align: justify;
-    font-size: 1.1rem;
-
-}
 h2 {
 
     font-size: 1.7rem;
@@ -85,10 +75,30 @@ h6 {
     text-align: left;
 
 }
+section {
+
+    display: flex;
+    flex-wrap: wrap;
+
+} 
+div.sections {
+    line-height: 3rem;
+}
+p.sections {
+
+    text-align: justify;
+    font-size: 1.1rem;
+
+}
 span.prompt {
 
     font-weight: 700;
     font-size: 1.2rem;
+
+}
+span.analysis {
+
+    text-indent: 5rem;
 
 }
 .epnum {
@@ -103,14 +113,7 @@ span.prompt {
     grid-template-columns: 3fr 1fr;
     gap: 20px;
   }
-   
-  article {
-    grid-area: content;
-  }
-  
-  aside {
-    grid-area: sidebar;
-  }
+
   
     /* SHARED MAGPOD STYLES END */
     /* THE MAGNUS ARCHIVES STYLES START */
@@ -132,7 +135,7 @@ span.protocol {
 .tmpepdesc {
 
     color: #d1a2a2;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-style: italic;
     text-align: right;
     position: relative;
