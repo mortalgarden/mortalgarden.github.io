@@ -78,12 +78,13 @@ h6 {
 section {
 
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
 
 } 
 div.sections {
 
-    line-height: 0.5rem;
+    line-height: 0.75rem;
+    margin-top: 2rem;
 
 }
 p.sections {
@@ -101,7 +102,7 @@ span.prompt {
 span.analysis {
 
     text-indent: 5rem;
-    line-height: normal;
+    line-height: 1.5rem;
 
 }
 .epnum {
@@ -109,7 +110,6 @@ span.analysis {
     font-weight: 900;
     
 }
-
   
     /* SHARED MAGPOD STYLES END */
     /* THE MAGNUS ARCHIVES STYLES START */
