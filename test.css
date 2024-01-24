@@ -128,7 +128,7 @@
         color: #dc6464;
     
     }
-    span.protocol {
+    span.protocol, p.protocol {
     
         color: #ec2a2a;
     
