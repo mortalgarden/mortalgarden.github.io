@@ -125,7 +125,7 @@
         font-size: 1.2rem;
     
     }
-    section.info p {
+    section.info p, span.sect {
     
         text-align: justify;
         font-size: 1.1rem;
