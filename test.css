@@ -148,6 +148,7 @@
 
         display: inherit;
         flex-flow: column;
+        justify-content: space-around;
 
     }
     div.key .imp, 
