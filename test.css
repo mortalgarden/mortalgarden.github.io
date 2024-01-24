@@ -107,7 +107,7 @@
     aside div {
 
         margin: 2rem;
-        
+
     }
     div.sect {
     
@@ -121,7 +121,7 @@
         font-size: 1.1rem;
     
     }
-    .prompt {
+    .prompt, p.prompt {
     
         font-weight: 700;
         font-size: 1.2rem;
