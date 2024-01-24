@@ -105,7 +105,7 @@
         width: 375px;
         position: sticky;
         top: 10%;
-        align-self: flex-start
+        align-self: flex-start;
 
     }
     aside div {
