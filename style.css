@@ -115,7 +115,6 @@
     }
     div.sect {
     
-        line-height: 1.1rem;
         margin-top: 2rem;
     
     }
@@ -125,7 +124,7 @@
         font-size: 1.2rem;
     
     }
-    section.info p, span.sect {
+    section.info p, div.sect {
     
         text-align: justify;
         font-size: 1.1rem;
@@ -145,7 +144,7 @@
         text-align: right;
         position: relative;
         bottom: 45%;
-        right: 40%;
+        right: 10%;
 
     }
     .key {
