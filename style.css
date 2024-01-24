@@ -85,7 +85,7 @@
     }
     b, i {
 
-        color: #e9ddcd;
+        color: #dad1c4;
         
     }
     body.flex {
@@ -188,7 +188,7 @@
         color: #ec2a2a;
     
     }
-    .epdesc.protocol {
+    .epdesc.protocol, .epdesc.protocol b {
     
         color: #d1a2a2;
         
