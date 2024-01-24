@@ -101,14 +101,14 @@
         display: inherit;
         justify-content: center;
         align-items: center;
+        display: inherit; 
+        flex-flow: column;
         font-size: 1rem;
 
     }
     aside div {
 
-        margin: 1rem;
-        display: inherit;
-        flex-flow: column;
+        margin: 0.5rem;
 
     }
     div.sect {
