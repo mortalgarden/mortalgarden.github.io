@@ -72,7 +72,7 @@
         text-indent: 5rem;
         font-size: 1.4rem;
         font-style: italic;
-        margin-bottom: 1rem;
+        margin-bottom: -1rem;
     
     }
     h6 {
@@ -81,8 +81,6 @@
         font-size: 1.1rem;
         font-style: italic;
         text-align: right;
-        position: relative;
-        left: 25%;
     
     }
     body.flex {
@@ -126,7 +124,7 @@
     
         text-indent: 2.5rem;
         line-height: 1.75rem;
-        margin-top: -1rem;
+        margin-top: -0.5rem;
     
     }
         /* SHARED MAGPOD STYLES END */
@@ -152,8 +150,8 @@
         font-style: italic;
         text-align: right;
         position: relative;
-        bottom: 15%;
-        right: 35%;
+        bottom: 25%;
+        right: 45%;
         
     }
     
