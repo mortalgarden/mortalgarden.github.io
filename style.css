@@ -81,6 +81,12 @@ section {
     flex-flow: row wrap;
 
 } 
+div.analysis {
+    
+    flex-flow: column;
+    width: 900px;
+
+}
 div.sections {
 
     line-height: 0.75rem;
@@ -102,7 +108,8 @@ span.prompt {
 span.analysis {
 
     text-indent: 5rem;
-    line-height: 1.5rem;
+    line-height: 1.75rem;
+    margin-top: 1rem;
 
 }
 .epnum {
