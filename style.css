@@ -82,7 +82,9 @@ section {
 
 } 
 div.sections {
-    line-height: 3rem;
+
+    line-height: 0.5rem;
+
 }
 p.sections {
 
