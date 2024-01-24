@@ -58,6 +58,7 @@
         /* SHARED MAGPOD STYLES START */
     h2 {
     
+        text-indent: 2.5rem;
         font-size: 1.7rem;
     
     }
@@ -68,6 +69,7 @@
     }
     h3 {
     
+        text-indent: 5rem;
         font-size: 1.4rem;
         font-style: italic;
     
@@ -78,6 +80,8 @@
         font-size: 1.1rem;
         font-style: italic;
         text-align: left;
+        position: absolute;
+        right: 30%;
     
     }
     body.flex {
@@ -89,15 +93,15 @@
     article {
         
         flex-flow: column;
-        width: 900px;
-        padding: 5%;
+        width: 700px;
+        padding: 2.5%;
     
     }
     aside {
 
         justify-content: center;
         align-items: center;
-        
+
     }
     div.sect {
     
@@ -119,7 +123,7 @@
     }
     p.analysis {
     
-        text-indent: 5rem;
+        text-indent: 2.5rem;
         line-height: 1.75rem;
         margin-top: 1rem;
     
@@ -146,7 +150,7 @@
         font-size: 0.9rem;
         font-style: italic;
         text-align: right;
-        position: relative;
+        position: absolute;
         bottom: 10%;
         right: 30%;
         
