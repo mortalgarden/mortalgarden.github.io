@@ -147,7 +147,7 @@
     }
     .key {
 
-        display: inherit;
+        display: inline-flex;
         flex-flow: row wrap;
         justify-content: space-around;
 
@@ -191,10 +191,10 @@
     }
     div.key .sus.protocol, 
     span.sus.protocol  {
-        color:#c3bbb1
+        color:#c5c0bb
     }
     div.key .ment.protocol, 
     span.ment.protocol  {
-        color:#c1b6b7
+        color:#b3afaf
     }
         /* THE MAGNUS PROTOCOL STYLES END */
