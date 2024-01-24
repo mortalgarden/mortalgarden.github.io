@@ -102,6 +102,7 @@
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
+        margin: 2rem;
 
     }
     div.sect {
