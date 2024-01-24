@@ -90,7 +90,14 @@
         
         flex-flow: column;
         width: 900px;
+        padding: 5%;
     
+    }
+    aside {
+
+        justify-content: center;
+        align-items: center;
+        
     }
     div.sect {
     
