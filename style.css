@@ -13,23 +13,32 @@
         font-weight: 500;
         font-size: 1.3rem;
         color: #faf1e5;
-        
     /* TEXT STYLE END */
     
     }
+    i {
+
+        color: #dad1c4;
+        
+    }
+    b {
+
+        color: #ccc4b8;
+
+    }
     a:link {
     
-        color: #eee6c1;
+        color: #ece3bb;
     
     }
     a:visited {
     
-        color: #d8d3bc;
+        color: #cec7a8;
     
     }
     a:hover {
     
-        color: #e9ebb9;
+        color: #e9eba7;
     
     }
         /* BASE STYLES END */
@@ -62,7 +71,7 @@
         font-size: 1.7rem;
     
     }
-    .epnum {
+    h2 > span {
     
         font-weight: 900;
         
@@ -82,16 +91,6 @@
         font-style: italic;
         text-align: right;
     
-    }
-    i {
-
-        color: #dad1c4;
-        
-    }
-    b {
-
-        color: #ccc4b8;
-
     }
     body.flex {
     
@@ -125,7 +124,7 @@
     }
     div.sect {
     
-        line-height: 1.3rem;
+        line-height: 1.4rem;
         margin-top: 2rem;
     
     }
