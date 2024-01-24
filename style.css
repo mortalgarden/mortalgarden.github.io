@@ -120,15 +120,9 @@
     }
     div.sect {
     
-        line-height: 0.75rem;
+        line-height: 1rem;
         margin-top: 2rem;
     
-    }
-    section.info > 
-    div.sect > span.sect {
-
-        line-height:  1.75;
-
     }
     .prompt {
     
