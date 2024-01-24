@@ -144,6 +144,24 @@
         right: 40%;
 
     }
+    .key {
+
+        display: inherit;
+        flex-flow: column;
+
+    }
+    div.key .imp, 
+    span.imp {
+
+        font-weight: 600;
+
+    }
+    div.key .sus, 
+    span.sus  {
+      
+        font-style: italic;
+
+    }
         /* SHARED MAGPOD STYLES END */
         /* THE MAGNUS ARCHIVES STYLES START */
     
@@ -164,5 +182,17 @@
     
         color: #d1a2a2;
         
+    }
+    div.key .imp.protocol, 
+    span.imp.protocol  {
+        color:#a06a6e
+    }
+    div.key .sus.protocol, 
+    span.sus.protocol  {
+        color:#c3bbb1
+    }
+    div.key .ment.protocol, 
+    span.ment.protocol  {
+        color:#c1b6b7
     }
         /* THE MAGNUS PROTOCOL STYLES END */
