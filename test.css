@@ -80,8 +80,8 @@
         font-size: 1.1rem;
         font-style: italic;
         text-align: left;
-        position: absolute;
-        right: 30%;
+        position: relative;
+        right: 25%;
     
     }
     body.flex {
@@ -109,6 +109,12 @@
         margin-top: 2rem;
     
     }
+    section.info {
+
+        position: relative;
+        bottom: 5%;
+
+    }
     section.info p {
     
         text-align: justify;
@@ -125,7 +131,6 @@
     
         text-indent: 2.5rem;
         line-height: 1.75rem;
-        margin-top: 1rem;
     
     }
         /* SHARED MAGPOD STYLES END */
@@ -150,7 +155,7 @@
         font-size: 0.9rem;
         font-style: italic;
         text-align: right;
-        position: absolute;
+        position: relative;
         bottom: 10%;
         right: 30%;
         
