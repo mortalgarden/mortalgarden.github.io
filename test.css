@@ -98,6 +98,7 @@
     }
     aside {
 
+        display: inherit;
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
