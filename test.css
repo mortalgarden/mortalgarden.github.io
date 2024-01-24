@@ -127,6 +127,16 @@
         margin-top: -0.5rem;
     
     }
+    .epdesc {
+
+        font-size: 0.9rem;
+        font-style: italic;
+        text-align: right;
+        position: relative;
+        bottom: 35%;
+        right: 45%;
+
+    }
         /* SHARED MAGPOD STYLES END */
         /* THE MAGNUS ARCHIVES STYLES START */
     
@@ -143,15 +153,9 @@
         color: #ec2a2a;
     
     }
-    .tmpepdesc {
+    .epdesc.protocol {
     
         color: #d1a2a2;
-        font-size: 0.9rem;
-        font-style: italic;
-        text-align: right;
-        position: relative;
-        bottom: 25%;
-        right: 45%;
         
     }
     
