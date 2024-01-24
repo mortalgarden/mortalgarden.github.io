@@ -102,8 +102,12 @@
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
-        margin: 2rem;
 
+    }
+    aside div {
+
+        margin: 2rem;
+        
     }
     div.sect {
     
