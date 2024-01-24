@@ -81,7 +81,7 @@
         font-style: italic;
         text-align: left;
         position: relative;
-        right: 25%;
+        left: 25%;
     
     }
     body.flex {
@@ -131,6 +131,7 @@
     
         text-indent: 2.5rem;
         line-height: 1.75rem;
+        margin-top: 0rem;
     
     }
         /* SHARED MAGPOD STYLES END */
