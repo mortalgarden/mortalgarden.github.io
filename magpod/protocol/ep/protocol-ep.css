@@ -1,4 +1,6 @@
-    /* BASE STYLES START*/
+
+
+            /* BASE STYLES START*/
     html {
 
         font-size: 14px;
@@ -7,15 +9,15 @@
     body {
     
         background-color: #08080a;
-    
-    /* TEXT STYLE START */
+            /* BODY TEXT STYLE START */
         font-family: "Besley", serif;
         font-weight: 500;
         font-size: 1.3rem;
         color: #faf1e5;
-    /* TEXT STYLE END */
+            /* BODY TEXT STYLE END */
     
     }
+            /* TEXT STYLES START */
     i {
 
         color: #dad1c4;
@@ -23,7 +25,7 @@
     }
     b {
 
-        color: #ccc4b8;
+        color: #c1baae;
 
     }
     a:link {
@@ -41,9 +43,12 @@
         color: #e9eba7;
     
     }
-        /* BASE STYLES END */
-       
-        /* SHARED MAGPOD STYLES START */
+            /* TEXT STYLES END */
+            /* BASE STYLES END */
+
+            /* GENERAL MAGPOD STYLES START */
+            /* TEXT STYLES START */
+            /* EPISODE TITLE START */
     h2 {
     
         text-indent: 2.5rem;
@@ -55,10 +60,11 @@
         font-weight: 900;
         
     }
+            /* EPISODE TITLE END */
     h3 {
     
         text-indent: 5rem;
-        font-size: 1.4rem;
+        font-size: 1.45rem;
         font-style: italic;
         margin-bottom: -1rem;
     
@@ -69,8 +75,13 @@
         font-size: 1.1rem;
         font-style: italic;
         text-align: right;
+        width: 485px;
+        position: relative;
+        left: 25%;
     
     }
+            /* TEXT STYLES END */
+            /* PAGE FORMATTING START */
     body.flex {
     
         display: flex;
@@ -88,6 +99,7 @@
 
         display: inherit;
         align-items: center;
+        justify-content: center;
         flex-flow: column;
         font-size: 1rem;
         width: 375px;
@@ -96,23 +108,21 @@
         align-self: flex-start;
 
     }
-    aside div {
-
-        margin: 0.5rem;
-
-    }
     div.sect {
     
         line-height: 1.4rem;
         margin-top: 2rem;
     
     }
+            /* PAGE FORMATTING END */
+            /* ANALYSES PORTIONS STYLES START */
     .prompt {
-    
+    /* ex: "Appearances:" */
         font-weight: 700;
         font-size: 1.2rem;
     
     }
+            /* .PROMPT RESPONSES START */
     section.info p {
     
         text-align: justify;
@@ -126,6 +136,9 @@
         margin-top: -0.5rem;
     
     }
+            /* .PROMPT RESPONSES END */
+            /* ANALYSES PORTIONS STYLES END */
+            /* OFFICIAL EPISODE DESCRIPTION STYLES START */
     .epdesc {
 
         font-size: 0.9rem;
@@ -136,12 +149,18 @@
         right: 10%;
 
     }
+            /* OFFICIAL EPISODE DESCRIPTION STYLES END */
+            /* LEGEND / KEY STYLES START */
     .key {
 
         display: inline-flex;
         flex-flow: row wrap;
-        justify-content: space-around;
+        justify-content: space-between;
+        width: 350px;
 
+    }
+    .key div {
+        margin: 0.2rem;
     }
     div.key .imp, 
     span.imp {
@@ -155,37 +174,89 @@
         font-style: italic;
 
     }
-        /* SHARED MAGPOD STYLES END */
-        /* THE MAGNUS ARCHIVES STYLES START */
+            /* JUMPLINK STYLES START */
+    h3 a.jump {
+
+        font-size: 0.9rem;
+        
+
+    }
+    a.jump {
+        
+        color: #3f3f46;
+        font-style: normal;
+        
+    }
+            /* JUMPLINK STYLES END */
+            /* NAVIGATION STYLES START */
+    .nav, .links {
+
+        display: inherit;
+        flex-flow:column;
+        align-items: center;
+
+    }
+    .navlink {
+
+        display: inherit;
+        flex-flow: row nowrap;
+        justify-items: left;
+
+    }
+    .nav {
+
+        display: inherit;
+        justify-self: left;
     
-    
-        /* THE MAGNUS ARCHIVES STYLES END */
-        /* THE MAGNUS PROTOCOL STYLES START */
+    }
+    .links {
+
+        display: inherit;
+        justify-self: right;
+
+    }
+            /* NAVIGATION STYLES END */
+            /* LEGEND / KEY STYLES END */
+            /* GENERAL MAGPOD STYLES END */
+
+            /* ARCHIVES STYLES START */
+
+            /* ARCHIVES STYLES END */
+
+            /* PROTOCOL STYLES START */
+            /* HEADER COLOR START */
     h2.protocol, h3.protocol, h6.protocol {
     
         color: #dc6464;
     
     }
-    span.protocol, p.protocol {
+            /* HEADER COLOR END */
+            /* PROMPT COLOR STYLES START */
+    .prompt.protocol {
     
         color: #ec2a2a;
     
     }
+            /* PROMPT COLOR STYLES END */
+            /* EPISODE DESCRIPTION COLOR STYLES START */
     .epdesc.protocol, .epdesc.protocol b {
     
         color: #d1a2a2;
         
     }
+            /* EPISODE DESCRIPTION COLOR STYLES END */
+            /* LEGEND / KEY COLOR STYLES START */
     div.key .imp.protocol, 
     span.imp.protocol  {
         color:#a06a6e
     }
     div.key .sus.protocol, 
     span.sus.protocol  {
-        color:#c5c0bb
+        color:#bfa49e
     }
     div.key .ment.protocol, 
     span.ment.protocol  {
-        color:#b3afaf
+        color:#9b8686
     }
+        /* LEGEND / KEY COLOR STYLES END */
         /* THE MAGNUS PROTOCOL STYLES END */
