@@ -123,42 +123,42 @@ article {   /* all episode details */
 /*------ TEXT STYLES ------*/
             /*--- selection styles ---*/
 
-::selection.plain {
+.plain::selection {
 
     background: var(--text);
     color: var(--content-bg);    
 
 }
 
-::-moz-selection.plain {
+.plain::-moz-selection {
 
     background: var(--text);
     color: var(--content-bg);    
 
 }
 
-::selection.protocol {
+.protocol::selection {
 
     background: var(--ep-desc);
     color: var(--content-bg);    
 
 }
 
-::-moz-selection.plain {
+.protocol::-moz-selection {
 
     background: var(--ep-desc);
     color: var(--content-bg);    
 
 }
 
-::selection.archives {
+.archives::selection {
 
     background: var(--ep-desc);
     color: var(--content-bg);    
 
 }
 
-::-moz-selection.archives {
+.archives::-moz-selection {
 
     background: var(--ep-desc);
     color: var(--content-bg);    
