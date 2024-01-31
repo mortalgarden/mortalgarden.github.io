@@ -1,68 +1,105 @@
 
-            /* BASE STYLES START*/
+
+
+
+            /*----- BASE STYLES START -----*/
 html {
 
     font-size: 16px;
 
 }
+
 body {
 
     background-color: #08080a;
+
             /* BODY TEXT STYLE START */
+
     font-family: "Besley", serif;
     font-weight: 500;
     font-size: 1.3rem;
-    color: #faf1e5;
+    color: #e4d6c7;
+
             /* END BODY TEXT STYLE */
 
 }
-            /* TEXT STYLES */
+
+main {
+    
+            /* CENTERING */
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+            /* END CENTERING */
+
+}
+
+            /*---- GENERAL TEXT STYLES ----*/
 i {
 
-    color: #dad1c4;
+    color: #beb8af;
     
 }
+
 b {
 
-    color: #c1baae;
+    color: #b1aba1;
 
 }
+
 a:link {
 
     color: #ece3bb;
 
 }
+
 a:visited {
 
     color: #cec7a8;
 
 }
+
 a:hover {
 
     color: #e9eba7;
 
 }
+            /*--- EPISODE TITLE & DESC ---*/
 h2 {
     
-    text-indent: 2.5rem;
+    text-indent: 2.3rem;
     font-size: 1.7rem;
+    margin-top: 1rem;
 
 }
+
 h2 span {
 
     font-weight: 900;
     
 }
-            /* EPISODE TITLE END */
-h3 {
 
-    text-indent: 5rem;
-    font-size: 1.45rem;
-    font-style: italic;
-    margin-bottom: -1rem;
+#td {
+
+    display: flex;
+    flex-flow: column;
 
 }
-            /* FAV QUOTE STYLE */
+            /*--- END EPISODE TITLE & DESC ---*/
+h3 {
+
+    text-indent: 3.5rem;
+    font-size: 1.4rem;
+    font-style: italic;
+    margin-bottom: -1rem;
+    margin-top: 2.5rem;
+
+}
+            /*--- FAV QUOTE STYLE ---*/
 h6 {
 
     font-weight: 650;
@@ -84,7 +121,7 @@ h6 {
     max-width: 25rem;
 
 }
-            /* END FAV QUOTE STYLE */
+            /*--- END FAV QUOTE STYLE ---*/
 .epdesc {
 
     font-size: 0.9rem;
@@ -93,22 +130,29 @@ h6 {
     position: relative;
     bottom: 45%;
     right: 10%;
+    margin-top: -1rem;
+    margin-bottom: -1rem;
 
 }
 div.sect {
 
     line-height: 1.4rem;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 
 }
-            /* ANALYSES PORTIONS STYLES START */
+            /*--- ANALYSES PORTIONS STYLES START ---*/
 .prompt {
             /* ex: "Appearances:" */
     font-weight: 700;
     font-size: 1.1rem;
 
 }
-            /* .PROMPT RESPONSES START */
+.cluster {
+
+    margin-top: -0.5rem;
+
+}
+            /*--- .PROMPT RESPONSES START ---*/
 section.info p {
 
     text-align: justify;
@@ -122,8 +166,8 @@ p.analysis {
     margin-top: -0.5rem;
 
 }
-            /* .PROMPT RESPONSES END */
-            /* ANALYSES PORTIONS STYLES END */
+            /*--- .PROMPT RESPONSES END ---*/
+            /*--- ANALYSES PORTIONS STYLES END ---*/
             /* HEADER COLOR START */
 h2.protocol, h3.protocol, 
 h6.protocol {
@@ -135,7 +179,7 @@ h6.protocol {
             /* PROMPT COLOR STYLES */
 .prompt.protocol {
 
-    color: #ec2a2a;
+    color: #d44242;
 
 }
             /* END PROMPT COLOR STYLES */
@@ -147,21 +191,30 @@ h6.protocol {
 
 }
             /* END EPISODE DESCRIPTION COLOR STYLES */
-            /* END TEXT STYLES */
+            /* LEGEND / KEY COLOR STYLES START */
+    div.key .imp.protocol, 
+    span.imp.protocol  {
+        color:#a06a6e
+    }
+    div.key .sus.protocol, 
+    span.sus.protocol  {
+        color:#bfa49e
+    }
+    div.key .ment.protocol, 
+    span.ment.protocol  {
+        color:#9b8686
+    }
+            /* LEGEND / KEY COLOR STYLES END */
+            /* END GENERAL TEXT STYLES */
             /* SCROLL BOX */
 article {
 
     max-width: 40rem;
     min-width: 20rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-self: center;
 
-            /* CENTERING */
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-            /* END CENTERING */
             /* SCROLL SHIT */
     overflow: hidden;
             /* END SCROLL SHIT */
@@ -172,15 +225,17 @@ article {
     border-style: double;
 
 }
+
 article > div {
 
             /* SCROLL SHIT */
-    height: 36rem;
+    height: 33rem;
     overflow-y: scroll;
     text-align: justify;
     scrollbar-width: thin;
             /* END SCROLL SHIT */
     width: inherit;
+
 
 }
 .text {
@@ -189,3 +244,39 @@ article > div {
 
 }
             /* END SCROLL BOX */
+            /*---- BUTTONS ----*/
+            
+aside {
+
+    height: 10rem;
+    width: 3rem;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+
+    background-color: #131218;
+    border-radius: 2%;
+    border-color: #c94545;
+    border-style: double;
+
+    transform: translateX(-1rem);
+
+    background-color: #131218;
+    border-radius: 10%;
+    border-color: #c94545;
+    border-style: double;
+    
+}
+
+button {
+
+    align-self: center;
+    font-size: 2rem;
+
+    background-color: #ffffff00;
+    color: #fd9ea3
+
+}
+
+            /*---- END BUTTONS ----*/

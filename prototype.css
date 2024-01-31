@@ -1,0 +1,318 @@
+
+
+/*------ HTML & BODY STYLES ------*/
+            /*--- html styles ---*/
+
+html {
+
+    font-size: 16px;
+    font-family: "Besley", serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    --font-icon: "Material Symbols Outlined";
+
+}
+
+:root, body.plain {    /* defining variables */
+
+    --background: #08080a;
+    --content-bg: #131218;
+
+    --text: #e4d6c7;
+    --text-bold: #b1aba1;
+    --text-italic: #beb8af;
+
+    --link: #ece3bb;
+    --link-visit: #cec7a8;
+    --link-hover: #e9eba7;
+
+    --header: #b99878;
+    --prompt: #9e8773;
+    --ep-desc: #d1b7a2;
+
+    --important: #a0876a;
+    --suspect: #bfae9e;
+    --mention: #9b9286;
+
+    --border: #c98545;
+
+}    /* end */
+
+
+body.protocol {
+
+    --background: #08080a;
+    --content-bg: #131218;
+
+    --text: #e4d6c7;
+    --text-bold: #beb8af;
+    --text-italic: #b1aba1;
+
+    --link: #ece3bb;
+    --link-visit: #cec7a8;
+    --link-hover: #e9eba7;
+    --header: #dc6464;
+    --prompt: #d44242;
+    --ep-desc: #d1a2a2;
+
+    --important: #a06a6e;
+    --suspect: #bfa49e;
+    --mention: #9b8686;
+
+    --border: #c94545;
+
+}
+
+body.archives {
+
+    --background: #08080a;
+    --content-bg: #131218;
+
+    --text: #e4d6c7;
+    --text-bold: #beb8af;
+    --text-italic: #b1aba1;
+
+    --link: #ece3bb;
+    --link-visit: #cec7a8;
+    --link-hover: #e9eba7;
+    --header: #94dc64;
+    --prompt: #53d442;
+    --ep-desc: #add1a2;
+
+    --important: #6aa06e;
+    --suspect: #adbf9e;
+    --mention: #869b86;
+
+    --border: #54c945;
+
+}
+
+            /*--- end ---*/
+
+            /*--- body styles ---*/
+
+body {
+
+    background-color: var(--background);
+    overflow: hidden;
+
+    font-family: "Besley", serif;
+    color: var(--text);
+    font-weight: 500;
+    font-size: 1.3rem;
+
+}
+
+.flex {
+
+    display: flex !important;
+
+}
+
+article {   /* all episode details */
+
+    background: var(--content-bg);
+
+}   /* end */
+
+            /*--- end ---*/
+/*------ END ------*/
+
+
+
+/*------ TEXT STYLES ------*/
+            /*--- selection styles ---*/
+
+::selection {
+
+    background: var(--text);
+    color: var(--content-bg);    
+
+}
+
+::-moz-selection {
+
+    background: var(--text);
+    color: var(--content-bg);    
+
+}
+
+            /*--- end ---*/
+
+            /*--- general styles ---*/
+
+i {
+
+    color: var(--text-italic);
+
+}
+
+b {
+
+    color: var(--text-bold);
+
+}
+
+            /*--- end ---*/
+
+            /*--- header styles ---*/
+
+h2 {    /* episode titles */
+
+    text-indent: 2.3rem;
+    font-size: 1.7rem;
+    margin-top: 1rem;
+
+}   /* end */
+
+h2 span {   /* episode number */
+
+    font-weight: 900;
+    
+}    /* end */
+
+h3 {    /* episode sections */
+
+    text-indent: 3.5rem;
+    font-size: 1.4rem;
+    font-style: italic;
+    margin-bottom: -1rem;
+    margin-top: 2.5rem;
+
+}    /* end */
+
+h6 {    /* favorite quote */
+
+    font-weight: 650;
+    font-size: 0.95rem;
+    font-style: italic;
+    text-align: right;
+    
+}   /* end */
+
+h2, h3, h6 {
+
+    color: var(--header);
+
+}
+
+            /*--- end ---*/
+
+            /*--- link styles ---*/
+
+a:link {
+
+    color: var(--link);
+
+}
+
+a:hover {
+
+    color: var(--link-hover);
+
+}
+
+a:visited {
+
+    color: var(--link-visit);
+
+}
+
+            /*--- end ---*/
+
+            /*--- analysis styles ---*/
+
+.prompt {   /* analyses prompt */
+
+    /* ex: "Appearances:" */
+font-weight: 700;
+font-size: 1.1rem;
+color: var(--prompt);
+
+}   /* end */
+
+.cluster {    /* prompt groups that go together */
+
+margin-top: -0.5rem;
+
+}   /* end */
+
+section.info p {
+
+text-align: justify;
+font-size: 1rem;
+
+}
+
+p.analysis {
+
+text-indent: 2.5rem;
+line-height: 1.75rem;
+margin-top: -0.5rem;
+
+}
+
+div.sect {
+
+    line-height: 1.4rem;
+    margin-top: 1.5rem;
+
+}
+
+.epdesc {
+
+    font-size: 0.9rem;
+    font-style: italic;
+    text-align: right;
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+    color: var(--ep-desc);
+
+}
+
+            /*--- end ---*/
+            /*--- legend|key ---*/
+
+div.key .imp, 
+span.imp  {
+
+    color: var(--important);
+}
+
+div.key .sus, 
+span.sus  {
+
+    color: var(--suspect);
+
+}
+
+div.key .ment, 
+span.ment  {
+    
+    color: var(--mention);
+
+}
+
+            /*--- end ---*/
+/*------ END ------*/
+
+
+
+/*------ PLACEMENTS ------*/
+
+#td {   /* title & description */
+
+    display: flex;
+    flex-flow: column;
+
+}   /* end */
+
+/*.epdesc {
+*
+*    position: relative;
+*    bottom: 45%;
+*    right: 10%;
+*
+}*/
+
+/*------ END ------*/

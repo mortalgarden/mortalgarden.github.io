@@ -9,21 +9,55 @@
 
     <title>TMP001: First Shift</title>
     
+    <!-- stylesheets -->
     <link rel="stylesheet" href="test.css"/>
+    <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 
+    <!-- if javascript disabled | simplebar -->
+    <noscript>
+        <style>
+          .simplebar-content-wrapper {
+
+            scrollbar-width: auto;
+            -ms-overflow-style: auto;
+
+          }
+      
+          .simplebar-content-wrapper::-webkit-scrollbar,
+          .simplebar-hide-scrollbar::-webkit-scrollbar {
+
+            display: initial;
+            width: initial;
+            height: initial;
+
+          }
+    
+        [data-simplebar] {
+
+        overflow: auto;
+
+        }
+
+        </style>
+      </noscript>
     
 </head>
 
 <body>
-<article>
-    <div id="scrollbar">
-    <div class="text">
-        <section>
+<main>
 
+    <!---- page start ---->
+<article>
+    <div class="text">
+    <div data-simplebar>
+        <section class="td">
+
+            <div>
             <h2 class="protocol">TMP<span>001</span>: First Shift</h2>
+            </div>
 
             <div class="epdesc protocol">
                 <b>CAT1RBC5257-12052022-09012024</b><br>
@@ -34,51 +68,56 @@
             
         </section>
 
-        <h3 class="protocol">The (First) Report 
+        <h3 class="protocol">Incident Report (#1)
             <a class="jump" id="First-Report">&#10687;</a></h3>
 
         <section class="info">
             <div class="sect">
-                <p>
+                
+                <div class="cluster"><p>
                 <span class="prompt protocol">
                     Case File: &nbsp;
                 </span>
                 CAT1RBC5257-12052022-09012024
-                </p>
+                </p></div>
 
-                <p>
+                <div class="cluster"><p>
                 <span class="prompt protocol">
-                    Report Giver/Subject: &nbsp;
+                    Reported By: &nbsp;
                 </span>
                 Harriet Winstead
-                </p>
+                </p></div>
 
-                <p>
+                <div class="cluster"><p>
                 <span class="prompt protocol">
                     Report Reader: &nbsp;
                 </span>
                 NORRIS
-                </p>
+                </p></div>
+
             </div>
 
             <div class="sect">
-                <p>
+
+                <div class="cluster"><p>
                 <span class="prompt protocol">
                     Report Appearances: &nbsp;
                 </span>
                 <span class="ment protocol">Arthur</span>, ‘Arthur’, 
                 <span class="ment protocol">Darla Winstead</span>
-                </p>
+                </p></div>
 
-                <p>
+                <div class="cluster"><p>
                 <span class="prompt protocol">
                     Report Locations: &nbsp;
                 </span>
                     Grantham Cemetery
-                </p>
+                </p><div class="cluster"></div>
+
             </div>
 
             <div class="sect">
+                
                 <p><span class="prompt protocol">
                     Report Summary:
                 </span></p>
@@ -139,55 +178,58 @@
 
         </section>
 
-        <h3 class="protocol">The (Second) Report 
+        <h3 class="protocol">Incident Report (#2) 
             <a class="jump" id="Second-Report">&#10687;</a></h3>
 
         <section class="info">
-
             <div class="sect">
-                <p>
+
+                <div class="cluster"><p>
                 <span class="prompt protocol">
                     Case File: &nbsp;
                 </span>
                 CAT23RAB2155-10042022-09012024
-                </p>
+                </p></div>
 
-                <p>
+                <div class="cluster"><p>
                 <span class="prompt protocol">
-                    Report Giver/Subject: &nbsp;
+                    Reported By: &nbsp;
                 </span>
                 RedCanary
-                </p>
+                </p></div>
 
-                <p>
+                <div class="cluster"><p>
                 <span class="prompt protocol">
                     Report Reader: &nbsp;
                 </span>
                 CHESTER
-                </p>
+                </p></div>
+
             </div>
 
             <div class="sect">
-                <p>
+
+                <div class="cluster"><p>
                 <span class="prompt protocol">
                     Report Appearances: &nbsp;
                 </span>
-                ArcherK, BadGrav31, Devan, FlowersUnderground
-                </p>
+                ArcherK, BadGrav31, <span class="ment protocol">Devan</span>, FlowersUnderground
+                </p></div>
 
-                <p>
+                <div class="cluster"><p>
                 <span class="prompt protocol">
                     Report Locations: &nbsp;
                 </span>
                 forums.lostcityurbex.com, <span class="ment protocol">The Magnus Institute <i>(Ruins)</i></span>
-                </p>
+                </p></div>
 
-                <p>
+                <div class="cluster"><p>
                 <span class="prompt protocol">
                     Report Artifacts: &nbsp;
                 </span>
                 <span class="sus protocol">Old wooden box with strange symbols</span>
-                </p>
+                </p></div>
+
             </div>
 
             <div class="sect">
@@ -289,21 +331,21 @@
         <h3 class="protocol">The Rest <a class="jump" id="The-Rest">&#10687;</a></h3>
 
         <section class="info">
-
             <div class="sect">
-                <p>
+                <div class="cluster"><p>
                 <span class="prompt protocol">
                 Appearances: &nbsp;
                 </span>
                 Alice Dyer, Colin, Gwendolyn Bouchard, Lena, Samama Khalid, Teddy
-                </p>
+                </p></div>
 
-                <p>
+                <div class="cluster"><p>
                 <span class="prompt protocol">
                 Locations: &nbsp;
                 </span>
                 O.I.A.R. office, a pub
-                </p>
+                </p></div>
+
             </div>
 
             <div class="sect">
@@ -361,6 +403,29 @@
     </div>
     </div>
 </article>
+
+<!-- buttons / nav section -->
+<aside>
+
+    <section>
+        <button>
+            <i class="ph ph-eye"></i>
+        </button>
+        <button>
+            <i class="ph ph-archive"></i>
+        </button>
+    </section>
+
+</aside>
+</main>
+
+<!-- TOOLTIP: tippy.js -->
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<!-- ICONS: phosphor -->
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+
 
 </body>
 </html>

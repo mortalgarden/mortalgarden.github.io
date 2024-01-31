@@ -13,19 +13,19 @@
         font-family: "Besley", serif;
         font-weight: 500;
         font-size: 1.3rem;
-        color: #faf1e5;
+        color: #e4d6c7;
             /* BODY TEXT STYLE END */
     
     }
             /* TEXT STYLES START */
     i {
 
-        color: #dad1c4;
+        color: #b1aba1;
         
     }
     b {
 
-        color: #c1baae;
+        color: #beb8af;
 
     }
     a:link {
@@ -232,36 +232,36 @@
             /* HEADER COLOR START */
     h2.protocol, h3.protocol, h6.protocol {
     
-        color: #dc6464;
+        color: #b99878;
     
     }
             /* HEADER COLOR END */
             /* PROMPT COLOR STYLES START */
     .prompt.protocol {
     
-        color: #ec2a2a;
+        color: #9e8773;
     
     }
             /* PROMPT COLOR STYLES END */
             /* EPISODE DESCRIPTION COLOR STYLES START */
     .epdesc.protocol, .epdesc.protocol b {
     
-        color: #d1a2a2;
+        color: #d1b7a2;
         
     }
             /* EPISODE DESCRIPTION COLOR STYLES END */
             /* LEGEND / KEY COLOR STYLES START */
     div.key .imp.protocol, 
     span.imp.protocol  {
-        color:#a06a6e
+        color:#a0876a
     }
     div.key .sus.protocol, 
     span.sus.protocol  {
-        color:#bfa49e
+        color:#bfae9e
     }
     div.key .ment.protocol, 
     span.ment.protocol  {
-        color:#9b8686
+        color:#9b9286
     }
         /* LEGEND / KEY COLOR STYLES END */
         /* THE MAGNUS PROTOCOL STYLES END */
