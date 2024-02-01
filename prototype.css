@@ -120,6 +120,12 @@ article {   /* all episode details */
 
 }   /* end */
 
+#info, #nav {
+
+    max-width: 45rem;
+
+}
+
             /*--- end ---*/
 /*------ END ------*/
 
