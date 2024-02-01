@@ -633,10 +633,6 @@ code {
     font-style: italic
 }
 
-p {
-    margin: .5rem 0
-}
-
 .no-line {
     line-height: normal
 }

@@ -174,17 +174,17 @@ article {   /* all episode details */
 
             /*--- general styles ---*/
 
-.i {
+i {
 
     color: var(--text-italic);
-    font-style: italic;
+    line-height: inherit;
 
 }
 
-.b {
+b {
 
     color: var(--text-bold);
-    font-weight: bold;
+    line-height: inherit;
 
 }
 
