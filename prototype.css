@@ -105,6 +105,9 @@ body {
 .flex {
 
     display: flex !important;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
 
 }
 
