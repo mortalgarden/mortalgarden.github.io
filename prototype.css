@@ -341,6 +341,13 @@ span.ment  {
 
 }   /* end */
 
+.tooltip {
+
+    background-color: var(--content-bg);
+
+}
+
+
 /*.epdesc {
 *
 *    position: relative;
