@@ -128,45 +128,45 @@ article {   /* all episode details */
 /*------ TEXT STYLES ------*/
             /*--- selection styles ---*/
 
-.plain::selection {
+.plain::selection, ::selection.plain {
 
     background: var(--text);
     color: var(--content-bg);    
 
 }
 
-.plain::-moz-selection {
+.plain::-moz-selection, ::-moz-selection.plain {
 
     background: var(--text);
     color: var(--content-bg);    
 
 }
 
-.protocol::selection {
+.protocol::selection, ::selection.protocol {
 
     background: var(--ep-desc);
     color: var(--content-bg);    
 
 }
 
-.protocol::-moz-selection {
+.protocol::-moz-selection, ::-moz-selection.protocol {
 
     background: var(--ep-desc);
     color: var(--content-bg);    
 
 }
 
-.archives::selection {
+.archives::selection, ::selection.archives {
 
     background: var(--ep-desc);
     color: var(--content-bg);    
 
 }
 
-.archives::-moz-selection {
+.archives::-moz-selection, ::-moz-selection.archives {
 
     background: var(--ep-desc);
-    color: var(--content-bg);    
+    color: var(--content-bg);
 
 }
 
@@ -174,15 +174,17 @@ article {   /* all episode details */
 
             /*--- general styles ---*/
 
-i {
+.i {
 
     color: var(--text-italic);
+    font-style: italic;
 
 }
 
-b {
+.b {
 
     color: var(--text-bold);
+    font-weight: bold;
 
 }
 

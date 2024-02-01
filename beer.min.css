@@ -2438,8 +2438,6 @@ nav:is(.left, .right, .top, .bottom):not(.drawer)>:is(ol, ul)>li>a:not(.button, 
 
 nav:is(.left, .right, .top, .bottom):not(.drawer)>a:not(.button, .chip):is(:hover, :focus, .active)>i.btn,
 nav:is(.left, .right, .top, .bottom):not(.drawer)>:is(ol, ul)>li>a:not(.button, .chip):is(:hover, :focus, .active)>i.btn {
-    background-color: var(--secondary-container);
-    color: var(--on-secondary-container);
     padding: .25rem 1rem;
     font-variation-settings: "FILL" 1
 }
@@ -2510,8 +2508,6 @@ nav:not(.left, .right)>.large-space {
     inset: 0 auto auto 0;
     inline-size: 100%;
     block-size: 100%;
-    color: var(--on-surface);
-    background-color: var(--overlay);
     z-index: 100;
     transition: var(--speed3) all, 0s background-color
 }
@@ -2572,7 +2568,6 @@ progress {
     position: relative;
     inline-size: 100%;
     block-size: .5rem;
-    color: var(--primary);
     background: var(--surface-container-highest);
     border-radius: 0;
     flex: none;
@@ -2744,7 +2739,6 @@ progress.circle.large {
 :is(.checkbox, .radio, .switch)>span {
     display: inline-flex;
     align-items: center;
-    color: var(--on-surface);
     font-size: .875rem
 }
 
@@ -2775,7 +2769,6 @@ progress.circle.large {
     box-sizing: border-box;
     margin: 0 auto;
     outline: none;
-    color: var(--primary);
     position: absolute;
     inset: auto auto auto -1.5rem;
     background-color: transparent;
