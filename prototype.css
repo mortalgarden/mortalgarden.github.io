@@ -319,6 +319,7 @@ div.key .ment,
 span.ment  {
     
     color: var(--mention);
+    font-style: italic;
 
 }
 

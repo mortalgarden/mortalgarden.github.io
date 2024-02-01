@@ -60,14 +60,6 @@ label {
 }
 
 a,
-b,
-i.btn,
-span,
-strong {
-    vertical-align: bottom
-}
-
-a,
 button,
 .button {
     cursor: pointer;
@@ -583,104 +575,6 @@ code {
     .m.s:not(.l) {
         display: none
     }
-}
-
-html {
-    font-size: var(--size)
-}
-
-body {
-    font-family: var(--font);
-    font-size: .875rem;
-    line-height: 1.5
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    line-height: normal
-}
-
-*+:is(h1, h2, h3, h4, h5, h6) {
-    margin-block-start: 1rem
-}
-
-h1 {
-    font-size: 3.5625rem
-}
-
-h2 {
-    font-size: 2.8125rem
-}
-
-h3 {
-    font-size: 2.25rem
-}
-
-h4 {
-    font-size: 2rem
-}
-
-h5 {
-    font-size: 1.75rem
-}
-
-h6 {
-    font-size: 1.5rem
-}
-
-h1.small {
-    font-size: 3.0625rem
-}
-
-h2.small {
-    font-size: 2.3125rem
-}
-
-h3.small {
-    font-size: 1.75rem
-}
-
-h4.small {
-    font-size: 1.5rem
-}
-
-h5.small {
-    font-size: 1.25rem
-}
-
-h6.small {
-    font-size: 1rem
-}
-
-h1.large {
-    font-size: 4.0625rem
-}
-
-h2.large {
-    font-size: 3.3125rem
-}
-
-h3.large {
-    font-size: 2.75rem
-}
-
-h4.large {
-    font-size: 2.5rem
-}
-
-h5.large {
-    font-size: 2.25rem
-}
-
-h6.large {
-    font-size: 2rem
 }
 
 .link {
