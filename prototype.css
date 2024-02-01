@@ -114,6 +114,8 @@ article {   /* all episode details */
     border: var(--border);
     border-style: double;
 
+    max-width: 45rem;
+
 }   /* end */
 
             /*--- end ---*/
