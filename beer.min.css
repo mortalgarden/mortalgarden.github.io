@@ -147,7 +147,7 @@ label {
 
 a,
 b,
-i,
+i.btn,
 span,
 strong {
     vertical-align: bottom
@@ -169,7 +169,7 @@ button,
 a,
 button,
 .button,
-i,
+i.btn,
 label {
     user-select: none
 }
@@ -370,7 +370,7 @@ code {
     color: transparent !important
 }
 
-.fill:not(i) {
+.fill:not(i.btn) {
     background-color: var(--surface-variant) !important;
     color: var(--on-surface-variant) !important
 }
@@ -1476,7 +1476,7 @@ code {
     border-radius: 2.5rem
 }
 
-:is(.circle, .square):not(i, img, video, svg),
+:is(.circle, .square):not(i.btn, img, video, svg),
 :is(.circle, .square).chip.medium {
     block-size: 2.5rem;
     inline-size: 2.5rem;
@@ -1487,18 +1487,18 @@ code {
     display: none
 }
 
-:is(.circle, .square).small:not(i, img, video, svg),
+:is(.circle, .square).small:not(i.btn, img, video, svg),
 :is(.circle, .square).chip {
     block-size: 2rem;
     inline-size: 2rem
 }
 
-:is(.circle, .square).large:not(i, img, video, svg) {
+:is(.circle, .square).large:not(i.btn, img, video, svg) {
     block-size: 3rem;
     inline-size: 3rem
 }
 
-:is(.circle, .square).extra:not(i, img, video, svg) {
+:is(.circle, .square).extra:not(i.btn, img, video, svg) {
     block-size: 3.5rem;
     inline-size: 3.5rem
 }
@@ -2154,7 +2154,7 @@ button {
     padding: 0 1.5rem
 }
 
-.extend:is(:hover, .active)>i+span {
+.extend:is(:hover, .active)>i.btn+span {
     display: inherit;
     margin-inline-start: 1.5rem
 }
@@ -2610,7 +2610,7 @@ summary:focus {
     color: var(--on-surface-variant)
 }
 
-.field>:is(i, img, svg, progress, a:not(.helper, .error)) {
+.field>:is(i.btn, img, svg, progress, a:not(.helper, .error)) {
     position: absolute;
     inset: 50% auto auto auto;
     transform: translateY(-50%);
@@ -2620,17 +2620,17 @@ summary:focus {
     block-size: 1.5rem
 }
 
-.field>:is(i, img, svg, progress, a:not(.helper, .error)),
-[dir=rtl] .field>:is(i, img, svg, progress, a:not(.helper, .error)):first-child {
+.field>:is(i.btn, img, svg, progress, a:not(.helper, .error)),
+[dir=rtl] .field>:is(i.btn, img, svg, progress, a:not(.helper, .error)):first-child {
     inset: 50% 1rem auto auto
 }
 
-.field>:is(i, img, svg, progress, a:not(.helper, .error)):first-child,
-[dir=rtl] .field>:is(i, img, svg, progress, a:not(.helper, .error)) {
+.field>:is(i.btn, img, svg, progress, a:not(.helper, .error)):first-child,
+[dir=rtl] .field>:is(i.btn, img, svg, progress, a:not(.helper, .error)) {
     inset: 50% auto auto 1rem
 }
 
-.field.invalid>i {
+.field.invalid>i.btn {
     color: var(--error)
 }
 
@@ -2643,7 +2643,7 @@ summary:focus {
     z-index: 10
 }
 
-.field>a>:is(i, img, svg, progress, a:not(.helper, .error)) {
+.field>a>:is(i.btn, img, svg, progress, a:not(.helper, .error)) {
     inline-size: 1.5rem;
     block-size: 1.5rem
 }
@@ -2960,7 +2960,7 @@ input::-webkit-search-results-decoration {
     inline-size: 1rem
 }
 
-.field.label>label>a>:is(i, img, svg) {
+.field.label>label>a>:is(i.btn, img, svg) {
     block-size: 1rem;
     line-height: 1rem;
     inline-size: 1rem;
@@ -3167,7 +3167,7 @@ table td>.field {
     }
 }
 
-i {
+i.btn {
     ---size: 1.5rem;
     font-family: var(--font-icon);
     font-weight: 400;
@@ -3194,34 +3194,34 @@ i {
     line-height: normal
 }
 
-i.tiny {
+i.btn.tiny {
     ---size: 1rem
 }
 
-.chip>i,
-i.small {
+.chip>i.btn,
+i.btn.small {
     ---size: 1.25rem
 }
 
-i.medium {
+i.btn.medium {
     ---size: 1.5rem
 }
 
-i.large {
+i.btn.large {
     ---size: 1.75rem
 }
 
-i.extra {
+i.btn.extra {
     ---size: 2rem
 }
 
-i.fill,
-a.row:is(:hover, :focus)>i,
-.transparent:is(:hover, :focus)>i {
+i.btn.fill,
+a.row:is(:hover, :focus)>i.btn,
+.transparent:is(:hover, :focus)>i.btn {
     font-variation-settings: "FILL" 1
 }
 
-i>:is(img, svg) {
+i.btn>:is(img, svg) {
     inline-size: 100%;
     block-size: 100%;
     background-size: 100%;
@@ -3231,7 +3231,7 @@ i>:is(img, svg) {
     padding: inherit
 }
 
-i[class*=fa-] {
+i.btn[class*=fa-] {
     font-size: calc(var(---size) * .85);
     line-height: normal;
     block-size: auto;
@@ -3429,7 +3429,7 @@ svg {
     max-block-size: 1.5rem
 }
 
-:is(button, .button, .chip)>:is(i, img, svg),
+:is(button, .button, .chip)>:is(i.btn, img, svg),
 :is(button, .button, .chip)>.responsive {
     margin: 0 -.5rem
 }
@@ -3456,7 +3456,7 @@ svg {
     margin: 0
 }
 
-.extend>:is(.responsive, i) {
+.extend>:is(.responsive, i.btn) {
     margin: 0;
     position: absolute;
     inset-inline: 1rem;
@@ -3719,8 +3719,8 @@ nav.drawer>:is(ol, ul)>li>a:is(:hover, .active) {
     background-color: var(--secondary-container)
 }
 
-nav.drawer>a:is(:hover, :focus, .active)>i,
-nav.drawer>:is(ol, ul)>li>a:is(:hover, :focus, .active)>i {
+nav.drawer>a:is(:hover, :focus, .active)>i.btn,
+nav.drawer>:is(ol, ul)>li>a:is(:hover, :focus, .active)>i.btn {
     font-variation-settings: "FILL" 1
 }
 
@@ -3745,16 +3745,16 @@ nav:is(.top, .bottom):not(.drawer)>:is(ol, ul)>li>a:not(.button, .chip) {
     inline-size: 3.5rem
 }
 
-nav:is(.left, .right, .top, .bottom):not(.drawer)>a:not(.button, .chip)>i,
-nav:is(.left, .right, .top, .bottom):not(.drawer)>:is(ol, ul)>li>a:not(.button, .chip)>i {
+nav:is(.left, .right, .top, .bottom):not(.drawer)>a:not(.button, .chip)>i.btn,
+nav:is(.left, .right, .top, .bottom):not(.drawer)>:is(ol, ul)>li>a:not(.button, .chip)>i.btn {
     padding: .25rem;
     border-radius: 2rem;
     transition: var(--speed1) padding linear;
     margin: 0 auto
 }
 
-nav:is(.left, .right, .top, .bottom):not(.drawer)>a:not(.button, .chip):is(:hover, :focus, .active)>i,
-nav:is(.left, .right, .top, .bottom):not(.drawer)>:is(ol, ul)>li>a:not(.button, .chip):is(:hover, :focus, .active)>i {
+nav:is(.left, .right, .top, .bottom):not(.drawer)>a:not(.button, .chip):is(:hover, :focus, .active)>i.btn,
+nav:is(.left, .right, .top, .bottom):not(.drawer)>:is(ol, ul)>li>a:not(.button, .chip):is(:hover, :focus, .active)>i.btn {
     background-color: var(--secondary-container);
     color: var(--on-secondary-container);
     padding: .25rem 1rem;
@@ -4070,7 +4070,7 @@ progress.circle.large {
 }
 
 :is(.checkbox, .radio, .switch)>span:before,
-.icon>span>i {
+.icon>span>i.btn {
     font-family: var(--font-icon);
     font-weight: 400;
     font-style: normal;
@@ -4104,7 +4104,7 @@ progress.circle.large {
 }
 
 .switch>span:before,
-.switch.icon>span>i {
+.switch.icon>span>i.btn {
     position: absolute;
     inset: 50% auto auto 0;
     display: inline-flex;
@@ -4121,11 +4121,11 @@ progress.circle.large {
 }
 
 .switch>span:before,
-.switch.icon>span>i {
+.switch.icon>span>i.btn {
     transform: translate(-3rem, -50%) scale(.6)
 }
 
-.switch.icon>span>i {
+.switch.icon>span>i.btn {
     transform: translate(-3rem, -50%) scale(1)
 }
 
@@ -4157,22 +4157,22 @@ progress.circle.large {
 }
 
 .switch>input:not(:disabled):is(:focus, :hover)+span:before,
-.switch.icon>input:not(:disabled):is(:focus, :hover)+span>i {
+.switch.icon>input:not(:disabled):is(:focus, :hover)+span>i.btn {
     box-shadow: 0 0 0 .5rem var(--active)
 }
 
 :is(.checkbox, .radio)>input:checked+span:before,
-:is(.checkbox, .radio).icon>input:checked+span>i {
+:is(.checkbox, .radio).icon>input:checked+span>i.btn {
     color: var(--primary)
 }
 
-.icon>input:checked+span>i:first-child,
-.icon>span>i:last-child {
+.icon>input:checked+span>i.btn:first-child,
+.icon>span>i.btn:last-child {
     opacity: 0
 }
 
-.icon>input:checked+span>i:last-child,
-.icon>span>i:first-child {
+.icon>input:checked+span>i.btn:last-child,
+.icon>span>i.btn:first-child {
     opacity: 1
 }
 
@@ -4182,14 +4182,14 @@ progress.circle.large {
 }
 
 .switch>input:checked+span:before,
-.switch.icon>input:checked+span>i {
+.switch.icon>input:checked+span>i.btn {
     content: "check";
     color: var(--primary);
     background-color: var(--on-primary)
 }
 
 .switch>input:checked+span:before,
-.switch.icon>input:checked+span>i {
+.switch.icon>input:checked+span>i.btn {
     transform: translate(-1.75rem, -50%) scale(1)
 }
 
@@ -4592,7 +4592,7 @@ tfoot th.fixed {
     border-block-end: .125rem solid var(--primary)
 }
 
-.tabs>a.active>i {
+.tabs>a.active>i.btn {
     color: var(--primary)
 }
 
