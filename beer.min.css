@@ -878,9 +878,6 @@ button {
 }
 
 article {
-    box-shadow: var(--elevate1);
-    background-color: var(--surface-container-low);
-    color: var(--on-surface);
     padding: 1rem;
     border-radius: .75rem;
     display: block;
@@ -1071,9 +1068,6 @@ dialog {
     opacity: 0;
     visibility: hidden;
     position: fixed;
-    box-shadow: var(--elevate2);
-    color: var(--on-surface);
-    background-color: var(--surface-container-high);
     padding: 1.5rem;
     z-index: 100;
     inset: 10% auto auto 50%;
@@ -1971,7 +1965,6 @@ footer {
     flex-direction: column;
     min-block-size: 4rem;
     padding: 0 1rem;
-    background-color: var(--surface-container)
 }
 
 main~footer {
