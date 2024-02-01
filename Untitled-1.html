@@ -28,7 +28,7 @@
 
 
     <main class="responsive flex">
-      <article class="absolute top left right bottom round medium-padding large-margin">
+      <article class="absolute top left right bottom round medium-padding large-margin scroll">
         <div class="absolute">
 
           <div class="page active" id="info">
@@ -38,18 +38,15 @@
             <h3>subheader</h3>
             <h6>quotes n shit</h6>
             <div>normal text, with <b>bold</b> and <i>italics.</i></div>
-            <div><span class="imp">important</span>, <span class="ment">only mentioned</span>,
-            <span class="sus">suspected</span></div>
 
           </div>
-
+          
           <div class="page" id="nav">
 
             <div><span class="imp">important</span>, <span class="ment">only mentioned</span>,
             <span class="sus">suspected</span></div>
 
           </div>
-
         </div>
       </article>
 
@@ -57,6 +54,7 @@
 
         <button class="transparent circle" onclick="ui('mode', ui('mode') == 'protocol' ? 'plain' : 'protocol')">
           <i class="ph-bold ph-swap btn"></i>
+          <div class="tooltip left">swap protocol red with plain colors</div>
         </button>
 
       </div>
@@ -64,9 +62,9 @@
     
       <script>
         function navPage() {
-          var element = document.getElementById("myDIV");
+          var element = document.getElementById("info");
           element.classList.toggle("active");
-          var element = document.getElementById("myP");
+          var element = document.getElementById("nav");
           element.classList.toggle("active");
         }
       </script>
