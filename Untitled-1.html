@@ -27,29 +27,32 @@
 
 <body class="protocol">
 
-
-    <main class="responsive flex">
-      <article class="absolute top left right bottom round large-padding large-margin large-elevate middle center">
+  
+    <main class="responsive">
+      <article class="absolute top left right bottom round large-padding large-margin large-elevate">
         <div class="absolute middle center">
-          <h2>title</h2>
-          <div class="epdesc">episode description :3</div>
-          <h3>subheader</h3>
-          <h6>quotes n shit</h6>
-          <div>normal text, with <b>bold</b> and <i>italics.</i></div>
-          <div><span class="imp">important</span>, <span class="ment">only mentioned</span>,
-          <span class="sus">suspected</span></div>
+          <h5>Title</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <nav>
+            <button class="round border">Cancel</button>
+            <button class="round">Confirm</button>
+          </nav>
         </div>
       </article>
       
-
       <div class="row absolute top right small-margin">
-
-        <button class="transparent circle" onclick="ui('mode', ui('mode') == 'protocol' ? 'plain' : 'protocol')">
-          <i class="ph-swap"></i>
+        <button class="circle fill">
+          <i>home</i>
         </button>
-
+        <button class="circle fill">
+          <i>search</i>
+        </button>
+        <button class="circle fill" onclick="ui('mode', ui('mode') == 'dark' ? 'light' : 'dark')">
+          <i>brightness_medium</i>
+        </button>
       </div>
     </main>
+
 
 </body>
 </html>
