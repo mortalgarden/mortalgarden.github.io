@@ -10,9 +10,6 @@
     --speed4: .4s;
     --overlay: rgb(0 0 0 / .5);
     --active: rgb(0 0 0 / .1);
-    --elevate1: 0 .125rem .125rem 0 rgb(0 0 0 / .32);
-    --elevate2: 0 .25rem .5rem 0 rgb(0 0 0 / .4);
-    --elevate3: 0 .375rem .75rem 0 rgb(0 0 0 / .48)
 }
 
 @font-face {
