@@ -192,7 +192,7 @@ b {
 
 h2 {    /* episode titles */
 
-    text-indent: 2rem;
+    text-indent: 1.5rem;
     font-size: 1.8rem;
     margin-top: 1rem;
 
@@ -206,7 +206,7 @@ h2 span {   /* episode number */
 
 h3 {    /* episode sections */
 
-    text-indent: 3.5rem;
+    text-indent: 3rem;
     font-size: 1.4rem;
     font-style: italic;
     margin-bottom: -1rem;
