@@ -508,13 +508,13 @@ code {
     block-size: 12rem !important
 }
 
-.medium-height {
+/*.medium-height {
     block-size: 24rem !important
 }
 
 .large-height {
     block-size: 36rem !important
-}
+}*/
 
 .wrap {
     display: block;
@@ -795,9 +795,7 @@ button {
     min-inline-size: 2.5rem;
     font-size: .875rem;
     font-weight: 500;
-    color: var(--on-primary);
     padding: 0 1.5rem;
-    background-color: var(--primary);
     margin: 0 .5rem;
     border-radius: 1.25rem;
     transition: var(--speed3) transform, var(--speed3) border-radius, var(--speed3) padding;
@@ -962,7 +960,7 @@ main.responsive {
 }
 
 :is(main, header, footer).responsive.max {
-    max-inline-size: 100%
+    max-inline-size: 75%
 }
 
 nav.bottom:not(.s, .m, .l)~.responsive:not(header) {

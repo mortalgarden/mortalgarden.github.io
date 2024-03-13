@@ -1,0 +1,449 @@
+
+/* BEERCSS from github.com/beercss
+but only the parts of it i need */
+
+:root {
+
+    --speed1: .1s;
+    --speed2: .2s;
+    --speed3: .3s;
+    --speed4: .4s;
+    --overlay: rgb(0 0 0 / .5);
+    --active: rgb(0 0 0 / .1);
+
+}
+
+* {
+
+    position: relative;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    border-radius: inherit;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    overflow-x: hidden;
+
+}
+
+body *::-webkit-scrollbar,
+body *::-webkit-scrollbar-thumb,
+body *::-webkit-scrollbar-button {
+
+    background: none;
+    inline-size: .4rem;
+    block-size: .4rem;
+
+}
+
+body *:is(:hover, :focus)::-webkit-scrollbar-thumb {
+
+    border-radius: 1rem;
+
+}
+
+/* ------------------- ALIGN ------------------- */
+
+.middle-align {
+
+    display: flex;
+    align-items: center !important;
+
+}
+
+.bottom-align {
+
+    display: flex;
+    align-items: flex-end !important;
+
+}
+
+.top-align {
+
+    display: flex;
+    align-items: flex-start !important;
+
+}
+
+.left-align {
+
+    text-align: start;
+    justify-content: flex-start !important;
+
+}
+
+.right-align {
+
+    text-align: end;
+    justify-content: flex-end !important;
+
+}
+
+.center-align {
+
+    text-align: center;
+    justify-content: center !important;
+
+}
+
+.horizontal {
+
+    display: inline-flex;
+    flex-direction: row !important;
+    gap: 1rem;
+    inline-size: auto !important;
+    max-inline-size: none !important;
+
+}
+
+.horizontal>* {
+
+    margin-block: 0 !important;
+
+}
+
+.vertical {
+
+    display: flex;
+    flex-direction: column !important;
+
+}
+
+:is(a, button, .button, .chip).vertical {
+
+    display: inline-flex;
+    gap: .25rem;
+    block-size: auto !important;
+    max-block-size: none !important;
+    padding-block: .5rem;
+
+}
+
+.vertical>* {
+
+    margin-inline: 0 !important;
+
+}
+
+/* ------------------- BORDER RADII ------------------- */
+
+.round {
+
+    border-radius: var(---round);
+
+}
+
+.small-round,
+.medium-round,
+.large-round {
+
+    border-radius: var(---round) !important;
+
+}
+
+.top-round,
+.bottom-round,
+.left-round,
+.right-round,
+.medium-round,
+.round {
+
+    ---round: 2rem;
+
+}
+
+.small-round {
+
+    ---round: .5rem;
+
+}
+
+.large-round {
+
+    ---round: 3.5rem;
+
+}
+
+/* ------------------- PADDING ------------------- */
+
+.no-padding {
+
+    ---padding: 0;
+
+}
+
+.auto-padding {
+
+    ---padding: auto;
+
+}
+
+.tiny-padding {
+
+    ---padding: .25rem;
+
+}
+
+.small-padding {
+
+    ---padding: .5rem;
+
+}
+
+.large-padding {
+
+    ---padding: 1.5rem;
+
+}
+
+.left-padding,
+.horizontal-padding {
+
+    padding-inline-start: var(---padding) !important;
+
+}
+
+.right-padding,
+.horizontal-padding {
+
+    padding-inline-end: var(---padding) !important;
+
+}
+
+.top-padding,
+.vertical-padding {
+
+    padding-block-start: var(---padding) !important;
+
+}
+
+.bottom-padding,
+.vertical-padding {
+
+    padding-block-end: var(---padding) !important;
+
+}
+
+/* ------------------- CASE ------------------- */
+
+.upper {
+
+    text-transform: uppercase;
+
+}
+
+.lower {
+
+    text-transform: lowercase;
+
+}
+
+.capitalize {
+
+    text-transform: capitalize;
+
+}
+
+/* ------------------- TOOLTIPS ------------------- */
+.tooltip {
+    ---space: -.5rem;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    background-color: var(--inverse-surface);
+    color: var(--inverse-on-surface);
+    font-size: 1rem;
+    text-align: center;
+    border-radius: .25rem;
+    padding: .5rem;
+    position: absolute;
+    z-index: 3;
+    inset: 0 auto auto 50%;
+    inline-size: auto;
+    white-space: nowrap;
+    font-weight: 500;
+    opacity: 0;
+    transition: var(--speed2) all;
+    line-height: normal;
+    transform: translate(-50%, -100%) scale(.9)
+}
+
+.tooltip.left {
+    inset: 50% auto auto 0;
+    transform: translate(-100%, -50%) scale(.9)
+}
+
+.tooltip.right {
+    inset: 50% 0 auto auto;
+    transform: translate(100%, -50%) scale(.9)
+}
+
+.tooltip.bottom {
+    inset: auto auto 0 50%;
+    transform: translate(-50%, 100%) scale(.9)
+}
+
+.tooltip.small {
+    inline-size: 8rem;
+    white-space: normal
+}
+
+.tooltip.medium {
+    inline-size: 12rem;
+    white-space: normal
+}
+
+.tooltip.large {
+    inline-size: 16rem;
+    white-space: normal
+}
+
+:hover>.tooltip {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -100%) scale(1)
+}
+
+:hover>.tooltip.left {
+    transform: translate(-100%, -50%) scale(1)
+}
+
+:hover>.tooltip.right {
+    transform: translate(100%, -50%) scale(1)
+}
+
+:hover>.tooltip.bottom {
+    transform: translate(-50%, 100%) scale(1)
+}
+
+.tooltip.no-space {
+    ---space: 0
+}
+
+.tooltip.medium-space {
+    ---space: -1rem
+}
+
+.tooltip.large-space {
+    ---space: -1.5rem
+}
+
+.tooltip:not(.left, .right, .bottom) {
+    margin-block-start: var(---space) !important
+}
+
+.tooltip.left,
+.tooltip.right {
+    margin-inline: var(---space) !important
+}
+
+.tooltip.bottom {
+    margin-block-end: var(---space) !important
+}
+
+/* ------------------- PAGES ------------------- */
+
+.page,
+:is(.page, dialog):not(.active) .page.active {
+    ---transform: translate(0, 0);
+    opacity: 0;
+    position: absolute;
+    display: none
+}
+
+.page.active {
+    opacity: 1;
+    position: inherit;
+    display: inherit;
+    animation: var(--speed4) to-page ease
+}
+
+.page.active.top {
+    ---transform: translate(0, -4rem)
+}
+
+.page.active.bottom {
+    ---transform: translate(0, 4rem)
+}
+
+.page.active.left {
+    ---transform: translate(-4rem, 0)
+}
+
+.page.active.right {
+    ---transform: translate(4rem, 0)
+}
+
+@keyframes to-page {
+    0% {
+        opacity: 0;
+        transform: var(---transform)
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0)
+    }
+}
+
+
+/* ------------------- ELEMENTS ------------------- */
+
+article {
+
+    display: block;
+    transition: var(--speed3) transform, var(--speed3) border-radius, var(--speed3) padding;
+
+}
+
+.button,
+button {
+    box-sizing: content-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    block-size: 2.5rem;
+    min-inline-size: 2.5rem;
+    font-size: .875rem;
+    font-weight: 500;
+    padding: 0 1.5rem;
+    margin: 0 .5rem;
+    border-radius: 1.25rem;
+    transition: var(--speed3) transform, var(--speed3) border-radius, var(--speed3) padding;
+    user-select: none;
+    gap: 1rem;
+    line-height: normal
+}
+
+i.btn {
+    ---size: 1.5rem;
+    font-family: var(--font-icon);
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(---size);
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    font-feature-settings: "liga";
+    -webkit-font-smoothing: antialiased;
+    vertical-align: middle;
+    text-align: center;
+    overflow: hidden;
+    inline-size: var(---size);
+    min-inline-size: var(---size);
+    block-size: var(---size);
+    min-block-size: var(---size);
+    box-sizing: content-box;
+    line-height: normal
+}

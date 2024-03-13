@@ -1,11 +1,11 @@
 @import "beercss.css";
+@import "beer.min.css";
 
-/*------ HTML STYLES ------*/
-            /*--- formatting styles ---*/
+/*------ HTML & BODY STYLES ------*/
+            /*--- html styles ---*/
 
 html {
 
-    height: 100%;
     font-size: 16px;
     font-family: "Besley", serif;
     font-weight: 500;
@@ -35,10 +35,10 @@ html {
 
     --border: #c98545;
 
-} 
+}    /* end */
 
 
-body.protocol {    /* redefining */
+body.protocol {
 
     --background: #08080a;
     --content-bg: #131218;
@@ -62,7 +62,7 @@ body.protocol {    /* redefining */
 
 }
 
-body.archives {    /* redefining */
+body.archives {
 
     --background: #08080a;
     --content-bg: #131218;
@@ -84,78 +84,45 @@ body.archives {    /* redefining */
 
     --border: #54c945;
 
-}   
+}
 
-/*------ END ------*/
+            /*--- end ---*/
 
-
-/*------ BODY STYLES ------*/
-            /*--- formatting styles ---*/
+            /*--- body styles ---*/
 
 body {
 
     background-color: var(--background);
+    overflow: hidden;
 
-    font-size: 1.4rem;
-    color: var(--text);
     font-family: "Besley", serif;
-    width: 100%;
-    height: 100%;
-
-    display: flex !important;
-    justify-content: center !important;
-    padding-left: 1.25%;
-    padding-right: 1.25%;
+    font-size: 1.4rem;;
+    color: var(--text);
+    font-weight: 500;
 
 }
 
-.container {
+.flex {
 
-    width: 55%;
-    position: relative;
-    margin: 0;
+    display: flex !important;
+    justify-content: center !important;
+    align-content: center !important;
 
 }
 
 article {   /* all episode details */
 
     background: var(--content-bg);
-    border: double var(--border);
-    border-top: none;
-    border-bottom: none;
+    border: var(--border);
+    border-style: double;
 
-    min-height: 100%;
-    width: 100%;
-    
-    margin: 0;
-    padding: 5%;
+}   /* end */
 
-    flex-flow: column wrap !important;
-    align-self: center;
-    justify-self: center;
-
-}
-
-.contents {
-
-    position: absolute;
-
-}
-
-button {    /* menu */
+button {
 
     background-color: var(--content-bg);
     color: var(--ep-desc);
     border: var(--border);
-
-}
-
-.menu {
-
-    display: flex;
-    flex-flow: column;
-    position: relative;
-    width: 5%;
 
 }
 
@@ -167,17 +134,13 @@ i.ph-fill, i.ph-duotone {
 
 }
 
-i.ph:hover, 
-i.ph-thin:hover, 
-i.ph-light:hover, 
-i.ph-bold:hover, 
-i.ph-fill:hover, 
-i.ph-duotone:hover {
+/* #info, #nav {
 
-    color: var(--header);
+    max-width: 45rem;
 
-}
+}*/
 
+            /*--- end ---*/
 /*------ END ------*/
 
 
@@ -209,6 +172,8 @@ body.archives * ::selection {
 
 }
 
+            /*--- end ---*/
+
             /*--- general styles ---*/
 
 i {
@@ -223,52 +188,50 @@ b {
 
 }
 
-* {
-
-    vertical-align: baseline;
-
-}
+            /*--- end ---*/
 
             /*--- header styles ---*/
 
 h2 {    /* episode titles */
 
     text-indent: 1.5rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-top: 1rem;
 
-} 
+}   /* end */
 
 h2 span {   /* episode number */
 
     font-weight: 900;
     
-}  
+}    /* end */
 
 h3 {    /* episode sections */
 
     text-indent: 3rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-style: italic;
+    margin-bottom: -1rem;
     margin-top: 2.5rem;
-    margin-bottom: -1.5rem;
 
-} 
+}    /* end */
 
 h6 {    /* favorite quote */
 
     font-weight: 650;
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-style: italic;
     text-align: right;
     
-} 
+}   /* end */
 
 h2, h3, h6 {
 
     color: var(--header);
 
 }
+
+            /*--- end ---*/
 
             /*--- link styles ---*/
 
@@ -290,6 +253,8 @@ a:visited {
 
 }
 
+            /*--- end ---*/
+
             /*--- analysis styles ---*/
 
 .prompt {   /* analyses prompt */
@@ -299,13 +264,13 @@ font-weight: 700;
 font-size: 1.1rem;
 color: var(--prompt);
 
-}
+}   /* end */
 
-.group {    /* prompt groups that go together */
+.cluster {    /* prompt groups that go together */
 
-margin-top: 0.5rem;
+margin-top: -0.5rem;
 
-}
+}   /* end */
 
 section.info p {
 
@@ -318,11 +283,11 @@ p.analysis {
 
 text-indent: 2.5rem;
 line-height: 1.75rem;
-margin-top: 0.5rem;
+margin-top: -0.5rem;
 
 }
 
-div.section {
+div.sect {
 
     line-height: 1.4rem;
     margin-top: 1.5rem;
@@ -331,15 +296,16 @@ div.section {
 
 .epdesc {
 
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-style: italic;
     text-align: right;
-    margin-top: 1rem;
+    margin-top: -1rem;
     margin-bottom: -1rem;
     color: var(--ep-desc);
 
 }
 
+            /*--- end ---*/
             /*--- legend|key ---*/
 
 div.key .imp, 
@@ -355,20 +321,41 @@ span.sus  {
 
 }
 
-div.key .men, 
-span.men  {
+div.key .ment, 
+span.ment  {
     
     color: var(--mention);
     font-style: italic;
 
 }
 
+            /*--- end ---*/
 /*------ END ------*/
+
+
+
+/*------ PLACEMENTS ------*/
+
+#td {   /* title & description */
+
+    display: flex;
+    flex-flow: column;
+
+}   /* end */
 
 .tooltip {
 
     background-color: var(--content-bg);
 
 }
+
+
+/*.epdesc {
+*
+*    position: relative;
+*    bottom: 45%;
+*    right: 10%;
+*
+}*/
 
 /*------ END ------*/
