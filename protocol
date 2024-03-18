@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html data-style="protocol" data-theme="dark">
+<head>
+      <!-- general -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0">
+    <meta charset="utf-8">
+      <!-- episode title here -->
+    <title>TMP000: Title</title>
+      <!-- stylesheet -->
+    <link rel="stylesheet/less" type="text/css" href="style.less">
+      <!-- LESS.js: lesscss.org -->
+    <script src="less.min.js" type="text/javascript"></script>
+      <!-- PHOSPHOR: github.com/phosphor-icons-->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+<article>
+  <div class="center"><div class="body">
+
+
+    <section class="main"><div>
+      eh? what?
+      <h1>heading</h1>
+      <h2>heading</h2>
+      <h3>heading</h3>
+      <h4>heading</h4>
+      <h5>heading</h5>
+      <h6>heading</h6>
+      <b>bold</b> and <i>italic</i>
+    </div></section>
+
+
+    <section class="sidebar">
+      <div class="navbar">
+        <div class="button"><i class="ph-fill ph-atom"></i></div>
+        <div class="button"><i class="ph-fill ph-bone"></i></div>
+        <div class="button"><i class="ph-fill ph-broom"></i></div>
+      </div>
+      <div class="content">sigh</div>
+    </section>
+
+
+  </div></div></article>
+</body>
+</html>

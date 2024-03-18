@@ -1,0 +1,209 @@
+// IMPORTS --------------------------------------------
+                @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap');
+// CODING: BEGIN! --------------------------------------------
+// VARIABLES
+    @headfont: "Merienda", cursive; @bodyfont: "Ysra", serif;
+    @bodytxt:#d2c7d9; @headtxt:#9c90a9;
+    @boldtxt:#c9b7cf; @subheadtxt:#ae95b8;
+    @italtxt:#d5c5df;
+    @keymention:#c68aaf; @keyimportant:#a09bda;
+
+    @background:#230d28; @contentbg:#18081b;
+    @contentborder:#a961a2; 
+    @innerborder: darken(@contentborder, 10%);
+html {
+    font-size: 16px;
+// THEMES ---------------------------------------------
+// ALL DARK MODES ---------------------------
+    &[data-theme="dark"] { 
+        &[data-style="none"] {
+            @bodytxt:#d2c7d9; @headtxt:#9c90a9;
+            @boldtxt:#c9b7cf; @subheadtxt:#ae95b8;
+            @italtxt:#d5c5df;
+            @keymention:#c68aaf; @keyimportant:#a09bda;
+        
+            @background:#230d28; @contentbg:#18081b;
+            @contentborder:#a961a2;
+        }
+        &[data-style="archives"] {
+            @bodytxt:#d1d9c7; @headtxt:#5ac245;
+            @boldtxt:#bdcfb7; @subheadtxt:#39d543;
+            @italtxt:#d3dec5;
+            @keymention:#7cecc3; @keyimportant:#7ceca7;
+        
+            @background:#230d28; @contentbg:#18081b;
+            @contentborder:#7ded33;
+        }
+        &[data-style="protocol"] {
+            @bodytxt:#d9c7c9; @headtxt:#c2454f;
+            @boldtxt:#cfb7ba; @subheadtxt:#d53958;
+            @italtxt:#dec5c8;
+            @keymention:#ec837c; @keyimportant:#ec837c;
+        
+            @background:#230d28; @contentbg:#18081b;
+            @contentborder:#ed3333;
+        }
+    }
+// ALL LIGHT MODES --------------------------
+    &[data-theme="light"] { 
+        &[data-style="none"] {
+            @bodytxt:#6e6171; @headtxt:#755e87;
+            @boldtxt:#49354c; @subheadtxt:#895884;
+            @italtxt:#5d4b65;
+            @keymention:#ac5493; @keyimportant:#6f4581;
+
+            @background:#b3a4b7; @contentbg:#d5c8d7;
+            @contentborder:#e7dfe8;
+        }
+        &[data-style="archives"] {
+            @bodytxt:#3c4e41; @headtxt:#375b2e;
+            @boldtxt:#233523; @subheadtxt:#2a8c32;
+            @italtxt:#38563d;
+            @keymention:#6d9a25; @keyimportant:#1f8f6a;
+
+            @background:#b3a4b7; @contentbg:#d5c8d7;
+            @contentborder:#caedc5;
+        }
+        &[data-style="protocol"] {
+            @bodytxt:#4e3c3e; @headtxt:#5b2e31;
+            @boldtxt:#352325; @subheadtxt:#8c2a3d;
+            @italtxt:#56383b;
+            @keymention:#9a2d25; @keyimportant:#8f271f;
+
+            @background:#b3a4b7; @contentbg:#d5c8d7;
+            @contentborder:#edc5c5;
+        }
+    }
+}
+// SOLO CLASSES ---------------------------------------
+#radius() {
+    .topleftonly {
+        border-top-left-radius: 5px;
+    }
+    .toprightonly {
+        border-top-right-radius: 25px;
+    }
+    .botleftonly {
+        border-bottom-left-radius: 25px;
+    }
+    .botrightonly {
+        border-bottom-right-radius: 25px;
+    }
+    .leftboth {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 25px;
+    }
+    .rightboth {
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+    .allcorn {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+}
+// TAG STYLES -----------------------------------------
+h1, h2 ,h3 
+,h4 ,h5 ,h6 {
+    font-family: @headfont;
+    &:not(h4, h5, h6) {
+        color: @headtxt;
+    }
+    &:not(h1, h2, h3) {
+        color: @subheadtxt;
+    }
+    &:not(h2, h3, h4, h5, h6) {
+        font-size: 1.8em;
+    }
+    &:not(h1, h3, h4, h5, h6) {
+        font-size: 1.65em;
+    }
+    &:not(h1, h2, h4, h5, h6) {
+        font-size: 1.4em;
+    }
+    &:not(h1, h2, h3, h5, h6) {
+        font-size: 1.25em;
+    }
+    &:not(h1, h2, h3, h4, h6) {
+        font-size: 1.1em;
+    }
+    &:not(h1, h2, h3, h4, h5) {
+        font-size: 1em;
+    }
+}
+
+b, strong {
+    color: @boldtxt;
+}
+i, em {
+    color: @italtxt;
+}
+body {
+    font-size: 1.1rem;
+    font-family: @bodyfont;
+    font-weight: 500;
+
+    color: @bodytxt;
+    background-color: @background;
+}
+article {
+    display: table;
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    .center {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .body {
+        display: flex;
+        width: 900px;
+        height: 550px;
+        margin-left: auto;
+        margin-right: auto;
+
+        background-color: shade(@contentbg, 15%);
+        border: 1px solid @contentborder;
+        #radius.allcorn();
+        .main {
+            padding: 2.5%;
+        }
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+            margin-left: auto;
+
+            background-color: @contentbg;
+            border-left: 1px solid @contentborder;
+            #radius.rightboth();
+            .content {
+                padding: 10px;
+            }
+            .navbar {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                height: 45px;
+                padding-top: 3.25%;
+                padding-left: 1%;
+                padding-right: 1%;
+                padding-bottom: 1%;
+
+                background-color: saturate(@navbarbg, 10%);
+                border-bottom: 1px solid @innerborder;
+                #radius.toprightonly();
+                @navbarbg: tint(@contentbg, 5%);
+            }
+        }
+    }
+}
+.navbar {
+    .button {
+        font-size: 1.8rem;
+    }
+}

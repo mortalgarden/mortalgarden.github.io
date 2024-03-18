@@ -8,22 +8,8 @@
             "type": "firefox",
             "request": "launch",
             "reAttach": true,
-            "name": "Launch Untitled-1.html",
-            "file": "${workspaceFolder}/Untitled-1.html"
-        },
-        {
-            "type": "firefox",
-            "request": "launch",
-            "reAttach": true,
-            "name": "Launch prototype-tmp.html",
-            "file": "${workspaceFolder}/prototype-tmp.html"
-        },
-        {
-            "name": "Launch Untitled-2.html",
-            "type": "firefox",
-            "request": "launch",
-            "reAttach": true,
-            "file": "${workspaceFolder}/Untitled-2.html"
+            "name": "Launch protocol",
+            "file": "${workspaceFolder}/protocol"
         },
     ]
 }
