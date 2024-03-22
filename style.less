@@ -11,11 +11,29 @@
     @background:#230d28; @contentbg:#18081b;
     @contentborder:#a961a2; 
     @innerborder: darken(@contentborder, 10%);
+
+    @lighton: {
+        .light-on() {
+            display: block;
+        }
+        .light-off() {
+            display: none;
+        }
+    };
+    @lightoff: {
+        .light-on() {
+            display: none;
+        }
+        .light-off() {
+            display: block;
+        }
+    };
 html {
     font-size: 16px;
 // THEMES ---------------------------------------------
 // ALL DARK MODES ---------------------------
     &[data-theme="dark"] { 
+        @lightoff();
         &[data-style="none"] {
             @bodytxt:#d2c7d9; @headtxt:#9c90a9;
             @boldtxt:#c9b7cf; @subheadtxt:#ae95b8;
@@ -45,7 +63,8 @@ html {
         }
     }
 // ALL LIGHT MODES --------------------------
-    &[data-theme="light"] { 
+    &[data-theme="light"] {    
+        @lighton(); 
         &[data-style="none"] {
             @bodytxt:#6e6171; @headtxt:#755e87;
             @boldtxt:#49354c; @subheadtxt:#895884;
@@ -75,7 +94,7 @@ html {
         }
     }
 }
-// SOLO CLASSES ---------------------------------------
+// SOLO CLASSES / MIXINS --------------------------------
 #radius() {
     .topleftonly {
         border-top-left-radius: 5px;
@@ -202,6 +221,29 @@ article {
         }
     }
 }
+// THEME TRANSITIONS -----------------------------------
+html {
+    .theme-transition, .theme-transition *, 
+    .theme-transition *:before, 
+    .theme-transition *:after, 
+    .color-transition, .color-transition *, 
+    .color-transition *:before, 
+    .color-transition *:after {
+        transition: 0s !important;
+        transition-delay: 0 !important;
+    }
+}
+button.theme-toggle, 
+button.color-toggle {
+    outline: none;
+    border: 0;
+    padding: 0;
+    background: @contentbg;
+    cursor: pointer; 
+    font-size: 1.8rem;  /* size of icons */
+    color: @bodytxt;
+}
+// CLASSES ---------------------------------------------
 .navbar {
     .button {
         font-size: 1.8rem;

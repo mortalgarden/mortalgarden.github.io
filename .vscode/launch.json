@@ -8,8 +8,8 @@
             "type": "firefox",
             "request": "launch",
             "reAttach": true,
-            "name": "Launch protocol",
-            "file": "${workspaceFolder}/protocol"
+            "name": "Launch protocol.html",
+            "file": "${workspaceFolder}/protocol.html"
         },
     ]
 }

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html data-style="protocol" data-theme="dark">
+<head>
+      <!-- general -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0">
+    <meta charset="utf-8">
+      <!-- episode title here -->
+    <title>TMP000: Title</title>
+      <!-- stylesheet -->
+    <link rel="stylesheet/less" type="text/css" href="style.less">
+      <!-- LESS.js: lesscss.org -->
+    <script src="less.min.js" type="text/javascript"></script>
+      <!-- STORED THEME -->
+    <script>const storedTheme = localStorage.getItem("theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    if (storedTheme) {
+        document.documentElement.setAttribute("data-theme", storedTheme);
+    } 
+    </script>
+      <!-- STORED STYLE -->
+    <script>const storedColor = localStorage.getItem("style");
+    if (storedColor) {
+        document.documentElement.setAttribute("data-style", storedColor);
+    }
+    </script>
+      <!-- PHOSPHOR: github.com/phosphor-icons-->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+<article>
+  <div class="center"><div class="body">
+
+
+    <section class="main"><div>
+      eh? what?
+      <h1>heading</h1>
+      <h2>heading</h2>
+      <h3>heading</h3>
+      <h4>heading</h4>
+      <h5>heading</h5>
+      <h6>heading</h6>
+      <b>bold</b> and <i>italic</i>
+    </div></section>
+
+
+    <section class="sidebar">
+      <div class="navbar">
+        <div><i class="ph-fill ph-atom"></i></div>
+
+        <div><button class="theme-toggle" aria-label="toggle dark or light mode" type="button">
+          <i class="ph-fill ph-moon light-on" title="toggle dark mode"></i>
+          <i class="ph-fill ph-sun light-off" title="toggle light mode"></i>
+        </button></div>
+        
+        <div><button class="color-toggle" aria-label="toggle color style on/off">
+          <i class="ph-fill ph-broom"></i>
+        </button></div>
+      </div>
+
+      <div class="content">sigh</div>
+    </section>
+
+  </div></div></article>
+<!----- SCRIPTS ----->
+<!--- LIGHT / DARK THEME TOGGLE ---><script>
+    const themeToggleButtons = document.querySelectorAll(".theme-toggle");
+
+themeToggleButtons.forEach((btn) => {
+btn.addEventListener("click", function () {
+
+    document.documentElement.classList.add("theme-transition");
+
+    let currentTheme = document.documentElement.getAttribute("data-theme");
+    let targetTheme = (currentTheme === "dark") ? "light" : "dark";
+
+    window.setTimeout(function () {
+        document.documentElement.classList.remove("theme-transition");
+    }, 50);
+
+    document.documentElement.setAttribute("data-theme", targetTheme);
+    localStorage.setItem("theme", targetTheme);
+});
+});
+</script><!--- COLOR THEME TOGGLE ---><script>
+    const colorToggleButtons = document.querySelectorAll(".color-toggle");
+
+    colorToggleButtons.forEach((btn) => {
+    btn.addEventListener("click", function () {
+
+        document.documentElement.classList.add("color-transition");
+
+        let currentColor = document.documentElement.getAttribute("data-style");
+        let targetColor = (currentColor === "protocol") ? "none" : "protocol";
+
+        window.setTimeout(function () {
+            document.documentElement.classList.remove("color-transition");
+        }, 50);
+
+        document.documentElement.setAttribute("data-style", targetColor);
+        localStorage.setItem("style", targetColor);
+    });
+});
+</script>
+
+</body>
+</html>
