@@ -1,19 +1,96 @@
 <!DOCTYPE html>
-<html data-theme="dark">
+<html>
 <head>
       <!-- general -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
     <meta charset="utf-8" />
       <!-- stylesheet -->
-    <link rel="stylesheet/less" type="text/css" href="/style.less">
+    <link rel="stylesheet/less" type="text/css" href="less/style.less">
       <!-- LESS.js: lesscss.org -->
-    <script src="less.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/less" type="text/javascript"></script>
+      <!-- ICONS: phosphoricons.com -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 
 <body>
-    <div>
-        <span>
-        </span>
-    </div>
+  <header>
+    <section>
+      <h1>the mortal garden.</h1>
+    </section>
+    <section  class="navbar-toggle">
+      <button onclick="nav()" id="toggle">
+        <i class="ph-duotone ph-bandaids"></i>
+      </button>
+    </section>
+  </header>
+
+  <aside class="navigation-small" id="navigation-small">
+    <section>
+      <h6>WebSite Navigation.</h6>
+      <nav>
+        <div><a href="tma/index.html" class="title">Magnus Archives</a></div>
+        <div><a href="tma/episodes.html" class="subtitle">Episodes</a></div>
+        <div><a href="tma/characters.html" class="subtitle">Characters</a></div>
+          <hr>
+        <div><a href="tmagp/index.html" class="title">Magnus Protocol</a></div>
+        <div><a href="tmagp/episodes.html" class="subtitle">Episodes</a></div>
+        <div><a href="tmagp/characters.html" class="subtitle">Characters</a></div>
+      </nav>
+    </section>
+  </aside>
+  <div id="navhelper"></div>
+
+  <main>
+    <aside class="navigation-large">
+      <section>
+        <h6>WebSite Navigation.</h6>
+        <nav>
+          <div><a href="tma/index.html" class="title">Magnus Archives</a></div>
+          <div><a href="tma/episodes.html" class="subtitle">Episodes</a></div>
+          <div><a href="tma/characters.html" class="subtitle">Characters</a></div>
+            <hr>
+          <div><a href="tmagp/index.html" class="title">Magnus Protocol</a></div>
+          <div><a href="tmagp/episodes.html" class="subtitle">Episodes</a></div>
+          <div><a href="tmagp/characters.html" class="subtitle">Characters</a></div>
+        </nav>
+      </section>
+    </aside>
+
+    <article>
+      <section class="synopsis">
+        <h4>. . .Welcome to Magnus Autism Central!</h4>
+      </section>
+      <section>
+        <div>
+          <h2>introduction</h2>
+        </div>
+      </section>
+      <section class="cluster">
+        <div>
+          <p class="analysis">
+            hello, hello; welcome! i doubt you found this organically. if you did... congrats? this site is just where i dump all of my autism related to <i><b>the magnus archives</b></i> and <i><b>the magnus protocol,</b></i> mostly for myself, because i resent google docs and things of the sort; decided to just code something oriented toward this. i guess it's a little spintrest project. this will slowly build up as i go through and re-listen to/reread the transcripts for the TMA episodes, as well as the TMagP episodes that have been—and continue to—come out.
+          </p>
+          <p class="analysis">
+            this site <b>will contain spoilers!</b> this is your one and only warning! <b>turn back now if you just happened to come across this and don't want spoilers to these podcasts!</b>
+          </p>
+          <p class="analysis">
+            <b>lastly,</b> this is <u>not a wiki</u>! i am documenting my thoughts, analyses, and <i>sometimes</i> opinions on the podcast and it's contents here! if you are looking for a wiki, i reccommend going <a href="https://the-magnus-archives.fandom.com/wiki/The_Magnus_Archives_Wikia">here</a> for TMA and <a href="https://themagnusprotocol.miraheze.org/wiki/The_Magnus_Protocol_Wiki">here</a> for TMagP!
+          </p>
+        </div>
+      </section>
+      <!--<section class="quote">
+        <h4></h4>
+      </section>-->
+    </article>
+  </main>
+
+  <script>
+    function nav() {
+      var element = document.getElementById("navigation-small");
+      element.classList.toggle("active");
+      var element = document.getElementById("toggle");
+      element.classList.toggle("click");
+    } 
+  </script>
 </body>
 </html>

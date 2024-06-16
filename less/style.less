@@ -1,0 +1,439 @@
+// ------------------------------------
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+@import '../less/mixins.less';
+@import '../less/variables.less';
+// ------------------------------------
+//// KEYFRAMES
+
+//// ---------
+
+//// ELEMENTS
+html {
+    font-size: 16px;
+    background-color: @background;
+}
+body {
+    font-family: @font[body];
+    font-size: 1.125rem;
+    font-weight: 500;
+    & > section > h1 {
+        text-align: end;
+        .margin-vertical(@space[small]);
+    }
+    .padding(@space[median]);
+}
+header {
+    justify-content: right;
+    align-items: last baseline;
+    .flex.row(nowrap); .margin-vertical(@space[big])
+}
+main {
+    gap: @space[big];
+    aside > section, aside section + section, article {
+        background-color: @content;
+        color: @text;
+        box-shadow: 
+            0px 5px fade(@contentshadow, 40%), 
+            0px 10px fade(@contentshadow, 30%), 
+            0px 15px fade(@contentshadow, 20%), 
+            0px 20px  fade(@contentshadow, 10%), 
+            0px 25px fade(@contentshadow, 5%);
+        border: solid @border .15rem;
+        .rounded(@radia[little]);
+    }
+    .flex.row(nowrap);
+}
+aside {
+    flex-basis: 20%;
+    gap: @space[median];
+    position: sticky;
+    top: @space[little];
+    height: fit-content;
+    & > section, section + section {
+        text-align: center;
+        .padding(@space[median]);
+    }
+    .flex.column(nowrap);
+}
+article {
+    flex-basis: 80%;
+    .flex.column(nowrap); .padding(@space[big]);
+}
+::selection {
+    color: @text;
+    background-color: @content;
+
+    @text: darken(@mentioned, 40%);
+    @content: desaturate(fade(lighten(@background, 50%), 75%), 10%);
+}
+h1 {
+    font-family: @font[heading];
+    user-select: none;
+    .margin-horizontal(@space[none]);
+    &:not(h2, h3, h4, h5, h6) {
+        font-size: 2.5rem;
+        text-transform: lowercase;
+    }
+}
+h2, h3, h4, h5, h6 {
+    font-variant: small-caps;
+    &:extend(h1);
+}
+h1, h2 {
+    color: @heading-12;
+}
+h2 {
+    font-size: 1.6rem;
+    text-decoration: .025rem underline @text;
+    text-underline-offset: .25rem;
+    text-align: center;
+    .margin-bottom(@space[small]);
+}
+h3, h4, h5, h6 {
+    color: @heading-3456;
+}
+hr {
+    color: @mentioned;
+    border-style: dashed;
+    .padding-vertical(@space[small]);
+}
+p {
+    color: @text;
+    .margin-horizontal(@space[none]);
+}
+nav {
+    a {
+        color: @link;
+        text-decoration: none;
+        transition-duration: @speed[1];
+        user-select: none;
+        &:hover {
+            color: darken(saturate(@link, 20%), 25%);
+            cursor: pointer;
+            transition-duration: @speed[1];
+        }
+        &:active {
+            color: darken(saturate(@link, 20%), 15%);
+            transition-duration: @speed[1];
+        }
+        &.title {
+            font-size: 1.25rem;
+            font-variant: small-caps;
+        }
+        &.subtitle {
+            font-size: 1rem;
+        }
+    }
+}
+a {
+    color: @link;
+    text-decoration: solid .5rem @link;
+    transition-duration: @speed[1];
+    user-select: none;
+    &:hover {
+        color: darken(saturate(@link, 20%), 25%);
+        cursor: pointer;
+        transition-duration: @speed[1];
+    }
+    &:active {
+        color: darken(saturate(@link, 20%), 15%);
+        transition-duration: @speed[1];
+    }
+}
+//// --------
+//// LONE CLASSES
+.nmbr {
+    font-weight: 700;
+    font-style: italic;
+}
+.legend {
+    font-size: 1rem;
+    text-align: center;
+    & > div:first-child {
+        font-variant: small-caps;
+    }
+    .flex.column(nowrap);
+}
+.mentioned {
+    color: @mentioned;
+}
+.important {
+    font-weight: 600;
+    color: @italic;
+    text-decoration: underline @mentioned;
+}
+.cluster {
+    .pair {
+        text-align: justify;
+        align-items: first baseline;
+        .flex.row(wrap);
+    }
+    .margin-bottom(@space[small]);
+}
+.synopsis {
+    display: flex;
+    justify-content: left;
+    user-select: none;
+    h4 {
+        font-size: 1.025rem;
+        width: 75%;
+        font-style: italic;
+        text-align: left;
+        font-weight: 600;
+        color: @mentioned;
+        font-variant: normal;
+    }
+    .padding(@space[small]);
+}
+.quote {
+    display: flex;
+    justify-content: right;
+    user-select: none;
+    & h4 {
+        text-align: right !important;
+        &:extend(.synopsis h4);
+            &::before {
+                content: "❝";
+                color: @mentioned;
+                font-size: 1.25;
+                font-style: normal;
+            }
+            &::after {
+                content: "❞";
+                color: @mentioned;
+                font-size: 1.25;
+                font-style: normal;
+            }
+    }
+    .margin-top(@space[tiny]);
+    .padding(@space[small]);
+}
+.prompt {
+    font-weight: bold;
+    user-select: none;
+    .margin-right(@space[tiny]);
+}
+.analysis {
+    text-align: justify;
+    &::before {
+        content: '\2003';
+    }
+}
+.navigation-small {
+    display: none;
+}
+.navbar-toggle {
+    button {
+        color: @link;
+        background-color: transparent;
+        display: none;
+        font-size: 2rem;
+        rotate: 45deg;
+        border: none;
+        transition-duration: @speed[2];
+        &:hover {
+            color: @hover;
+            transition-duration: @speed[1];
+        }
+        &.click#toggle {
+            color: @text;
+            rotate: 180deg;
+            transition-duration: @speed[2];
+        }
+    }
+    .margin-vertical(@space[median]);
+}
+//// ------------
+//// MEDIA QUERIES
+@media only screen and (min-width: @min-smalltablet) and (max-width: @max-smalllaptop) {
+    .navigation-large {
+        display: none;
+    }
+    .navbar-toggle {
+        display: block;
+        button {
+            display: inline;
+            position: fixed;
+            top: @space[small];
+        }
+    }
+    header {
+        justify-content: space-between;
+        .margin-vertical(@space[tiny]);
+    }
+    main {
+        justify-content: center;
+    }
+    aside > section, aside section + section {
+        background-color: @content;
+        color: @text;
+        box-shadow: 
+            5px 5px fade(@contentshadow, 40%), 
+            10px 10px fade(@contentshadow, 30%), 
+            15px 15px fade(@contentshadow, 20%), 
+            20px 20px  fade(@contentshadow, 10%), 
+            25px 25px fade(@contentshadow, 5%);
+        border: solid @border .15rem;
+        .rounded(@radia[little]);
+    }
+    .navigation-small {
+        display: none;
+        position: fixed;
+        top: @space[huge];
+        height: 100%;
+        flex-grow: 1;
+        &.active {
+            display: inline-flex;
+        }
+    }
+}
+@media only screen and (min-width: @min-bigmobile) and (max-width: @max-smalltablet) {
+    h1 {
+        &:not(h2, h3, h4, h5, h6) {
+            font-size: 2.15rem;
+        }
+        
+    }
+    h2 {
+        font-size: 1.35rem;
+    }
+    h3 {
+        font-size: 1.15rem;
+    }
+    h4 {
+        font-size: 1.05rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .navigation-large {
+        display: none;
+    }
+    .navbar-toggle {
+        display: block;
+        button {
+            font-size: 1.75rem;
+            display: inline;
+            position: fixed;
+            top: @space[small]
+        
+        }
+    }
+    header {
+        justify-content: space-between;
+        .margin-vertical(@space[little]);
+    }
+    main {
+        justify-content: center;
+    }
+    body {
+        .padding(@space[tiny]);
+    }
+    .analysis {
+        &::before {
+            content: '\2002';
+        }
+    }
+    .synopsis {
+        h4 {
+            font-size: 1rem;
+        }
+    }
+    aside > section, aside section + section {
+        background-color: @content;
+        color: @text;
+        box-shadow: 
+            5px 5px fade(@contentshadow, 40%), 
+            10px 10px fade(@contentshadow, 30%), 
+            15px 15px fade(@contentshadow, 20%), 
+            20px 20px  fade(@contentshadow, 10%), 
+            25px 25px fade(@contentshadow, 5%);
+        border: solid @border .15rem;
+        .rounded(@radia[little]);
+    }
+    .navigation-small {
+        display: none;
+        position: fixed;
+        top: @space[huge];
+        height: 100%;
+        flex-grow: 1;
+        &.active {
+            display: inline-flex;
+        }
+    }
+}
+@media only screen and (max-width: @max-bigmobile) {
+    h1 {
+        &:not(h2, h3, h4, h5, h6) {
+            font-size: 1.5rem;
+            .margin-bottom(@space[tiny]);
+        }
+    }
+    h2 {
+        font-size: 1.15rem;
+    }
+    h3 {
+        font-size: 1.1rem;
+    }
+    p {
+        font-size: .95rem;
+    }
+    .navigation-large {
+        display: none;
+    }
+    .navbar-toggle {
+        display: block;
+        button {
+            display: inline;
+            font-size: 1.5rem;
+            position: fixed;
+            top: @space[small];
+        }
+    }
+    header {
+        justify-content: space-between;
+        .margin-vertical(@space[tiny]);
+    }
+    main {
+        justify-content: center;
+    }
+    aside > section, aside section + section {
+        background-color: @content;
+        color: @text;
+        box-shadow: 
+            5px 5px fade(@contentshadow, 40%), 
+            10px 10px fade(@contentshadow, 30%), 
+            15px 15px fade(@contentshadow, 20%), 
+            20px 20px  fade(@contentshadow, 10%), 
+            25px 25px fade(@contentshadow, 5%);
+        border: solid @border .15rem;
+        .rounded(@radia[little]);
+    }
+    .navigation-small {
+        display: none;
+        position: fixed;
+        top: @space[huge];
+        height: 100%;
+        flex-grow: 1;
+        &.active {
+            display: inline-flex;
+        }
+    }
+    body {
+        .padding(@space[nano]);
+    }
+    .synopsis {
+        h4 {
+            font-size: .85rem;
+            width: 100%;
+        }
+        .padding(@space[tiny]);
+    }
+    .analysis {
+        &::before {
+            content: '\2002';
+        }
+    }
+}
+//// -------------

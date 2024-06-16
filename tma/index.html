@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <!-- general -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+    <meta charset="utf-8" />
+      <!-- stylesheet -->
+    <link rel="stylesheet/less" type="text/css" href="../less/style.less">
+      <!-- LESS.js: lesscss.org -->
+    <script src="https://cdn.jsdelivr.net/npm/less" type="text/javascript"></script>
+      <!-- ICONS: phosphoricons.com -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+  <header>
+    <section>
+      <h1>the magnus archives.</h1>
+    </section>
+    <section  class="navbar-toggle">
+      <button onclick="nav()" id="toggle">
+        <i class="ph-duotone ph-bandaids"></i>
+      </button>
+    </section>
+  </header>
+
+  <aside class="navigation-small" id="navigation-small">
+    <section>
+        <h6>the Magnus Archives.</h6>
+        <nav>
+          <div><a href="episodes.html" class="title">Episodes</a></div>
+          <div><a href="season/1.html" class="subtitle">Season One</a></div>
+          <div><a href="season/2.html" class="subtitle">Season Two</a></div>
+          <div><a href="season/3.html" class="subtitle">Season Three</a></div>
+          <div><a href="season/4.html" class="subtitle">Season Four</a></div>
+          <div><a href="season/5.html" class="subtitle">Season Five</a></div>
+            <hr>
+          <div><a href="characters.html" class="title">Characters</a></div>
+          <div><a href="character/institute.html" class="subtitle">Institute Employees</a></div>
+          <div><a href="character/recurring.html" class="subtitle">Recurring</a></div>
+          <div><a href="character/other.html" class="subtitle">Other</a></div>
+            <hr>
+          <div><a href="entity.html" class="title">Entities</a></div>
+        </nav>
+      </section>
+  </aside>
+  <div id="navhelper"></div>
+
+  <main>
+    <aside class="navigation-large">
+      <section>
+        <h6>the Magnus Archives.</h6>
+        <nav>
+          <div><a href="episodes.html" class="title">Episodes</a></div>
+          <div><a href="season/1.html" class="subtitle">Season One</a></div>
+          <div><a href="season/2.html" class="subtitle">Season Two</a></div>
+          <div><a href="season/3.html" class="subtitle">Season Three</a></div>
+          <div><a href="season/4.html" class="subtitle">Season Four</a></div>
+          <div><a href="season/5.html" class="subtitle">Season Five</a></div>
+            <hr>
+          <div><a href="characters.html" class="title">Characters</a></div>
+          <div><a href="character/institute.html" class="subtitle">Institute Employees</a></div>
+          <div><a href="character/recurring.html" class="subtitle">Recurring</a></div>
+          <div><a href="character/other.html" class="subtitle">Other</a></div>
+            <hr>
+          <div><a href="entity.html" class="title">Entities</a></div>
+        </nav>
+      </section>
+    </aside>
+
+    <article>
+      <section class="synopsis">
+        <h4>Audio. Opperior. Vigilo.</h4>
+      </section>
+      <section>
+        <div id="Statement">
+          <h2>introduction</h2>
+        </div>
+      </section>
+      <section class="cluster">
+        <div>
+          <p class="analysis">
+            this is the landing page relating to <b>the magnus archives.</b> in the navigation, one can find links to the <b>episode, character,</b> and <b>entity</b> pages, as well as more <i>specific</i> pages for all the seasons and groups of characters. 
+          </p>
+        </div>
+      </section>
+      <section class="quote">
+        <h4>Make your statement, face your fear.</h4>
+      </section>
+    </article>
+  </main>
+
+  <script>
+    function nav() {
+      var element = document.getElementById("navigation-small");
+      element.classList.toggle("active");
+      var element = document.getElementById("toggle");
+      element.classList.toggle("click");
+    } 
+  </script>
+</body>
+</html>

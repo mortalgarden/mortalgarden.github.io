@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <!-- general -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+    <meta charset="utf-8" />
+      <!-- stylesheet -->
+    <link rel="stylesheet/less" type="text/css" href="../../less/style.less">
+      <!-- LESS.js: lesscss.org -->
+    <script src="https://cdn.jsdelivr.net/npm/less" type="text/javascript"></script>
+      <!-- ICONS: phosphoricons.com -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+  <header>
+    <section>
+      <h1></h1>
+    </section>
+    <section  class="navbar-toggle">
+      <button onclick="nav()" id="toggle">
+        <i class="ph-duotone ph-bandaids"></i>
+      </button>
+    </section>
+  </header>
+
+  <aside class="navigation-small" id="navigation-small">
+    <section>
+        <h6></h6>
+        <nav>
+          <div><a href="/" class="title"></a></div>
+          <div><a href="/" class="subtitle"></a></div>
+        </nav>
+    </section>
+  </aside>
+  <div id="navhelper"></div>
+
+  <main>
+    <aside class="navigation-large">
+      <section>
+        <h6></h6>
+        <nav>
+          <div><a href="/" class="title"></a></div>
+          <div><a href="/" class="subtitle"></a></div>
+        </nav>
+      </section>
+    </aside>
+
+    <article>
+      <section class="synopsis">
+        <h4></h4>
+      </section>
+      <section>
+        <div id="">
+          <h2></h2>
+        </div>
+      </section>
+      <section class="cluster">
+        <div>
+          <p class="analysis">
+          </p>
+        </div>
+      </section>
+      <!--<section class="quote">
+        <h4></h4>
+      </section>-->
+    </article>
+  </main>
+
+  <script>
+    function nav() {
+      var element = document.getElementById("navigation-small");
+      element.classList.toggle("active");
+      var element = document.getElementById("toggle");
+      element.classList.toggle("click");
+    } 
+  </script>
+</body>
+</html>

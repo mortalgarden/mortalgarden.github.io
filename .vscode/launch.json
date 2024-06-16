@@ -1,15 +1,27 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
             "type": "firefox",
             "request": "launch",
             "reAttach": true,
-            "name": "Launch protocol.html",
-            "file": "${workspaceFolder}/protocol.html"
+            "name": "TMagP Skeleton",
+            "file": "${workspaceFolder}/tmagp/000.html"
         },
+        {
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "name": "TMA Skeleton",
+            "file": "${workspaceFolder}/tma/000.html"
+        },
+        {
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "name": "Launch index.html",
+            "file": "${workspaceFolder}/index.html"
+        }
+        
     ]
 }

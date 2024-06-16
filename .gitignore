@@ -1,0 +1,9 @@
+# ignore .vscode
+.vscode/
+
+# ignore skeletons / templates
+tma/000.html
+tmagp/000.html
+
+# unneeded
+less/themes.less

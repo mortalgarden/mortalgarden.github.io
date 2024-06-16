@@ -1,0 +1,84 @@
+// MIXIN
+// margins
+.margin-left(@margin) {
+    margin-left: @margin;
+}
+.margin-right(@margin) {
+    margin-right: @margin;
+}
+.margin-top(@margin) {
+    margin-top: @margin;
+}
+.margin-bottom(@margin) {
+    margin-bottom: @margin;
+}
+.margin-horizontal(@margin) {
+    margin-top: @margin;
+    margin-bottom: @margin;
+}
+.margin-vertical(@margin) {
+    margin-left: @margin;
+    margin-right: @margin;
+}
+.margin(@margin) {
+    margin: @margin;
+}
+// -------
+// padding
+.padding-left(@padding) {
+    padding-left: @padding;
+}
+.padding-right(@padding) {
+    padding-right: @padding;
+}
+.padding-top(@padding) {
+    padding-top: @padding;
+}
+.padding-bottom(@padding) {
+    padding-bottom: @padding;
+}
+.padding-horizontal(@padding) {
+    padding-top: @padding;
+    padding-bottom: @padding;
+}
+.padding-vertical(@padding) {
+    padding-left: @padding;
+    padding-right: @padding;
+}
+.padding(@padding) {
+    padding: @padding;
+}
+// -------
+// border radius
+.rounded(@radius) {
+    border-radius: @radius;
+}
+.custom-corners(@tl, @tr, @bl, @br) {
+    border-top-left-radius: @tl;
+    border-top-right-radius: @tr;
+    border-bottom-left-radius: @bl;
+    border-bottom-right-radius: @br;
+}
+// -------------
+// flex
+.flex() {
+    .row(@wrap) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: @wrap;
+    }
+    .column(@wrap) {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: @wrap;
+    }
+}
+// ----
+// &:extend
+.scroll {
+    overflow: auto;
+  }
+.no-scroll {
+overflow: hidden;
+}
+// --------

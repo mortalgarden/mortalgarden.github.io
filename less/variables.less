@@ -1,0 +1,93 @@
+// LOOKUPS
+@space: {
+    none: 0rem;
+    nano: .25rem;
+    tiny: .5rem;
+    little: .75rem;
+    small: 1rem; 
+    median: 1.25rem;
+    big: 1.5rem;
+    large: 1.75rem;
+    huge: 2rem;
+    massive: 2.5;
+    immense: 3rem;
+}
+  // -----
+@radia: {
+    none: 0rem;
+    nano: .25rem;
+    tiny: .5rem;
+    little: .75rem;
+    small: 1rem; 
+    median: 1.25rem;
+    big: 1.5rem;
+    large: 1.75rem;
+    huge: 2rem;
+    massive: 2.5;
+    immense: 3rem;
+}
+  // -----
+@speed: {
+    1: .1s;
+    2: .2s;
+    3: .3s;
+    4: .4s;
+    5: .5s;
+}
+  // -----
+@sizes: {
+  @min: {
+    mobile1: 320px;
+    mobile2: 480px;
+    tablet1: 600px;
+    tablet2: 768px;
+    laptop1: 992px;
+    laptop2: 1280px;
+    desktop1: 1600px;
+    desktop2: 1920px;
+  }
+  @max: {
+    mobile1: 319px;
+    mobile2: 479px;
+    tablet1: 599px;
+    tablet2: 767px;
+    laptop1: 991px;
+    laptop2: 1279px;
+    desktop1: 1599px;
+    desktop2: 1919px;
+  }
+    
+  } // aliases:
+@min-smallmobile: @sizes[@min][mobile1]; @min-bigmobile: @sizes[@min][mobile2];
+@min-smalltablet: @sizes[@min][tablet1]; @min-bigtablet: @sizes[@min][tablet2];
+@min-smalllaptop: @sizes[@min][laptop1]; @min-biglaptop: @sizes[@min][laptop2];
+@min-smalldesktop: @sizes[@min][desktop1]; @min-bigdesktop: @sizes[@min][desktop2];
+
+@max-smallmobile: @sizes[@max][mobile1]; @max-bigmobile: @sizes[@max][mobile2];
+@max-smalltablet: @sizes[@max][tablet1]; @max-bigtablet: @sizes[@max][tablet2];
+@max-smalllaptop: @sizes[@max][laptop1]; @max-biglaptop: @sizes[@max][laptop2];
+@max-smalldesktop: @sizes[@max][desktop1]; @max-bigdesktop: @sizes[@max][desktop2];
+// -------
+// COLORS
+  // typography
+    @text: hsl(151, 20%, 70%);
+    @bold: hsl(150, 15%, 65%);
+    @italic: hsl(151, 19%, 68%);
+    @link: hsl(57, 31%, 72%);
+    @active: darken(saturate(@link, 20%), 15%);
+    @hover: darken(saturate(@link, 20%), 25%);
+    @heading-12: hsl(160, 47%, 65%);
+    @heading-3456: hsl(150, 34%, 62%);
+    @mentioned: darken(@bold, 15%);
+  // elements
+    @background: hsl(281, 46%, 14%);
+    @content: hsl(276, 93%, 5%); 
+    @contentshadow: hsl(283, 46%, 10%); 
+    @border: hsl(285, 67%, 2%);
+// ------
+// FONTS
+    @font: {
+      body: 'EB Garamond', serif;
+      heading: 'Platypi', serif;
+    }
+// -----
