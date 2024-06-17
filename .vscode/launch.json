@@ -5,6 +5,13 @@
             "type": "firefox",
             "request": "launch",
             "reAttach": true,
+            "name": "test",
+            "file": "${workspaceFolder}/betternavs.html"
+        },
+        {
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
             "name": "TMagP Skeleton",
             "file": "${workspaceFolder}/tmagp/000.html"
         },

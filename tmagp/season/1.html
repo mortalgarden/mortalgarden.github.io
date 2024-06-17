@@ -14,19 +14,47 @@
 
 <body>
   <header>
-    <section>
-      <h1></h1>
+    <section class="site navbar toggle">
+      <button onclick="navSmallS()" id="btn-small-s">
+        <i class="ph-duotone ph-mask-sad" id="i-small-s"></i>
+      </button>
+      <button onclick="navBigS()" id="btn-big-s">
+        <i class="ph-duotone ph-mask-sad" id="i-big-s"></i>
+      </button>
     </section>
-    <section  class="navbar-toggle">
-      <button onclick="nav()" id="toggle">
-        <i class="ph-duotone ph-bandaids"></i>
+
+    <section>
+      <h1>TMagP: Season One</h1>
+    </section>
+
+    <section class="page navbar toggle">
+      <button onclick="navSmallP()" id="btn-small-p">
+        <i class="ph-duotone ph-eye" id="i-small-p"></i>
       </button>
     </section>
   </header>
-
-  <aside class="navigation-small" id="navigation-small">
+  
+  <aside class="navbar bar site small" id="nav-small-s">
     <section>
-        <h6></h6>
+      <nav>
+        <div><a href="../../index.html" class="title">Home</a></div>
+        <div><a href="../../tma/index.html" class="subtitle">Magnus Archives</a></div>
+        <div><a href="../index.html" class="subtitle">Magnus Protocol</a></div>
+      </nav>
+    </section>
+    <section>
+      <h6>TMagP</h6>
+      <nav>
+        <div><a href="tmagp/episodes.html" class="title">Episodes</a></div>
+        <div><a href="tmagp/characters.html" class="title">Characters</a></div>
+        <div><a href="tmagp/002.html" class="subtitle">Next Season</a></div>
+      </nav>
+    </section>
+  </aside>
+
+  <aside class="navbar bar page small" id="nav-small-p">
+    <section>
+        <h6>TMagP: Season One</h6>
         <nav>
           <div><a href="/" class="title"></a></div>
           <div><a href="/" class="subtitle"></a></div>
@@ -36,7 +64,24 @@
   <div id="navhelper"></div>
 
   <main>
-    <aside class="navigation-large">
+    <aside class="navbar bar site big" id="nav-big-s">
+      <section>
+        <nav>
+            <div><a href="../../index.html" class="title">Home</a></div>
+            <div><a href="../../tma/index.html" class="subtitle">Magnus Archives</a></div>
+            <div><a href="../index.html" class="subtitle">Magnus Protocol</a></div>
+        </nav>
+      </section>
+      <section>
+        <h6>TMagP</h6>
+        <nav>
+            <div><a href="tmagp/episodes.html" class="title">Episodes</a></div>
+            <div><a href="tmagp/characters.html" class="title">Characters</a></div>
+            <div><a href="tmagp/002.html" class="subtitle">Next Episode</a></div>
+        </nav>
+      </section>
+    </aside>
+    <aside class="navbar bar big page" id="nav-big-p">
       <section>
         <h6></h6>
         <nav>

@@ -30,26 +30,25 @@ header {
 }
 main {
     gap: @space[big];
-    aside > section, aside section + section, article {
-        background-color: @content;
-        color: @text;
-        box-shadow: 
-            0px 5px fade(@contentshadow, 40%), 
-            0px 10px fade(@contentshadow, 30%), 
-            0px 15px fade(@contentshadow, 20%), 
-            0px 20px  fade(@contentshadow, 10%), 
-            0px 25px fade(@contentshadow, 5%);
-        border: solid @border .15rem;
-        .rounded(@radia[little]);
-    }
     .flex.row(nowrap);
+}
+aside > section, aside section + section, article {
+    background-color: @content;
+    color: @text;
+    box-shadow: 
+        0px 5px fade(@contentshadow, 40%), 
+        0px 10px fade(@contentshadow, 30%), 
+        0px 15px fade(@contentshadow, 20%), 
+        0px 20px  fade(@contentshadow, 10%), 
+        0px 25px fade(@contentshadow, 5%);
+    border: solid @border .15rem;
+    .rounded(@radia[little]);
 }
 aside {
     flex-basis: 20%;
     gap: @space[median];
     position: sticky;
     top: @space[little];
-    height: fit-content;
     & > section, section + section {
         text-align: center;
         .padding(@space[median]);
@@ -74,6 +73,7 @@ h1 {
     &:not(h2, h3, h4, h5, h6) {
         font-size: 2.5rem;
         text-transform: lowercase;
+        z-index: 99;
     }
 }
 h2, h3, h4, h5, h6 {
@@ -123,6 +123,7 @@ nav {
         }
         &.subtitle {
             font-size: 1rem;
+            font-variant: small-caps;
         }
     }
 }
@@ -138,6 +139,17 @@ a {
     }
     &:active {
         color: darken(saturate(@link, 20%), 15%);
+        transition-duration: @speed[1];
+    }
+}
+button {
+    color: @link;
+    background-color: transparent;
+    font-size: 2rem;
+    border: none;
+    transition-duration: @speed[2];
+    &:hover {
+        color: @hover;
         transition-duration: @speed[1];
     }
 }
@@ -220,44 +232,72 @@ a {
         content: '\2003';
     }
 }
-.navigation-small {
-    display: none;
+.active {
+    display: inline-flex!important;
 }
-.navbar-toggle {
-    button {
-        color: @link;
-        background-color: transparent;
-        display: none;
-        font-size: 2rem;
-        rotate: 45deg;
-        border: none;
-        transition-duration: @speed[2];
-        &:hover {
-            color: @hover;
-            transition-duration: @speed[1];
+.inactive {
+    display: none!important;
+}
+.navbar {
+    &.site {
+        &.bar {
+            &.small {
+                position: fixed !important;
+                top: @space[huge]!important;
+                flex-grow: 1;
+                display: none;
+                &:extend(aside);
+            }
+            &.big {
+                display: none;
+                &:extend(aside);
+            }
         }
-        &.click#toggle {
-            color: @text;
-            rotate: 180deg;
-            transition-duration: @speed[2];
+        &.toggle {
+            button {
+                &.click {
+                    color: @text;
+                    transition-duration: @speed[2];
+                }
+                &#btn-small-s {
+                    display: none;
+                }
+                &#btn-big-s {
+                    display: inline-flex;
+                }
+            }
         }
     }
-    .margin-vertical(@space[median]);
+    &.page {
+        &.bar {
+            &.small {
+                position: fixed !important;
+                top: @space[huge]!important;
+                height: 100%!important;
+                flex-grow: 1;
+                display: none;
+                &:extend(aside);
+            }
+            &.big {
+                &:extend(aside);
+            }
+        }
+        &.toggle {
+            button {
+                &.click {
+                    color: @text;
+                    transition-duration: @speed[2];
+                }
+                &#btn-small-p {
+                    display: none;
+                }
+            }
+        }
+    }
 }
 //// ------------
 //// MEDIA QUERIES
 @media only screen and (min-width: @min-smalltablet) and (max-width: @max-smalllaptop) {
-    .navigation-large {
-        display: none;
-    }
-    .navbar-toggle {
-        display: block;
-        button {
-            display: inline;
-            position: fixed;
-            top: @space[small];
-        }
-    }
     header {
         justify-content: space-between;
         .margin-vertical(@space[tiny]);
@@ -266,25 +306,48 @@ a {
         justify-content: center;
     }
     aside > section, aside section + section {
-        background-color: @content;
-        color: @text;
         box-shadow: 
             5px 5px fade(@contentshadow, 40%), 
             10px 10px fade(@contentshadow, 30%), 
             15px 15px fade(@contentshadow, 20%), 
             20px 20px  fade(@contentshadow, 10%), 
             25px 25px fade(@contentshadow, 5%);
-        border: solid @border .15rem;
-        .rounded(@radia[little]);
     }
-    .navigation-small {
-        display: none;
-        position: fixed;
-        top: @space[huge];
-        height: 100%;
-        flex-grow: 1;
-        &.active {
-            display: inline-flex;
+    .navbar {
+        &.site {
+            &.toggle {
+                button {    
+                    position: fixed;
+                    top: @space[small];
+                    right: @space[little];
+                    &#btn-small-s {
+                        display: inline;
+                    }
+                    &#btn-big-s {
+                        display: none;
+                    }
+                }
+            }
+        }
+        &.page {
+            &.bar {
+                &.big {
+                    display: none;
+                }
+            }
+            &.toggle {
+                button {    
+                    position: fixed;
+                    top: @space[immense];
+                    right: @space[little];
+                    &#btn-small-p {
+                        display: inline;
+                    }
+                    &#btn-big-p {
+                        display: none;
+                    }
+                }
+            }
         }
     }
 }
@@ -293,7 +356,6 @@ a {
         &:not(h2, h3, h4, h5, h6) {
             font-size: 2.15rem;
         }
-        
     }
     h2 {
         font-size: 1.35rem;
@@ -306,19 +368,6 @@ a {
     }
     p {
         font-size: 1rem;
-    }
-    .navigation-large {
-        display: none;
-    }
-    .navbar-toggle {
-        display: block;
-        button {
-            font-size: 1.75rem;
-            display: inline;
-            position: fixed;
-            top: @space[small]
-        
-        }
     }
     header {
         justify-content: space-between;
@@ -341,25 +390,50 @@ a {
         }
     }
     aside > section, aside section + section {
-        background-color: @content;
-        color: @text;
         box-shadow: 
             5px 5px fade(@contentshadow, 40%), 
             10px 10px fade(@contentshadow, 30%), 
             15px 15px fade(@contentshadow, 20%), 
             20px 20px  fade(@contentshadow, 10%), 
             25px 25px fade(@contentshadow, 5%);
-        border: solid @border .15rem;
-        .rounded(@radia[little]);
     }
-    .navigation-small {
-        display: none;
-        position: fixed;
-        top: @space[huge];
-        height: 100%;
-        flex-grow: 1;
-        &.active {
-            display: inline-flex;
+    .navbar {
+        &.site {
+            &.toggle {
+                button {    
+                    &#btn-small-s {
+                        position: fixed;
+                        top: @space[small];
+                        right: @space[nano];
+                        font-size: 1.75rem;
+                        display: inline;
+                    }
+                    &#btn-big-s {
+                        display: none;
+                    }
+                }
+            }
+        }
+        &.page {
+            &.bar {
+                &.big {
+                    display: none;
+                }
+            }
+            &.toggle {
+                button {    
+                    &#btn-small-p {
+                        position: fixed;
+                        top: @space[immense];
+                        right: @space[nano];
+                        font-size: 1.75rem;
+                        display: inline;
+                    }
+                    &#btn-big-p {
+                        display: none;
+                    }
+                }
+            }
         }
     }
 }
@@ -379,46 +453,12 @@ a {
     p {
         font-size: .95rem;
     }
-    .navigation-large {
-        display: none;
-    }
-    .navbar-toggle {
-        display: block;
-        button {
-            display: inline;
-            font-size: 1.5rem;
-            position: fixed;
-            top: @space[small];
-        }
-    }
     header {
         justify-content: space-between;
         .margin-vertical(@space[tiny]);
     }
     main {
         justify-content: center;
-    }
-    aside > section, aside section + section {
-        background-color: @content;
-        color: @text;
-        box-shadow: 
-            5px 5px fade(@contentshadow, 40%), 
-            10px 10px fade(@contentshadow, 30%), 
-            15px 15px fade(@contentshadow, 20%), 
-            20px 20px  fade(@contentshadow, 10%), 
-            25px 25px fade(@contentshadow, 5%);
-        border: solid @border .15rem;
-        .rounded(@radia[little]);
-    }
-    .navigation-small {
-        display: none;
-        position: fixed;
-        top: @space[huge];
-        height: 100%;
-        flex-grow: 1;
-        &.active {
-            display: inline-flex;
-        }
     }
     body {
         .padding(@space[nano]);
@@ -433,6 +473,63 @@ a {
     .analysis {
         &::before {
             content: '\2002';
+        }
+    }
+    aside > section, aside section + section {
+        box-shadow: 
+            5px 5px fade(@contentshadow, 40%), 
+            10px 10px fade(@contentshadow, 30%), 
+            15px 15px fade(@contentshadow, 20%), 
+            20px 20px  fade(@contentshadow, 10%), 
+            25px 25px fade(@contentshadow, 5%);
+    }
+    .navbar {
+        &.site {
+            &.toggle {
+                button {    
+                    &#btn-small-s {
+                        position: fixed;
+                        top: @space[small];
+                        right: @space[nano];
+                        font-size: 1.5rem;
+                        display: inline;
+                    }
+                    &#btn-big-s {
+                        display: none;
+                    }
+                }
+            }
+        }
+        &.page {
+            &.bar {
+                &.big {
+                    display: none;
+                }
+            }
+            &.toggle {
+                button {    
+                    &#btn-small-p {
+                        position: fixed;
+                        top: @space[immense];
+                        right: @space[nano];
+                        font-size: 1.5rem;
+                        display: inline;
+                    }
+                    &#btn-big-p {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    nav {
+        a {
+            &.title {
+                font-size: 1.15rem;
+            }
+            &.subtitle {
+                font-size: 1rem;
+            }
         }
     }
 }
