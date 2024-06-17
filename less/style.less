@@ -48,7 +48,8 @@ aside {
     flex-basis: 20%;
     gap: @space[median];
     position: sticky;
-    top: @space[little];
+    top: @space[small];
+    height: 100%;
     & > section, section + section {
         text-align: center;
         .padding(@space[median]);
@@ -152,6 +153,15 @@ button {
         color: @hover;
         transition-duration: @speed[1];
     }
+    &.click {
+        color: @link;
+        transition-duration: @speed[2];
+        &:hover {
+            color: @hover;
+            transition-duration: @speed[1];
+        }
+        @link: @text;
+    }
 }
 //// --------
 //// LONE CLASSES
@@ -254,11 +264,16 @@ button {
             }
         }
         &.toggle {
-            button {
-                &.click {
-                    color: @text;
-                    transition-duration: @speed[2];
+            &#btn-div-s {
+                position: absolute;
+                top: -1rem;
+                left: -.75rem;
+                z-index: 999;
+                button {
+                    font-size: 2.25rem;
                 }
+            }
+            button {
                 &#btn-small-s {
                     display: none;
                 }
@@ -284,10 +299,6 @@ button {
         }
         &.toggle {
             button {
-                &.click {
-                    color: @text;
-                    transition-duration: @speed[2];
-                }
                 &#btn-small-p {
                     display: none;
                 }

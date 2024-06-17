@@ -18,9 +18,6 @@
       <button onclick="navSmallS()" id="btn-small-s">
         <i class="ph-duotone ph-mask-sad" id="i-small-s"></i>
       </button>
-      <button onclick="navBigS()" id="btn-big-s">
-        <i class="ph-duotone ph-mask-sad" id="i-big-s"></i>
-      </button>
     </section>
 
     <section>
@@ -50,6 +47,12 @@
         <div><a href="tmagp/002.html" class="subtitle">Next Episode</a></div>
       </nav>
     </section>
+    <section class="legend">
+      <div>Legend</div>
+      <div>
+        <span class="mentioned">Mentioned only</span>. <span class="important">Important</span>.
+      </div>
+    </section>
   </aside>
 
   <aside class="navbar bar page small" id="nav-small-p">
@@ -74,61 +77,63 @@
         <div><a href="#Significant" class="subtitle">Of Significance</a></div>
       </nav>
     </section>
-    <section class="legend">
-      <div>Legend</div>
-      <div>
-        <span class="mentioned">Mentioned only</span>. <span class="important">Important</span>.
-      </div>
-    </section>
   </aside>
   <div id="navhelper"></div>
 
   <main>
-    <aside class="navbar bar site big" id="nav-big-s">
-      <section>
-        <nav>
-            <div><a href="../../index.html" class="title">Home</a></div>
-            <div><a href="../../tma/index.html" class="subtitle">Magnus Archives</a></div>
-            <div><a href="../index.html" class="subtitle">Magnus Protocol</a></div>
-        </nav>
-      </section>
-      <section>
-        <h6>TMagP</h6>
-        <nav>
-            <div><a href="tmagp/episodes.html" class="title">Episodes</a></div>
-            <div><a href="tmagp/characters.html" class="title">Characters</a></div>
-            <div><a href="tmagp/002.html" class="subtitle">Next Episode</a></div>
-        </nav>
-      </section>
-    </aside>
-    <aside class="navbar bar big page" id="nav-big-p">
-      <section>
-        <h6>magp<span class="nmbr">001</span>: First Shift.</h6>
-        <nav>
-          <div><a href="#1st-Incident" class="title">1st Incident</a></div>
-          <div><a href="#1st-Incident-Summary" class="subtitle">Incident Summary</a></div>
-          <div><a href="#1st-Incident-Entity" class="subtitle">Entity Influence</a></div>
-          <div><a href="#1st-Incident-Assessment" class="subtitle">Incident Assessment</a></div>
-          <div><a href="#1st-Incident-Significant" class="subtitle">Of Significance</a></div>
-            <hr>
-            <div><a href="#2nd-Incident" class="title">2nd Incident</a></div>
-            <div><a href="#2nd-Incident-Summary" class="subtitle">Incident Summary</a></div>
-            <div><a href="#2nd-Incident-Entity" class="subtitle">Entity Influence</a></div>
-            <div><a href="#2nd-Incident-Assessment" class="subtitle">Incident Assessment</a></div>
-            <div><a href="#2nd-Incident-Significant" class="subtitle">Of Significance</a></div>
+    <aside>
+      <div class="site navbar toggle" id="btn-div-s">
+        <button onclick="navBigS()" id="btn-big-s">
+          <i class="ph-duotone ph-mask-sad" id="i-big-s"></i>
+        </button>
+      </div>
+      
+      <aside class="navbar bar site big" id="nav-big-s">
+        <section>
+          <nav>
+              <div><a href="../../index.html" class="title">Home</a></div>
+              <div><a href="../../tma/index.html" class="subtitle">Magnus Archives</a></div>
+              <div><a href="../index.html" class="subtitle">Magnus Protocol</a></div>
+          </nav>
+        </section>
+        <section>
+          <h6>TMagP</h6>
+          <nav>
+              <div><a href="tmagp/episodes.html" class="title">Episodes</a></div>
+              <div><a href="tmagp/characters.html" class="title">Characters</a></div>
+              <div><a href="tmagp/002.html" class="subtitle">Next Episode</a></div>
+          </nav>
+        </section>
+        <section class="legend">
+          <div>Legend</div>
+          <div>
+            <span class="mentioned">Mentioned only</span>. <span class="important">Important</span>.
+          </div>
+        </section>
+      </aside>
+      <aside class="navbar bar big page" id="nav-big-p">
+        <section>
+          <h6>magp<span class="nmbr">001</span>: First Shift.</h6>
+          <nav>
+            <div><a href="#1st-Incident" class="title">1st Incident</a></div>
+            <div><a href="#1st-Incident-Summary" class="subtitle">Incident Summary</a></div>
+            <div><a href="#1st-Incident-Entity" class="subtitle">Entity Influence</a></div>
+            <div><a href="#1st-Incident-Assessment" class="subtitle">Incident Assessment</a></div>
+            <div><a href="#1st-Incident-Significant" class="subtitle">Of Significance</a></div>
               <hr>
-          <div><a href="#Not-Incident" class="title">Non-Incident</a></div>
-          <div><a href="#Event-Summary" class="subtitle">Event Summary</a></div>
-          <div><a href="#Entity" class="subtitle">Entity Influence</a></div>
-          <div><a href="#Significant" class="subtitle">Of Significance</a></div>
-        </nav>
-      </section>
-      <section class="legend">
-        <div>Legend</div>
-        <div>
-          <span class="mentioned">Mentioned only</span>. <span class="important">Important</span>.
-        </div>
-      </section>
+              <div><a href="#2nd-Incident" class="title">2nd Incident</a></div>
+              <div><a href="#2nd-Incident-Summary" class="subtitle">Incident Summary</a></div>
+              <div><a href="#2nd-Incident-Entity" class="subtitle">Entity Influence</a></div>
+              <div><a href="#2nd-Incident-Assessment" class="subtitle">Incident Assessment</a></div>
+              <div><a href="#2nd-Incident-Significant" class="subtitle">Of Significance</a></div>
+                <hr>
+            <div><a href="#Not-Incident" class="title">Non-Incident</a></div>
+            <div><a href="#Event-Summary" class="subtitle">Event Summary</a></div>
+            <div><a href="#Entity" class="subtitle">Entity Influence</a></div>
+            <div><a href="#Significant" class="subtitle">Of Significance</a></div>
+          </nav>
+        </section>
+      </aside>
     </aside>
 
     <article>
