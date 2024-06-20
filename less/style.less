@@ -54,6 +54,9 @@ aside {
         text-align: center;
         .padding(@space[median]);
     }
+    h6 {
+        user-select: none;
+    }
     .flex.column(nowrap);
 }
 article {
@@ -69,20 +72,20 @@ article {
 }
 h1 {
     font-family: @font[heading];
-    user-select: none;
+    font-size: 2.5rem;
+    text-transform: lowercase;
+    z-index: 99;
     .margin-horizontal(@space[none]);
-    &:not(h2, h3, h4, h5, h6) {
-        font-size: 2.5rem;
-        text-transform: lowercase;
-        z-index: 99;
-    }
 }
 h2, h3, h4, h5, h6 {
+    font-family: @font[heading];
     font-variant: small-caps;
-    &:extend(h1);
+    cursor: default;
+    .margin-horizontal(@space[none]);
 }
 h1, h2 {
     color: @heading-12;
+    user-select: none;
 }
 h2 {
     font-size: 1.6rem;
@@ -132,7 +135,6 @@ a {
     color: @link;
     text-decoration: solid .5rem @link;
     transition-duration: @speed[1];
-    user-select: none;
     &:hover {
         color: darken(saturate(@link, 20%), 25%);
         cursor: pointer;
@@ -161,6 +163,17 @@ button {
             transition-duration: @speed[1];
         }
         @link: @text;
+    }
+}
+div {
+    &.title {
+        cursor: not-allowed;
+        user-select: none;
+        &:extend(nav a.title);
+    }
+    &.subtitle {
+        &:extend(div.title);
+        &:extend(nav a.subtitle);
     }
 }
 //// --------
@@ -196,7 +209,6 @@ button {
 .synopsis {
     display: flex;
     justify-content: left;
-    user-select: none;
     h4 {
         font-size: 1.025rem;
         width: 75%;
@@ -211,7 +223,6 @@ button {
 .quote {
     display: flex;
     justify-content: right;
-    user-select: none;
     & h4 {
         text-align: right !important;
         &:extend(.synopsis h4);
