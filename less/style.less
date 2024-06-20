@@ -5,7 +5,46 @@
 @import '../less/variables.less';
 // ------------------------------------
 //// KEYFRAMES
-
+@keyframes fadein {
+    0% {
+      opacity: 0;
+      filter: blur(10px);
+      transform: translateY(-15%);
+    }
+    100% {
+      opacity: 1;
+      filter: blur(0px);
+      transform: translateY(0%);
+    }
+}
+@keyframes fadeout {
+    0% {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0%);
+    }
+    100% {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateY(15%);
+    }
+}
+@keyframes bgin {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+@keyframes bgout {
+    0% {
+    opacity: 1;
+    }
+    100% {
+    opacity: 0;
+    }
+}
 //// ---------
 
 //// ELEMENTS
@@ -147,12 +186,13 @@ a {
 }
 button {
     color: @link;
-    background-color: transparent;
-    font-size: 2rem;
     border: none;
+    font-size: 2rem;
+    background-color: transparent;
     transition-duration: @speed[2];
     &:hover {
         color: @hover;
+        cursor: pointer;
         transition-duration: @speed[1];
     }
     &.click {
@@ -174,6 +214,114 @@ div {
     &.subtitle {
         &:extend(div.title);
         &:extend(nav a.subtitle);
+    }
+}
+dialog {
+    color: @link;
+    background-color: @background;
+    border: solid .075rem @link;
+    width: 50%;
+    height: 75%;
+    .rounded(@radia[little]);
+    
+    &[open] {
+        animation: fadein .75s ease-in-out normal;
+    }
+    &[open]::backdrop {
+        animation: bgin 1.5s ease-in-out normal;
+    }
+    &.hide {
+        animation: fadeout .75s ease-in-out normal;
+        &::backdrop {
+            animation: bgout 1.5s ease-in-out normal;
+        }
+    }
+    .modal {
+        justify-content: center;
+        position: relative;
+        .flex.column(nowrap);
+    }
+    .close-modal {
+        position: absolute;
+        top: -1.25rem;
+        left: -1.25rem;
+    }
+    button {
+        color: @link;
+        background-color: @content;
+        border: .125rem dotted @mentioned;
+        width: 3rem;
+        height: 3rem;
+        box-shadow: 
+            0px 2.5px fade(@contentshadow, 25%), 
+            0px 5px fade(@contentshadow, 15%);
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            color: @hover;
+            background-color: @content;
+            transform: scale(1.025);
+            box-shadow: 
+                0px 2.5px fade(@contentshadow, 40%), 
+                0px 5px fade(@contentshadow, 30%);
+        }
+        & > i {
+            font-size: 1.5rem;
+        }
+        @link: @text;
+        .custom-corners(@radia[none], @radia[none], @radia[none], @radia[big]);
+        .padding(@space[nano]);
+    }
+    .h3 {
+        display: grid;
+    }
+    h3 {
+        position: relative;
+        font-variant: small-caps;
+        justify-self: center;
+        font-weight: 800;
+        width: fit-content;
+        background-color: lighten(@background, 10%);
+        z-index: 0;
+        overflow: hidden;
+        color: @heading-12;
+        .padding-horizontal(@space[tiny]);
+        .padding-vertical(@space[little]);
+        .margin-bottom(@space[tiny]);
+        .custom-corners(@radia[nano], @radia[little], @radia[little], @radia[nano]);
+        .nickname {
+            font-size: 1.25rem;
+            color: @heading-3456;
+            &::before {
+                content: '\201C';
+                color: inherit;
+                font-size: inherit;
+            }
+            &::after {
+                content: '\201D';
+                color: inherit;
+                font-size: inherit;
+            }
+        }
+        &::after, &::before {
+            content: "+";
+            display: block;
+            line-height: 0;
+            font-size: 5rem;
+            position: absolute;
+            color: darken(@content, 20%);
+            z-index: -1;
+            opacity: 0.3;
+        }
+        &::before {
+            left: 0;
+            top: 0.5rem;
+        }
+        &::after {
+            right: 0;
+            bottom: 1.25rem;
+        }
     }
 }
 //// --------
@@ -266,6 +414,7 @@ div {
                 position: fixed !important;
                 top: @space[huge]!important;
                 flex-grow: 1;
+                z-index: 99;
                 display: none;
                 &:extend(aside);
             }
@@ -301,6 +450,7 @@ div {
                 top: @space[huge]!important;
                 height: 100%!important;
                 flex-grow: 1;
+                z-index: 99;
                 display: none;
                 &:extend(aside);
             }
@@ -314,6 +464,137 @@ div {
                     display: none;
                 }
             }
+        }
+    }
+}
+.cardsel {
+    gap: @space[small];
+    justify-content: center;
+    user-select: none;
+    .margin-top(@space[nano]);
+    .margin-bottom(@space[small]);
+    .flex.row(wrap);
+    .padding-vertical(@space[immense]);
+
+    .cardwrap {
+        display: inline-flex;
+        width: fit-content;
+        height: fit-content;
+
+        hr {
+            border-width: 0.025rem;
+            border-style: solid;
+            width: 75%;
+            .margin-top(@space[small]);
+        }
+        &:hover {
+            cursor: pointer;
+            p.lm {
+                color: @heading-12;
+            }
+        }
+        .cards {
+            margin: @space[none];
+            padding: @space[none];
+            .flex.row(wrap);
+        }
+        .cards-item {
+            .flex.column(nowrap);
+        }
+    }
+    .lm {
+        text-decoration: underline @hover;
+        text-align: right;
+        font-weight: 600;
+        @link: @text;
+    }
+    .ds {
+        text-align: center;
+    }
+    .card {
+        position: relative;
+        background-color: @background;
+        transition: transform @speed[1] linear, box-shadow @speed[2];
+        .custom-corners(@radia[nano], @radia[big], @radia[immense], @radia[nano]);
+        .flex.column(nowrap);
+
+    }
+    .card:focus, .card:hover {
+        transform: scale(1.01);
+        box-shadow: .5rem 1rem .75rem -.75rem lighten(@background, 7.5%);
+        outline: .075rem dashed @link;
+    }
+    .card-content {
+        .padding-top(@space[tiny]);
+        .padding-vertical(@space[small]);
+        .padding-bottom(@space[small]);
+    }
+    .card-text {
+        line-height: @space[small];
+        font-family: @font[body];
+        font-size: 1rem;
+        
+        .padding-horizontal(@space[none]);
+        .padding-vertical(@space[small]);
+        p {
+            color: @link;
+        }
+    }
+    .names {
+        display: grid;
+    }
+    .name {
+        position: relative;
+        font-family: @font[heading];
+        width: fit-content;
+        text-align: center;
+        justify-self: center;
+        font-variant: small-caps;
+        font-weight: 800;
+        background-color: lighten(@background, 10%);
+        color: @heading-12!important;
+        z-index: 0;
+        overflow: hidden;
+        .padding-horizontal(@space[tiny]);
+        .padding-vertical(@space[little]);
+        .margin-bottom(@space[tiny]);
+        .custom-corners(@space[none], @space[tiny], @space[tiny], @space[none]);
+        &::after, &::before {
+        content: "+";
+        display: block;
+        line-height: 0;
+        font-size: 3rem;
+        position: absolute;
+        color: darken(@content, 20%);
+        z-index: -1;
+        opacity: 0.3;
+        }
+        &::before {
+        left: 0;
+        top: 0.5rem;
+        }
+        &::after {
+        right: 0;
+        bottom: 1.25rem;
+        }
+    }
+    .hsh {
+        font-weight: 800;
+
+        &::before {
+            content: '\2003';
+        }
+        &::after {
+            content: '\2003';
+        }
+    }
+    button {
+        color: inherit;
+        border: inherit;
+        font-size: inherit;
+        background-color: transparent;
+        &:hover {
+            color: inherit;
         }
     }
 }
@@ -341,7 +622,7 @@ div {
                 button {    
                     position: fixed;
                     top: @space[small];
-                    right: @space[little];
+                    right: @space[small];
                     &#btn-small-s {
                         display: inline;
                     }
@@ -361,7 +642,7 @@ div {
                 button {    
                     position: fixed;
                     top: @space[immense];
-                    right: @space[little];
+                    right: @space[small];
                     &#btn-small-p {
                         display: inline;
                     }
@@ -369,6 +650,46 @@ div {
                         display: none;
                     }
                 }
+            }
+        }
+    }
+    main > aside {
+        display: none;
+    }
+    .cardsel {
+        gap: @space[small];
+        justify-content: center;
+        .margin-bottom(@space[small]);
+        .padding-vertical(@space[none]);
+    }
+    dialog {
+        border: solid .075rem @link;
+        width: 80%;
+        height: 75%;
+        
+        .close-modal {
+            position: absolute;
+            top: -1.25rem;
+            left: -1.25rem;
+        }
+        button {
+            border: .125rem dotted @mentioned;
+            width: 3rem;
+            height: 3rem;
+            &:hover {
+                transform: scale(1.025);
+            }
+            & > i {
+                font-size: 1.5rem;
+            }
+        }
+        h3 {
+            z-index: 2;
+            &::after, &::before {
+                font-size: 3rem;
+            }
+            .nickname {
+                font-size: 1.2rem;
             }
         }
     }
@@ -426,7 +747,7 @@ div {
                     &#btn-small-s {
                         position: fixed;
                         top: @space[small];
-                        right: @space[nano];
+                        right: @space[small];
                         font-size: 1.75rem;
                         display: inline;
                     }
@@ -447,7 +768,7 @@ div {
                     &#btn-small-p {
                         position: fixed;
                         top: @space[immense];
-                        right: @space[nano];
+                        right: @space[small];
                         font-size: 1.75rem;
                         display: inline;
                     }
@@ -455,6 +776,46 @@ div {
                         display: none;
                     }
                 }
+            }
+        }
+    }
+    main > aside {
+        display: none;
+    }
+    .cardsel {
+        gap: @space[small];
+        justify-content: center;
+        .margin-bottom(@space[small]);
+        .padding-vertical(@space[none]);
+    }
+    dialog {
+        border: solid .075rem @link;
+        width: 80%;
+        height: 75%;
+        
+        .close-modal {
+            position: absolute;
+            top: -1.25rem;
+            left: -1.25rem;
+        }
+        button {
+            border: .125rem dotted @mentioned;
+            width: 3rem;
+            height: 3rem;
+            &:hover {
+                transform: scale(1.025);
+            }
+            & > i {
+                font-size: 1.5rem;
+            }
+        }
+        h3 {
+            z-index: 2;
+            &::after, &::before {
+                font-size: 3rem;
+            }
+            .nickname {
+                font-size: 1.1rem;
             }
         }
     }
@@ -497,6 +858,9 @@ div {
             content: '\2002';
         }
     }
+    main > aside {
+        display: none;
+    }
     aside > section, aside section + section {
         box-shadow: 
             5px 5px fade(@contentshadow, 40%), 
@@ -512,7 +876,7 @@ div {
                     &#btn-small-s {
                         position: fixed;
                         top: @space[small];
-                        right: @space[nano];
+                        right: @space[little];
                         font-size: 1.5rem;
                         display: inline;
                     }
@@ -533,7 +897,7 @@ div {
                     &#btn-small-p {
                         position: fixed;
                         top: @space[immense];
-                        right: @space[nano];
+                        right: @space[little];
                         font-size: 1.5rem;
                         display: inline;
                     }
@@ -551,6 +915,54 @@ div {
             }
             &.subtitle {
                 font-size: 1rem;
+            }
+        }
+    }
+    .cardsel {
+        gap: @space[small];
+        justify-content: center;
+        .margin-bottom(@space[small]);
+        .padding-vertical(@space[none]);
+
+        .hsh {
+            &::before {
+                content: '\2002';
+            }
+            &::after {
+                content: '\2002';
+            }
+        }
+    }
+    dialog {
+        border: solid .075rem @link;
+        width: 80%;
+        height: 75%;
+        
+        .close-modal {
+            position: absolute;
+            top: -1.25rem;
+            left: -1.25rem;
+        }
+        button {
+            border: .125rem dotted @mentioned;
+            width: 3rem;
+            height: 3rem;
+            &:hover {
+                transform: scale(1.025);
+            }
+            & > i {
+                font-size: 1.5rem;
+            }
+        }
+        h3 {
+            justify-self: right;
+            display: inherit;
+            z-index: 2;
+            &::after, &::before {
+                font-size: 3rem;
+            }
+            .nickname {
+                font-size: 1.025rem;
             }
         }
     }

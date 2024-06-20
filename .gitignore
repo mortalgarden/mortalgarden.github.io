@@ -1,9 +1,8 @@
-# ignore .vscode
-.vscode/
-
-# ignore skeletons / templates
+# ignore skeletons
 tma/000.html
 tmagp/000.html
-
+# ignore convinience snippets
+snippets/
 # unneeded
 less/themes.less
+js/theme.js
