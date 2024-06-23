@@ -1,3 +1,5 @@
+Gemfile.lock
+_site
 # ignore skeletons
 tma/mag/000.html
 tmagp/magp/000.html
