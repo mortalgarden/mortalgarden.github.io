@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <!-- general -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+    <meta charset="utf-8" />
+    <title>TMagP: recurring characters</title>
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+      <!-- stylesheet -->
+    <link rel="stylesheet/less" type="text/css" href="../../less/style.less">
+      <!-- LESS.js: lesscss.org -->
+    <script src="https://cdn.jsdelivr.net/npm/less" type="text/javascript"></script>
+      <!-- ICONS: phosphoricons.com -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+  <header>
+    <section class="site navbar toggle">
+      <button onclick="navSmallS()" id="btn-small-s">
+        <i class="ph-duotone ph-mask-sad" id="i-small-s"></i>
+      </button>
+    </section>
+
+    <section>
+      <h1></h1>
+    </section>
+    
+    <section class="page navbar toggle">
+      <button onclick="navSmallP()" id="btn-small-p">
+        <i class="ph-duotone ph-eye" id="i-small-p"></i>
+      </button>
+    </section>
+  </header>
+  
+  <aside class="navbar bar site small" id="nav-small-s">
+    <section>
+      <nav>
+        <div><a href="../../index" class="title">Home</a></div>
+        <div><a href="../../tma/index" class="subtitle">Magnus Archives</a></div>
+        <div><a href="../index" class="subtitle">Magnus Protocol</a></div>
+      </nav>
+    </section>
+    <section>
+      <h6>TMagP</h6>
+      <nav>
+        <div><a href="../episodes" class="title">Episodes</a></div>
+        <div><a href="oiar" class="subtitle">O.I.A.R. Employees</div>
+        <div class="subtitle">Recurring Characters</div>
+        <div><a href="minor" class="subtitle">Minor Characters</a></div>
+      </nav>
+    </section>
+  </aside>
+
+  <aside class="navbar bar page small" id="nav-small-p">
+    <section>
+      <h6>Recurring Characters</h6>
+      <nav>
+      </nav>
+    </section>
+  </aside>
+  <div id="navhelper"></div>
+
+  <!-- CHARACTER MODALS -->
+  <dialog id="Ink5oul">
+    <div class="modal">
+      <span class="h3"><h3>Ink5oul</h3></span>
+        <button class="close-modal" aria-label="Close modal" onclick="inkClose()">
+          <i class="ph-duotone ph-cpu"></i>
+        </button>
+
+
+    </div>
+  </dialog>
+  <dialog id="Needles">
+    <div class="modal">
+      <span class="h3"><h3>Needles</h3></span>
+        <button class="close-modal" aria-label="Close modal" onclick="needleClose()">
+          <i class="ph-duotone ph-cpu"></i>
+        </button>
+
+
+    </div>
+  </dialog>
+  <!-- //////////////// -->
+
+  <!-- THE MAIN PAGE -->
+  <main>
+    <aside>
+      <div class="site navbar toggle" id="btn-div-s">
+        <button onclick="navBigS()" id="btn-big-s">
+          <i class="ph-duotone ph-mask-sad" id="i-big-s"></i>
+        </button>
+      </div>
+      
+      <aside class="navbar bar site big" id="nav-big-s">
+        <section>
+          <nav>
+              <div><a href="../../index" class="title">Home</a></div>
+              <div><a href="../../tma/index" class="subtitle">Magnus Archives</a></div>
+              <div><a href="../index" class="subtitle">Magnus Protocol</a></div>
+          </nav>
+        </section>
+        <section>
+          <h6>TMagP</h6>
+          <nav>
+            <div><a href="../episodes" class="title">Episodes</a></div>
+            <div><a href="oiar" class="subtitle">O.I.A.R. Employees</a></div>
+            <div class="subtitle">Recurring Characters</div>
+            <div><a href="minor" class="subtitle">Minor Characters</a></div>
+          </nav>
+        </section>
+      </aside>
+      <aside class="navbar bar big page" id="nav-big-p">
+        <section>
+          <h6>Recurring Characters</h6>
+          <nav>
+          </nav>
+        </section>
+      </aside>
+    </aside>
+
+    <article>
+      <section class="synopsis">
+        <h4>Non Vacillabimus</h4>
+      </section>
+      <section>
+        <div id="Prominent">
+          <h2>Characters</h2>
+        </div>
+      </section>
+      <section class="cardsel">
+        <div class="cardwrap">
+          <div class="cards">
+            <div class="cards-item">
+              <div class="card">
+                <button onclick="inkShow()">
+                  <div class="card-content">
+                    <div class="card-text">
+                      <span class="names"><p class="name">Ink5oul</p></span>
+                      <p class="ds">tattooist<span class="hsh">-/-</span>they/them</p>
+                        <hr>
+                      <p class="lm">learn more.</p>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardwrap">
+          <div class="cards">
+            <div class="cards-item">
+              <div class="card">
+                <button onclick="needleShow()">
+                  <div class="card-content">
+                    <div class="card-text">
+                      <span class="names"><p class="name">Needles</p></span>
+                      <p class="ds">???<span class="hsh">-/-</span>he/him</p>
+                        <hr>
+                      <p class="lm">learn more.</p>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="quote">
+        <h4>Fear takes many forms.</h4>
+      </section>
+    </article>
+  </main>
+
+  <script src="../../js/scripts.js"></script>
+  <script src="../../js/modalTMP.js"></script>
+</body>
+</html>

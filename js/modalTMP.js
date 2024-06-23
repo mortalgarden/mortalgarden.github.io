@@ -196,3 +196,33 @@ function augustusClose() {
   }, false);
 }
 // --------------
+// RECURRING CHARACTERS
+                      const inkModal = document.getElementById("Ink5oul");
+function inkShow() {
+  inkModal.showModal();
+}
+function inkClose() {
+
+  inkModal.classList.add('hide');
+
+  inkModal.addEventListener('webkitAnimationEnd', function() {
+    inkModal.classList.remove('hide');
+    inkModal.close();
+    inkModal.removeEventListener('webkitAnimationEnd',  arguments.callee, false);
+  }, false);
+}
+                        const needleModal = document.getElementById("Needles");
+function needleShow() {
+  needleModal.showModal();
+}
+function needleClose() {
+
+  needleModal.classList.add('hide');
+
+  needleModal.addEventListener('webkitAnimationEnd', function() {
+    needleModal.classList.remove('hide');
+    needleModal.close();
+    needleModal.removeEventListener('webkitAnimationEnd',  arguments.callee, false);
+  }, false);
+}
+// --------------------

@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
       <!-- stylesheet -->
     <link rel="stylesheet/less" type="text/css" href="../less/style.less">
+    <link rel="stylesheet/less" type="text/css" href="../less/fears.less">
       <!-- LESS.js: lesscss.org -->
     <script src="https://cdn.jsdelivr.net/npm/less" type="text/javascript"></script>
       <!-- ICONS: phosphoricons.com -->
@@ -36,31 +37,220 @@
   <aside class="navbar bar site small" id="nav-small-s">
     <section>
       <nav>
-        <div><a href="../../index.html" class="title">Home</a></div>
-        <div><a href="../../tma/index.html" class="subtitle">Magnus Archives</a></div>
-        <div><a href="../index.html" class="subtitle">Magnus Protocol</a></div>
+        <div><a href="../../index" class="title">Home</a></div>
+        <div><a href="../tma/index" class="subtitle">Magnus Archives</a></div>
+        <div><a href="../tmagp/index" class="subtitle">Magnus Protocol</a></div>
       </nav>
     </section>
     <section>
       <h6>TMA</h6>
       <nav>
-        <div><a href="tmagp/episodes.html" class="title">Episodes</a></div>
-        <div><a href="tmagp/characters.html" class="title">Characters</a></div>
-        <div><a href="tmagp/002.html" class="subtitle">Next Episode</a></div>
+        <div><a href="episodes" class="title">Episodes</a></div>
+        <div><a href="characters" class="title">Characters</a></div>
       </nav>
     </section>
   </aside>
 
   <aside class="navbar bar page small" id="nav-small-p">
     <section>
-        <h6></h6>
-        <nav>
-          <div><a href="/" class="title"></a></div>
-          <div><a href="/" class="subtitle"></a></div>
-        </nav>
+      <h6>The Dread Powers</h6>
+      <nav>
+        <div><a href="#Smirkes-Fourteen" class="title">Smirke's Fourteen</a></div>
+        <div class="fearsnav">
+          <a href="#TheBuried" class="subtitle">Buried</a>
+          <a href="#TheCorruption" class="subtitle">Corruption</a>
+          <a href="#TheDark" class="subtitle">Dark</a>
+          <a href="#TheDesolation" class="subtitle">Desolation</a>
+          <a href="#TheEnd" class="subtitle">End</a>
+          <a href="#TheEye" class="subtitle">Eye</a>
+          <a href="#TheFlesh" class="subtitle">Flesh</a>
+          <a href="#TheHunt" class="subtitle">Hunt</a>
+          <a href="#TheLonely" class="subtitle">Lonely</a>
+          <a href="#TheSlaughter" class="subtitle">Slaughter</a>
+          <a href="#TheSpiral" class="subtitle">Spiral</a>
+          <a href="#TheStranger" class="subtitle">Stranger</a>
+          <a href="#TheVast" class="subtitle">Vast</a>
+          <a href="#TheWeb" class="subtitle">Web</a>
+        </div>
+          <hr>
+        <div><a href="#Dekkers-Addendum" class="title">Dekker's Addendum</a></div>
+        <div><a href="#TheExtinction" class="subtitle">Extinction</a></div>
+      </nav>
     </section>
   </aside>
   <div id="navhelper"></div>
+
+  <!-- ENTITY MODALS -->
+  <dialog id="Buried">
+    <div class="modal">
+      <span class="h3"><h3>The Buried</h3></span>
+        <button class="close-modal" aria-label="Close modal" onclick="buriedClose()">
+          <i class="ph-duotone ph-cpu"></i>
+        </button>
+      <h5><i>also known as<b>:</b></i> <span class="nickname">The Centre</span>, <span class="nickname">Choke</span>, <span class="nickname">Too Close I Cannot Breathe</span>, <i>and</i> <span class="nickname">Forever Deep Below Creation</span>.</h5>
+
+    </div>
+  </dialog>
+  <dialog id="Corruption">
+    <div class="modal">
+      <span class="h3"><h3>The Corruption</h3></span>
+        <button class="close-modal" aria-label="Close modal" onclick="corruptionClose()">
+          <i class="ph-duotone ph-cpu"></i>
+        </button>
+      <h5><i>also known as<b>:</b></i> <span class="nickname">The Crawling Rot</span>, 
+        <span class="nickname">Filth</span> <i>and</i> 
+        <span class="nickname">Flesh Hive</span>.</h5>
+
+    </div>
+  </dialog>
+  <dialog id="Dark">
+    <div class="modal">
+      <span class="h3"><h3>The Dark</h3></span>
+        <button class="close-modal" aria-label="Close modal" onclick="darkClose()">
+          <i class="ph-duotone ph-cpu"></i>
+        </button>
+      <h5><i>also known as<b>:</b></i> <span class="nickname">Mr. Pitch</span> <i>and</i> <span class="nickname">The Forever Blind</span>.</h5>
+
+    </div>
+  </dialog>
+<dialog id="Desolation">
+  <div class="modal">
+    <span class="h3"><h3>The Desolation</h3></span>
+      <button class="close-modal" aria-label="Close modal" onclick="desolationClose()">
+        <i class="ph-duotone ph-cpu"></i>
+      </button>
+    <h5><i>also known as<b>:</b></i> <span class="nickname">Asag</span>, 
+      <span class="nickname">The Blackened Earth</span>,
+      <span class="nickname">The Devastation</span>,
+      <span class="nickname">The Lightless Flame</span>, 
+      <span class="nickname">The Ravening Burn</span>, <i>and</i>
+      <span class="nickname">The Torturing Flame</span>.</h5>
+
+  </div>
+</dialog>
+<dialog id="End">
+  <div class="modal">
+    <span class="h3"><h3>The End</h3></span>
+      <button class="close-modal" aria-label="Close modal" onclick="endClose()">
+        <i class="ph-duotone ph-cpu"></i>
+      </button>
+    <h5><i>also known as<b>:</b></i> <span class="nickname">Death</span>, 
+      <span class="nickname">The Coming End That Waits For All And Cannot Be Ignored</span>, 
+      <span class="nickname">The Termination of All Life</span>, <i>and</i> 
+      <span class="nickname">Terminus</span>.</h5>
+
+  </div>
+</dialog>
+<dialog id="Eye">
+  <div class="modal">
+    <span class="h3"><h3>The Eye</h3></span>
+      <button class="close-modal" aria-label="Close modal" onclick="eyeClose()">
+        <i class="ph-duotone ph-cpu"></i>
+      </button>
+    <h5><i>also known as<b>:</b></i> <span class="nickname">Beholding</span>,
+       <span class="nickname">The Ceaseless Watcher</span>, 
+       <span class="nickname">The Great Eye that Watches All Who Linger in Terror and Gorges Itself on the Sufferings of those Under its Unrelenting Stuporous Gaze</span>, 
+       <i>and</i> <span class="nickname">It Knows You</span>.</h5>
+
+  </div>
+</dialog>
+</dialog>
+<dialog id="Flesh">
+  <div class="modal">
+    <span class="h3"><h3>The Flesh</h3></span>
+      <button class="close-modal" aria-label="Close modal" onclick="fleshClose()">
+        <i class="ph-duotone ph-cpu"></i>
+      </button>
+    <h5><i>also known as<b>:</b></i> <span class="nickname">Viscera</span>.</h5>
+
+  </div>
+</dialog>
+<dialog id="Hunt">
+  <div class="modal">
+    <span class="h3"><h3>The Hunt</h3></span>
+      <button class="close-modal" aria-label="Close modal" onclick="huntClose()">
+        <i class="ph-duotone ph-cpu"></i>
+      </button>
+    <h5><i>also known as<b>:</b></i> <span class="nickname">Blood</span>.</h5>
+
+  </div>
+</dialog>
+<dialog id="Lonely">
+  <div class="modal">
+    <span class="h3"><h3>The Lonely</h3></span>
+      <button class="close-modal" aria-label="Close modal" onclick="lonelyClose()">
+        <i class="ph-duotone ph-cpu"></i>
+      </button>
+    <h5><i>also known as<b>:</b></i> <span class="nickname">Foresaken</span> <i>and</i> <span class="nickname">The One Alone</span>.</h5>
+
+  </div>
+</dialog>
+<dialog id="Slaughter">
+  <div class="modal">
+    <span class="h3"><h3>The Slaughter</h3></span>
+      <button class="close-modal" aria-label="Close modal" onclick="slaughterClose()">
+        <i class="ph-duotone ph-cpu"></i>
+      </button>
+    <h5><i>this Fear has no known aliases</i>.</h5>
+
+  </div>
+</dialog>
+<dialog id="Spiral">
+  <div class="modal">
+    <span class="h3"><h3>The Spiral</h3></span>
+      <button class="close-modal" aria-label="Close modal" onclick="spiralClose()">
+        <i class="ph-duotone ph-cpu"></i>
+      </button>
+    <h5><i>also known as<b>:</b></i> <span class="nickname">Es Mentiras <i>[It Is Lies]</i></span>, <span class="nickname">It Is Not What It Is</span>,<i>and</i> <span class="nickname">The Twisting Deceit</span>.</h5>
+
+  </div>
+</dialog>
+<dialog id="Stranger">
+  <div class="modal">
+    <span class="h3"><h3>The Stranger</h3></span>
+      <button class="close-modal" aria-label="Close modal" onclick="strangerClose()">
+        <i class="ph-duotone ph-cpu"></i>
+      </button>
+    <h5><i>also known as<b>:</b></i> <span class="nickname">I Do Not Know You</span>.</h5>
+
+  </div>
+</dialog>
+<dialog id="Vast">
+  <div class="modal">
+    <span class="h3"><h3>The Vast</h3></span>
+      <button class="close-modal" aria-label="Close modal" onclick="vastClose()">
+        <i class="ph-duotone ph-cpu"></i>
+      </button>
+    <h5><i>also known as<b>:</b></i> <span class="nickname">The Falling Titan</span>.</h5>
+
+  </div>
+</dialog>
+<dialog id="Web">
+  <div class="modal">
+    <span class="h3"><h3>The Web</h3></span>
+      <button class="close-modal" aria-label="Close modal" onclick="webClose()">
+        <i class="ph-duotone ph-cpu"></i>
+      </button>
+    <h5><i>also known as<b>:</b></i> <span class="nickname">The Great Spider,</span> 
+      <span class="nickname">The Hidden Machination</span>, 
+      <span class="nickname">The Mother</span>, <span class="nickname">The Mother of Puppets</span>, 
+      <span class="nickname">The Spider</span>, <i>and</i> 
+      <span class="nickname">The Spinner of Schemes</span>.</h5>
+
+  </div>
+</dialog>
+<dialog id="Extinction">
+  <div class="modal">
+    <span class="h3"><h3>The Extinction</h3></span>
+      <button class="close-modal" aria-label="Close modal" onclick="extinctionClose()">
+        <i class="ph-duotone ph-cpu"></i>
+      </button>
+    <h5><i>also known as<b>:</b></i> <span class="nickname">The Future Without Us</span>, 
+      <span class="nickname">The Terrible Change</span>, <i>and</i> 
+      <span class="nickname">The World Is Always Ending</span>.</h5>
+
+  </div>
+</dialog>
 
   <main>
     <aside>
@@ -73,26 +263,43 @@
       <aside class="navbar bar site big" id="nav-big-s">
         <section>
           <nav>
-              <div><a href="../../index.html" class="title">Home</a></div>
-              <div><a href="../../tma/index.html" class="subtitle">Magnus Archives</a></div>
-              <div><a href="../index.html" class="subtitle">Magnus Protocol</a></div>
+              <div><a href="../index" class="title">Home</a></div>
+              <div><a href="../tma/index" class="subtitle">Magnus Archives</a></div>
+              <div><a href="../tmagp/index" class="subtitle">Magnus Protocol</a></div>
           </nav>
         </section>
         <section>
           <h6>TMA</h6>
           <nav>
-              <div><a href="tmagp/episodes.html" class="title">Episodes</a></div>
-              <div><a href="tmagp/characters.html" class="title">Characters</a></div>
-              <div><a href="tmagp/002.html" class="subtitle">Next Episode</a></div>
+              <div><a href="episodes" class="title">Episodes</a></div>
+              <div><a href="characters" class="title">Characters</a></div>
           </nav>
         </section>
       </aside>
       <aside class="navbar bar big page" id="nav-big-p">
         <section>
-          <h6></h6>
+          <h6>The Dread Powers</h6>
           <nav>
-            <div><a href="/" class="title"></a></div>
-            <div><a href="/" class="subtitle"></a></div>
+            <div><a href="#Smirkes-Fourteen" class="title">Smirke's Fourteen</a></div>
+            <div class="fearsnav">
+              <a href="#TheBuried" class="subtitle">Buried</a>
+              <a href="#TheCorruption" class="subtitle">Corruption</a>
+              <a href="#TheDark" class="subtitle">Dark</a>
+              <a href="#TheDesolation" class="subtitle">Desolation</a>
+              <a href="#TheEnd" class="subtitle">End</a>
+              <a href="#TheEye" class="subtitle">Eye</a>
+              <a href="#TheFlesh" class="subtitle">Flesh</a>
+              <a href="#TheHunt" class="subtitle">Hunt</a>
+              <a href="#TheLonely" class="subtitle">Lonely</a>
+              <a href="#TheSlaughter" class="subtitle">Slaughter</a>
+              <a href="#TheSpiral" class="subtitle">Spiral</a>
+              <a href="#TheStranger" class="subtitle">Stranger</a>
+              <a href="#TheVast" class="subtitle">Vast</a>
+              <a href="#TheWeb" class="subtitle">Web</a>
+            </div>
+              <hr>
+            <div><a href="#Dekkers-Addendum" class="title">Dekker's Addendum</a></div>
+            <div><a href="#TheExtinction" class="subtitle">Extinction</a></div>
           </nav>
         </section>
       </aside>
@@ -100,25 +307,373 @@
 
     <article>
       <section class="synopsis">
-        <h4></h4>
+        <h4>The Things That Were Fear</h4>
       </section>
       <section>
-        <div id="">
-          <h2></h2>
+        <div id="Introduction">
+          <h2>Introduction</h2>
         </div>
       </section>
       <section class="cluster">
-        <div>
-          <p class="analysis">
+          <p class="analysis fearSmall">
+            this is a <i>slightly modified</i> rendition of <a href="https://www.tumblr.com/strangecreetures/715667967086608384">strangecreetures' chart</a> of generic themes shared by each Entity; these modifications are mostly just so it's dark-mode friendly, as well as changing up the colors. i find this to be a fairly useful resource in narrowing down vague appearances of the Fears; although they are much more pronounced in <b>the magnus archives,</b> i may be using these themes in some way for <b>the magnus protocol,</b> at least until we learn more about the Entities in that reality.
           </p>
+        <div class="pair img">
+          <div class="cluster">
+            <div class="fearSmall">
+              <img class="EntityChart" src="../img/EntityChart.png">
+            </div>
+            <p class="analysis fearBig">
+              this is a <i>slightly modified</i> rendition of <a href="https://www.tumblr.com/strangecreetures/715667967086608384">strangecreetures' chart</a> of generic themes shared by each Entity; these modifications are mostly just so it's dark-mode friendly, as well as changing up the colors. i find this to be a fairly useful resource in narrowing down vague appearances of the Fears; although they are much more pronounced in <b>the magnus archives,</b> i may be using these themes in some way for <b>the magnus protocol,</b> at least until we learn more about the Entities in that reality.
+            </p>
+            <p class="keytitle"><b>the colors represent these themes:</b></p>
+            <p class="entitykey">
+              <span class="themes" id="inevitability-abstract">
+                Abstract inevitability (something bad <i>will</i> happen&#8205;&#8212;but what?)</span>
+                <span class="next"></span>
+  
+                <span class="themes" id="lurk">
+                Things that lurk</span><span class="next"></span>
+  
+                <span class="themes" id="flaw">
+                Inherent flaw (you are a bad person, you are unlovable, etc.)</span>
+                <span class="next"></span>
+  
+                <span class="themes" id="invasive">
+                Invasive closeness/intimacy</span><span class="next"></span>
+  
+                <span class="themes" id="inevitability-concrete">
+                Concrete inevitability (conveyor belt effect&#8205;&#8212;you know <i>exactly</i> what's coming for you)</span><span class="next"></span>
+  
+                <span class="themes" id="oppressive-systems">
+                Dehumanizing & oppressive systems (late&#8209;stage capitalism, factory farms, etc.)</span>
+                <span class="next"></span>
+  
+                <span class="themes" id="physical-threat">
+                Visible, physical threat</span><span class="next"></span>
+  
+                <span class="themes" id="instability">
+                Instability&#8205;&#8212;the threat of sudden & unpredictable change</span>
+                <span class="next"></span>
+  
+                <span class="themes" id="mutilation">
+                Mutilation</span><span class="next"></span>
+  
+                <span class="themes" id="guilt">
+                Guilt</span> <span class="next"></span>
+  
+                <span class="themes" id="intimacy-lack">
+                <i>Lack</i> of closeness/intimacy</span><span class="next"></span>
+  
+                <span class="themes" id="natural-forces">
+                Unstoppable forces of nature (death, time, etc.)</span>
+                <span class="next"></span>
+  
+                <span class="themes" id="stagnation">
+                Eternal stagnation</span>
+            </p>
+          </div>
+          <div class="fearBig">
+            <img class="EntityChart" src="../img/EntityChart.png">
+          </div>
         </div>
       </section>
-      <!--<section class="quote">
-        <h4></h4>
-      </section>-->
+      <section class="cluster">
+        <p class="analysis">
+          <b>the Entities,</b> also called <span class="nickname">the Dread Powers,</span> <span class="nickname">the Powers</span> <span class="nickname">the Fears,</span> and <span class="nickname">The Things That Were Fear</span> . . .
+        </p>
+      </section>
+      <section>
+        <div id="Smirkes-Fourteen">
+          <h2>Smirkes Fourteen</h2>
+        </div>
+      </section>
+      <section class="cardsel">
+        <div class="cardwrap" id="TheBuried">
+          <div class="cards">
+            <div class="cards-item">
+              <div class="card">
+                <button onclick="buriedShow()">
+                  <div class="card-content">
+                    <div class="card-text">
+                      <span class="names"><p class="name">The Buried</p></span>
+                      <p class="ds">Forever Deep Below Creation</p>
+                        <hr>
+                      <p class="lm">learn more.</p>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardwrap" id="TheCorruption">
+          <div class="cards">
+            <div class="cards-item">
+              <div class="card">
+                <button onclick="corruptionShow()">
+                  <div class="card-content">
+                    <div class="card-text">
+                      <span class="names"><p class="name">The Corruption</p></span>
+                      <p class="ds">The Crawling Rot</p>
+                        <hr>
+                      <p class="lm">learn more.</p>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardwrap" id="TheDark">
+          <div class="cards">
+            <div class="cards-item">
+              <div class="card">
+                <button onclick="darkShow()">
+                  <div class="card-content">
+                    <div class="card-text">
+                      <span class="names"><p class="name">The Dark</p></span>
+                      <p class="ds">The Extinguished Sun</p>
+                        <hr>
+                      <p class="lm">learn more.</p>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardwrap" id="TheDesolation">
+          <div class="cards">
+            <div class="cards-item">
+              <div class="card">
+                <button onclick="desolationShow()">
+                  <div class="card-content">
+                    <div class="card-text">
+                      <span class="names"><p class="name">The Desolation</p></span>
+                      <p class="ds">The Scoured Earth</p>
+                        <hr>
+                      <p class="lm">learn more.</p>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardwrap" id="TheEnd">
+          <div class="cards">
+            <div class="cards-item">
+              <div class="card">
+                <button onclick="endShow()">
+                  <div class="card-content">
+                    <div class="card-text">
+                      <span class="names"><p class="name">The End</p></span>
+                      <p class="ds">The Termination of All Life</p>
+                        <hr>
+                      <p class="lm">learn more.</p>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardwrap" id="TheEye">
+          <div class="cards">
+            <div class="cards-item">
+              <div class="card">
+                <button onclick="eyeShow()">
+                  <div class="card-content">
+                    <div class="card-text">
+                      <span class="names"><p class="name">The Eye</p></span>
+                      <p class="ds">The Watcher's Crown</p>
+                        <hr>
+                      <p class="lm">learn more.</p>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardwrap" id="TheFlesh">
+          <div class="cards">
+            <div class="cards-item">
+              <div class="card">
+                <button onclick="fleshShow()">
+                  <div class="card-content">
+                    <div class="card-text">
+                      <span class="names"><p class="name">The Flesh</p></span>
+                      <p class="ds">The Last Feast</p>
+                        <hr>
+                      <p class="lm">learn more.</p>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardwrap" id="TheHunt">
+          <div class="cards">
+            <div class="cards-item">
+              <div class="card">
+                <button onclick="huntShow()">
+                  <div class="card-content">
+                    <div class="card-text">
+                      <span class="names"><p class="name">The Hunt</p></span>
+                      <p class="ds">The Everchase</p>
+                        <hr>
+                      <p class="lm">learn more.</p>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardwrap" id="TheLonely">
+          <div class="cards">
+            <div class="cards-item">
+              <div class="card">
+                <button onclick="lonelyShow()">
+                  <div class="card-content">
+                    <div class="card-text">
+                      <span class="names"><p class="name">The Lonely</p></span>
+                      <p class="ds">The Silence</p>
+                        <hr>
+                      <p class="lm">learn more.</p>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardwrap" id="TheSlaughter">
+          <div class="cards">
+            <div class="cards-item">
+              <div class="card">
+                <button onclick="slaughterShow()">
+                  <div class="card-content">
+                    <div class="card-text">
+                      <span class="names"><p class="name">The Slaughter</p></span>
+                      <p class="ds">The Risen War</p>
+                        <hr>
+                      <p class="lm">learn more.</p>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardwrap" id="TheSpiral">
+          <div class="cards">
+            <div class="cards-item">
+              <div class="card">
+                <button onclick="spiralShow()">
+                  <div class="card-content">
+                    <div class="card-text">
+                      <span class="names"><p class="name">The Spiral</p></span>
+                      <p class="ds">The Great Twisting</p>
+                        <hr>
+                      <p class="lm">learn more.</p>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardwrap" id="TheStranger">
+          <div class="cards">
+            <div class="cards-item">
+              <div class="card">
+                <button onclick="strangerShow()">
+                  <div class="card-content">
+                    <div class="card-text">
+                      <span class="names"><p class="name">The Stranger</p></span>
+                      <p class="ds">The Unknowing</p>
+                        <hr>
+                      <p class="lm">learn more.</p>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardwrap" id="TheVast">
+          <div class="cards">
+            <div class="cards-item">
+              <div class="card">
+                <button onclick="vastShow()">
+                  <div class="card-content">
+                    <div class="card-text">
+                      <span class="names"><p class="name">The Vast</p></span>
+                      <p class="ds">The Awful Deep</p>
+                        <hr>
+                      <p class="lm">learn more.</p>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardwrap" id="TheWeb">
+          <div class="cards">
+            <div class="cards-item">
+              <div class="card">
+                <button onclick="webShow()">
+                  <div class="card-content">
+                    <div class="card-text">
+                      <span class="names"><p class="name">The Web</p></span>
+                      <p class="ds">The Spinner of Schemes</p>
+                        <hr>
+                      <p class="lm">learn more.</p>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div id="Dekkers-Addendum">
+          <h2>DEKKER'S ADDENDUM</h2>
+        </div>
+      </section>
+      <section class="cardsel">
+        <div class="cardwrap" id="TheExtinction">
+          <div class="cards">
+            <div class="cards-item">
+              <div class="card">
+                <button onclick="extinctionShow()">
+                  <div class="card-content">
+                    <div class="card-text">
+                      <span class="names"><p class="name">The Extinction</p></span>
+                      <p class="ds">The World is Always Ending</p>
+                        <hr>
+                      <p class="lm">learn more.</p>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="quote">
+        <h4>These forces, they are our fear. Deep fears. Primordial. Always looking for ways to grow and spread.</h4>
+      </section>
     </article>
   </main>
 
   <script src="../js/scripts.js"></script>
+  <script src="../js/modalFear.js"></script>
 </body>
 </html>
