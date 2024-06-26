@@ -148,6 +148,16 @@ h2 {
   text-align: center;
 
   .margin-bottom(@space[tiny]);
+
+  > [tooltip]::after {
+    font-size: .95rem!important;
+  }
+}
+h3 {
+  > [tooltip]::after {
+    font-size: .8rem!important;
+    .padding(@space[tiny]);
+  }
 }
 h3, h4, h5, h6 {
   color: @heading-3456;
@@ -351,7 +361,7 @@ dialog {
     .custom-corners(@radia[nano], @radia[little], @radia[little], @radia[nano]);
 
     .nickname {
-      font-size: 1.25rem;
+      font-size: 1.1rem;
       color: @heading-3456;
 
       &::before {
@@ -829,13 +839,17 @@ div.searchbox {
     }
   }
   .hsh {
-    font-weight: 800;
+    font-weight: 600;
+    font-style: italic;
+    color: @text;
 
     &::before {
-      content: '\2003';
+      content: '\2002';
+      font-style: normal;
     }
     &::after {
-      content: '\2003';
+      content: '\2002';
+      font-style: normal;
     }
   }
   button {
@@ -860,6 +874,7 @@ div.searchbox {
 [tooltip] {
   position: relative;
   display: inline-block;
+  text-decoration: inherit;
 }
 [tooltip]::before {
     content: "";
@@ -905,7 +920,6 @@ div.searchbox {
     text-align: center;
     color: @text;
     padding: .25rem .125rem;
-    font-size: .95rem;
     min-width: 5rem;
     pointer-events: none;
     z-index: 99;
