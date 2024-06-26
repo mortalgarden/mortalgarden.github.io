@@ -6,12 +6,17 @@
     <meta charset="utf-8" />
     <title>the mortal garden</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+      <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Grenze+Gotisch:wght@100..900&family=Platypi:ital,wght@0,300..800;1,300..800&family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap" rel="stylesheet">
       <!-- stylesheet -->
-    <link rel="stylesheet/less" type="text/css" href="less/style.less">
+    <link rel="stylesheet/less" type="text/css" href="/less/style.less">
       <!-- LESS.js: lesscss.org -->
-    <script src="https://cdn.jsdelivr.net/npm/less" type="text/javascript"></script>
+    <script src="/framework/less.min.js" type="text/javascript"></script>
       <!-- ICONS: phosphoricons.com -->
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+      <link rel="stylesheet" type="text/css"
+      href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/duotone/style.css"/>
 </head>
 
 <body>
@@ -37,7 +42,7 @@
     <section>
       <nav>
         <div class="title">Home</div>
-        <div><a href="../../tma/" class="subtitle">Magnus Archives</a></div>
+        <div><a href="/tma/" class="subtitle">Magnus Archives</a></div>
         <div><a href="../" class="subtitle">Magnus Protocol</a></div>
       </nav>
     </section>
@@ -56,13 +61,13 @@
       <h6>Navigation.</h6>
       <nav>
         <div><a href="tma/" class="title">Magnus Archives</a></div>
-        <div><a href="tma/characters" class="subtitle">Characters</a></div>
         <div><a href="tma/fears" class="subtitle">Dread Powers</a></div>
-        <div><a href="tma/episodes" class="subtitle">Episodes</a></div>
+        <div><a href="tma/cast/" class="subtitle">Characters</a></div>
+        <div><a href="tma/season/" class="subtitle">Seasons</a></div>
           <hr>
         <div><a href="tmagp/" class="title">Magnus Protocol</a></div>
-        <div><a href="tmagp/characters" class="subtitle">Characters</a></div>
-        <div><a href="tmagp/episodes" class="subtitle">Episodes</a></div>
+        <div><a href="tmagp/cast/" class="subtitle">Characters</a></div>
+        <div><a href="tmagp/season/" class="subtitle">Seasons</a></div>
       </nav>
     </section>
   </aside>
@@ -98,13 +103,13 @@
           <h6>Navigation.</h6>
           <nav>
             <div><a href="tma/" class="title">Magnus Archives</a></div>
-            <div><a href="tma/characters" class="subtitle">Characters</a></div>
             <div><a href="tma/fears" class="subtitle">Dread Powers</a></div>
-            <div><a href="tma/episodes" class="subtitle">Episodes</a></div>
+            <div><a href="tma/cast/" class="subtitle">Characters</a></div>
+            <div><a href="tma/season/" class="subtitle">Seasons</a></div>
               <hr>
             <div><a href="tmagp/" class="title">Magnus Protocol</a></div>
-            <div><a href="tmagp/episodes" class="subtitle">Episodes</a></div>
-            <div><a href="tmagp/characters" class="subtitle">Characters</a></div>
+            <div><a href="tmagp/cast/" class="subtitle">Characters</a></div>
+            <div><a href="tmagp/season/" class="subtitle">Seasons</a></div>
           </nav>
         </section>
       </aside>
@@ -112,31 +117,36 @@
 
     <article>
       <section class="synopsis">
-        <h4>. . .Welcome to Magnus Autism Central!</h4>
+        <h4>Audio. Opperior. Vigilo.</h4>
       </section>
       <section>
         <div>
-          <h2>introduction</h2>
+          <h2>
+            <span tooltip="Introduction" tooltip-position="left">
+              Introduction
+            </span>
+          </h2>
         </div>
       </section>
       <section class="cluster">
         <div>
           <p class="analysis">
-            welcome to my autism dump relating to <b>the magnus archives</b> and <b>the magnus protocol!</b> this is mostly for myself, as someone who resents google docs and things of the sort; decided to just code something myself oriented toward what's essentially a little spintrest project. contents of the site will slowly build up as i go through my TMA relisten/transcript reread, as well as the TMagP episodes that have been&#8205;&#8212;and continue to&#8205;&#8212; come out.
+            a personal web-project i've made to document my thoughts and analyses on <b>the magnus archives</b> and <b>the magnus protocol;</b> the analyses will be primarily focused on the episodes and the fears, <i>however</i> i may go in-and-out of delving into the characters.
           </p>
-            <br>
           <p class="analysis">
-            this will be your <u>one and only warning</u> that this site <b>will contain spoilers! turn back now if you just happened to come across this and don't want spoilers to these podcasts!</b>
+            this is mostly for myself, as someone who resents google docs and things of the sort; decided to just code something myself with the sole purpose of being where i lay out these thoughts. contents of the site will slowly build up as i go through my TMA relisten/transcript reread, as well as the TMagP seasons that have been&#8205;&#8212;and continue to&#8205;&#8212; come out.
           </p>
-            <br>
           <p class="analysis">
-            <b>lastly,</b> this is <u>not a wiki</u>! although some information, at least for the beginning, is taken directly from the wiki, i am documenting my thoughts, analyses, and <i>sometimes</i> opinions on the podcast and it's contents here! if you are looking for a wiki, i reccommend going <a href="https://the-magnus-archives.fandom.com/wiki/The_Magnus_Archives_Wikia">here</a> for TMA and <a href="https://themagnusprotocol.miraheze.org/wiki/The_Magnus_Protocol_Wiki">here</a> for TMagP!
+            if you happen to come upon this site, this will be your <u>one and only warning</u> that this site <b>will contain spoilers for both <i>the magnus archives</i> and <i>protocol</i>! <u>turn back now if you don't want spoilers</u> to these podcasts!</b>
+          </p>
+          <p class="analysis">
+            and <b>lastly,</b> this is <u>not a wiki</u>! although some information, at least for now, is taken directly from the wiki, this is not made with the intention of being any sort of wiki for the magnusverse. if you are looking for a wiki, i reccommend going <a href="https://the-magnus-archives.fandom.com/wiki/The_Magnus_Archives_Wikia">this TMA wiki</a> and <a href="https://themagnusprotocol.miraheze.org/wiki/The_Magnus_Protocol_Wiki">this TMagP wiki</a>; other great resources, this time for transcripts, are <a href="https://ghostwrites.github.io/transcripts/tma/">this TMA transcript archive</a> and <a href="https://ghostwrites.github.io/transcripts/tmagp/">this TMagP transcript archive</a>.
           </p>
         </div>
       </section>
-      <!--<section class="quote">
-        <h4></h4>
-      </section>-->
+      <section class="no quote">
+        <h4>Non Vacillabimus.</h4>
+      </section>
     </article>
   </main>
 

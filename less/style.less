@@ -1,6 +1,4 @@
 // ------------------------------------
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
 @import '../less/mixins.less';
 @import '../less/variables.less';
 // ------------------------------------
@@ -54,7 +52,7 @@ html {
 }
 body {
   font-family: @font[body];
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 500;
 
   .padding(@space[median]);
@@ -75,6 +73,7 @@ main {
   gap: @space[big];
 
   .flex.row(nowrap);
+  .margin-bottom(@space[small]);
 }
 aside > section, aside section + section, article {
   background-color: @content;
@@ -93,7 +92,7 @@ aside {
   flex-basis: 20%;
   gap: @space[median];
   position: sticky;
-  top: @space[small];
+  top: @space[big];
   height: 100%;
 
   .flex.column(nowrap);
@@ -117,18 +116,22 @@ article {
   background-color: @content;
 
   @text: darken(@mentioned, 40%);
-  @content: desaturate(fade(lighten(@background, 50%), 75%), 10%);
+  @content: desaturate(fade(lighten(@background, 25%), 75%), 15%);
 }
 h1 {
-  font-family: @font[heading];
-  font-size: 2.5rem;
+  font-family: @font[title];
+  font-size: 2.75rem;
   text-transform: lowercase;
   z-index: 99;
+  font-variation-settings: 
+               "SOFT" 100,
+                 "WONK" 1;
+  position: relative;
+  top: 1.25rem;
 
   .margin-horizontal(@space[none]);
 }
 h2, h3, h4, h5, h6 {
-  font-family: @font[heading];
   font-variant: small-caps;
   cursor: default;
 
@@ -139,15 +142,30 @@ h1, h2 {
   user-select: none;
 }
 h2 {
-  font-size: 1.6rem;
+  font-size: 1.85rem;
   text-decoration: .025rem underline @text;
   text-underline-offset: .25rem;
   text-align: center;
 
-  .margin-bottom(@space[small]);
+  .margin-bottom(@space[tiny]);
 }
 h3, h4, h5, h6 {
   color: @heading-3456;
+}
+h2, h3 {
+  font-family: @font[head];
+}
+h4 {
+  font-family: @font[title];
+  font-variation-settings: 
+               "SOFT" 100,
+                 "WONK" 1;
+}
+h5, h6, nav {
+  font-family: @font[nav];
+}
+h6 {
+  font-size: .8rem;
 }
 hr {
   color: @mentioned;
@@ -159,6 +177,10 @@ p {
   color: @text;
 
   .margin-horizontal(@space[none]);
+  
+  &.analysis {
+    .margin-bottom(@space[nano])
+  }
 }
 nav {
   a {
@@ -225,6 +247,8 @@ button {
 }
 div {
   &.title {
+    color: @strike;
+    font-family: @font[nav];
     cursor: not-allowed;
     user-select: none;
 
@@ -233,6 +257,9 @@ div {
   &.subtitle {
     &:extend(div.title);
     &:extend(nav a.subtitle);
+  }
+  &.strike {
+    text-decoration-line: line-through;
   }
 }
 dialog {
@@ -316,6 +343,7 @@ dialog {
     z-index: 0;
     overflow: hidden;
     color: @heading-12;
+    user-select: none;
 
     .padding-horizontal(@space[tiny]);
     .padding-vertical(@space[little]);
@@ -357,6 +385,7 @@ dialog {
     }
   }
   h5 {
+    &:extend(.h3 > h3);
     .nickname {
       font-size: .875rem;
       color: lighten(@mentioned, 5%);
@@ -377,6 +406,58 @@ dialog {
 img {
   width: 30rem;
   height: auto;
+}
+div.searchbox {
+  background-color: @content;
+  color: @text;
+  border: solid .025rem @heading-3456;
+  position: relative;
+  overflow: hidden;
+  justify-content: space-between;
+
+  .rounded(@radia[little]);
+  .margin-top(@space[tiny]);
+  .margin-bottom(@space[nano]);
+  .padding(@space[nano]);
+  .flex.row(nowrap);
+  div.searchbar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -10%;
+    left: @space[none];
+    background-color: @text;
+    height: 120%;
+    width: 15%;
+    .custom-corners(@radia[none], @radia[small], @radia[none], @radia[small]);
+  }
+  i {
+    color: @content;
+    background-color: transparent;
+    font-size: 1.25rem;
+  }
+  input.page-search {
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    font-family: @font[body];
+    font-size: 1rem;
+    color: inherit;
+
+    .margin(@space[none]);
+    .margin-left(7%);
+    .padding(@space[none]);
+
+    &::placeholder, &::-moz-placeholder {
+      color: hsla(@heading-12, .95);
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  @content: darken(@background, 2.5%);
+  @text: lighten(@heading-12, 10%);
 }
 //// --------
 //// LONE CLASSES
@@ -426,11 +507,13 @@ img {
 .synopsis {
   display: flex;
   justify-content: left;
+  position: relative;
+  top: -.25rem;
 
   .padding(@space[small]);
 
   h4 {
-    font-size: 1.025rem;
+    font-size: 1.05rem;
     width: 75%;
     font-style: italic;
     text-align: left;
@@ -462,6 +545,20 @@ img {
       color: @mentioned;
       font-size: 1.25;
       font-style: normal;
+    }
+  }
+  &.no {
+    h4 {
+      text-align: right !important;
+
+      &:extend(.synopsis h4);
+
+      &::before {
+        content: none!important;
+      }
+      &::after {
+        content: none!important;
+      }
     }
   }
 }
@@ -696,7 +793,7 @@ img {
   }
   .name {
     position: relative;
-    font-family: @font[heading];
+    font-family: @font[head];
     width: fit-content;
     text-align: center;
     justify-self: center;
@@ -756,6 +853,90 @@ img {
 }
 .fearSmall {
   display: none;
+}
+.name, .h3 > h3 {
+  font-family: @font[title]!important;
+}
+[tooltip] {
+  position: relative;
+  display: inline-block;
+}
+[tooltip]::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+   // border-width: 4px 6px 0 6px;
+    //border-style: solid;
+    //border-color: hsla(@border, .7) transparent transparent     transparent;
+    z-index: 99;
+    opacity: 0;
+    transition: @speed[4];
+}
+[tooltip-position='left']::before{
+  left: 0%;
+  top: 50%;
+  margin-left: -12px;
+  transform: translatey(-50%) rotate(-90deg);
+}
+[tooltip-position='top']::before{
+  left: 50%;
+}
+[tooltip-position='bottom']::before{
+  top: 100%;
+  transform: translateX(-50%) translatey(-100%) rotate(-180deg);
+  .margin-top(@space[tiny]);
+}
+[tooltip-position='right']::before{
+  left: 100%;
+  top: 50%;
+  margin-left: 1px;
+  transform: translatey(-50%) rotate(90deg);
+}
+[tooltip]::after {
+    content: attr(tooltip);
+    position: absolute;
+    left: 50%;
+    top: -.375rem;
+    transform: translateX(-50%)   translateY(-100%);
+    background-color: @background!important;
+    font-family: @font[title]!important;
+    text-align: center;
+    color: @text;
+    padding: .25rem .125rem;
+    font-size: .95rem;
+    min-width: 5rem;
+    pointer-events: none;
+    z-index: 99;
+    opacity: 0;
+    transition: @speed[3];
+    .rounded(@space[tiny]);
+    .padding(@space[little]);
+}
+[tooltip-position='left']::after{
+  left: 0%;
+  top: 50%;
+  margin-left: -8px;
+  transform: translateX(-100%)   translateY(-50%);
+}
+[tooltip-position='top']::after{
+  left: 50%;
+}
+[tooltip-position='bottom']::after{
+  top: 100%;
+  transform: translateX(-50%) translateY(0%);
+  .margin-top(@space[tiny]);
+}
+[tooltip-position='right']::after{
+  left: 100%;
+  top: 50%;
+  margin-left: 8px;
+  transform: translateX(0%)   translateY(-50%);
+}
+[tooltip]:hover::after,[tooltip]:hover::before {
+   opacity: 1;
+   transition: @speed[3];
 }
 //// ------------
 //// MEDIA QUERIES
@@ -856,12 +1037,15 @@ img {
       }
     }
   }
+  div.searchbox {
+    input.page-search {
+      .margin-left(5.5%);
+    }
+  }
 }
 @media only screen and (min-width: @min-bigmobile) and (max-width: @max-smalltablet) {
   h1 {
-    &:not(h2, h3, h4, h5, h6) {
-      font-size: 2.15rem;
-    }
+    font-size: 2.15rem;
   }
   h2 {
     font-size: 1.35rem;
@@ -984,13 +1168,16 @@ img {
       }
     }
   }
+  div.searchbox {
+    input.page-search {
+      .margin-left(5.5%);
+    }
+  }
 }
 @media only screen and (max-width: @max-bigmobile) {
   h1 {
-    &:not(h2, h3, h4, h5, h6) {
-      font-size: 1.5rem;
-      .margin-bottom(@space[tiny]);
-    }
+    font-size: 1.5rem;
+    .margin-bottom(@space[tiny]);
   }
   h2 {
     font-size: 1.15rem;
@@ -1134,6 +1321,24 @@ img {
         font-size: 1.025rem;
       }
     }
+  }
+  div.searchbox {
+    input.page-search {
+      .margin-left(5.5%);
+    }
+  }
+  [tooltip]::after {
+      content: attr(tooltip);
+      position: absolute;
+      left: 50%;
+      font-size: .75rem;
+      transition: @speed[3];
+      .rounded(@space[tiny]);
+      .padding(@space[tiny]);
+  }
+  [tooltip-position='left']::before{
+    left: 5%;
+    transform: translatey(-50%) rotate(-90deg);
   }
 }
 //// -------------

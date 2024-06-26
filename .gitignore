@@ -1,5 +1,6 @@
 Gemfile.lock
 _site
+Gemfile
 # ignore skeletons
 tma/mag/000.html
 tmagp/magp/000.html
@@ -7,6 +8,7 @@ tmagp/magp/000.html
 snippets/
 # unneeded
 less/themes.less
+less/global.less
 js/theme.js
 # ignore tmagp episodes i havent done yet
 # season one

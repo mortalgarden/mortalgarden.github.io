@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
     <meta charset="utf-8" />
     <title>the magnus archives</title>
-    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+      <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Grenze+Gotisch:wght@100..900&family=Platypi:ital,wght@0,300..800;1,300..800&family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap" rel="stylesheet">
       <!-- stylesheet -->
-    <link rel="stylesheet/less" type="text/css" href="../less/style.less">
+    <link rel="stylesheet/less" type="text/css" href="/less/style.less">
       <!-- LESS.js: lesscss.org -->
-    <script src="https://cdn.jsdelivr.net/npm/less" type="text/javascript"></script>
+    <script src="/framework/less.min.js" type="text/javascript"></script>
       <!-- ICONS: phosphoricons.com -->
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+      <link rel="stylesheet" type="text/css"
+      href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/duotone/style.css"/>
 </head>
 
 <body>
@@ -44,8 +49,8 @@
     <section>
       <h6>TMA</h6>
       <nav>
-          <div><a href="episodes" class="title">Episodes</a></div>
-          <div><a href="characters" class="title">Characters</a></div>
+          <div><a href="season/" class="title">Seasons</a></div>
+          <div><a href="cast/" class="title">Characters</a></div>
           <div><a href="fears" class="subtitle">Entities</a></div>
       </nav>
     </section>
@@ -55,17 +60,17 @@
     <section>
         <h6>the Magnus Archives.</h6>
         <nav>
-          <div><a href="episodes" class="title">Episodes</a></div>
+          <div class="title">Seasons</div>
           <div><a href="season/1" class="subtitle">Season One</a></div>
           <div><a href="season/2" class="subtitle">Season Two</a></div>
           <div><a href="season/3" class="subtitle">Season Three</a></div>
           <div><a href="season/4" class="subtitle">Season Four</a></div>
           <div><a href="season/5" class="subtitle">Season Five</a></div>
             <hr>
-          <div><a href="characters" class="title">Characters</a></div>
-          <div><a href="characters/institute" class="subtitle">Institute Employees</a></div>
-          <div><a href="characters/recurring" class="subtitle">Recurring</a></div>
-          <div><a href="characters/minor" class="subtitle">Other</a></div>
+          <div class="title">Characters</div>
+          <div><a href="cast/institute" class="subtitle">Institute Employees</a></div>
+          <div><a href="cast/recurring" class="subtitle">Recurring</a></div>
+          <div><a href="cast/minor" class="subtitle">Other</a></div>
             <hr>
           <div><a href="fears" class="title">Entities</a></div>
         </nav>
@@ -92,8 +97,8 @@
         <section>
           <h6>TMA</h6>
           <nav>
-              <div><a href="episodes" class="title">Episodes</a></div>
-              <div><a href="characters" class="title">Characters</a></div>
+              <div><a href="season/" class="title">Seasons</a></div>
+              <div><a href="cast/" class="title">Characters</a></div>
               <div><a href="fears" class="subtitle">Entities</a></div>
           </nav>
         </section>
@@ -102,17 +107,17 @@
         <section>
           <h6>the Magnus Archives.</h6>
           <nav>
-            <div><a href="episodes" class="title">Episodes</a></div>
+            <div class="title">Seasons</div>
             <div><a href="season/1" class="subtitle">Season One</a></div>
             <div><a href="season/2" class="subtitle">Season Two</a></div>
             <div><a href="season/3" class="subtitle">Season Three</a></div>
             <div><a href="season/4" class="subtitle">Season Four</a></div>
             <div><a href="season/5" class="subtitle">Season Five</a></div>
               <hr>
-            <div><a href="characters" class="title">Characters</a></div>
-            <div><a href="characters/institute" class="subtitle">Institute Employees</a></div>
-            <div><a href="characters/recurring" class="subtitle">Recurring</a></div>
-            <div><a href="characters/minor" class="subtitle">Other</a></div>
+            <div class="title">Characters</div>
+            <div><a href="cast/institute" class="subtitle">Institute Employees</a></div>
+            <div><a href="cast/recurring" class="subtitle">Recurring</a></div>
+            <div><a href="cast/minor" class="subtitle">Other</a></div>
               <hr>
             <div><a href="fears" class="title">Entities</a></div>
           </nav>
@@ -126,7 +131,7 @@
       </section>
       <section>
         <div id="Statement">
-          <h2>introduction</h2>
+          <h2>Introduction</h2>
         </div>
       </section>
       <section class="cluster">

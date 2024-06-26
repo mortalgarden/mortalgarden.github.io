@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html style="background-color: hsl(281, 46%, 14%);">
+<head>
+      <!-- general -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+    <meta charset="utf-8" />
+    <title>the magnus institute's personnel</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+      <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Grenze+Gotisch:wght@100..900&family=Platypi:ital,wght@0,300..800;1,300..800&family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap" rel="stylesheet">
+      <!-- stylesheet -->
+    <link rel="stylesheet/less" type="text/css" href="/less/style.less">
+      <!-- LESS.js: lesscss.org -->
+    <script src="/framework/less.min.js" type="text/javascript"></script>
+      <!-- ICONS: phosphoricons.com -->
+      <link rel="stylesheet" type="text/css"
+      href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/duotone/style.css"/>
+</head>
+
+<body>
+  <header>
+    <section class="site navbar toggle">
+      <button onclick="navSmallS()" id="btn-small-s">
+        <i class="ph-duotone ph-mask-sad" id="i-small-s"></i>
+      </button>
+    </section>
+
+    <section>
+      <h1>the magnus institute&rsquo;s personnel</h1>
+    </section>
+    
+    <section class="page navbar toggle">
+      <button onclick="navSmallP()" id="btn-small-p">
+        <i class="ph-duotone ph-eye" id="i-small-p"></i>
+      </button>
+    </section>
+  </header>
+  
+  <aside class="navbar bar site small" id="nav-small-s">
+    <section>
+      <nav>
+        <div><a href="/" class="title">Home</a></div>
+        <div><a href="../" class="subtitle">Magnus Archives</a></div>
+        <div><a href="/tmagp/" class="subtitle">Magnus Protocol</a></div>
+      </nav>
+    </section>
+    <section>
+      <h6>TMA</h6>
+      <nav>
+        <div><a href="../season/" class="title">Seasons</a></div>
+        <div class="subtitle">The Institute's Personnel</div>
+        <div><a href="recurring" class="subtitle">Recurring Characters</a></div>
+        <div><a href="minor" class="subtitle">Minor Characters</a></div>
+      </nav>
+    </section>
+  </aside>
+
+  <aside class="navbar bar page small" id="nav-small-p">
+    <section>
+        <h6></h6>
+        <nav>
+          <div><a href="#Employees" class="title">Employees</a></div>
+          <div><a href="#Major-Formers" class="subtitle">Major Former Employees</a></div>
+          <div><a href="#Former" class="subtitle">Former Employees</a></div>
+        </nav>
+    </section>
+  </aside>
+  <div id="navhelper"></div>
+
+  <!-- CHARACTER MODALS -->
+  <dialog id="JonathanSims">
+    <div class="modal">
+      <span class="h3"><h3>Jonathan <span class="nickname">Jon</span> Sims</h3></span>
+        <button class="close-modal" aria-label="Close modal" onclick="jonClose()">
+          <i class="ph-duotone ph-cpu"></i>
+        </button>
+    </div>
+  </dialog>
+  <dialog id="MartinBlackwood">
+    <div class="modal">
+      <span class="h3"><h3>Martin Blackwood</h3></span>
+        <button class="close-modal" aria-label="Close modal" onclick="martinClose()">
+          <i class="ph-duotone ph-cpu"></i>
+        </button>
+    </div>
+  </dialog>
+  <dialog id="EliasBouchard">
+    <div class="modal">
+      <span class="h3"><h3>Elias Bouchard</h3></span>
+        <button class="close-modal" aria-label="Close modal" onclick="eliasClose()">
+          <i class="ph-duotone ph-cpu"></i>
+        </button>
+    </div>
+  </dialog>
+  <dialog id="JonahMagnus">
+    <div class="modal">
+      <span class="h3"><h3>Jonah Magnus</h3></span>
+        <button class="close-modal" aria-label="Close modal" onclick="magnusClose()">
+          <i class="ph-duotone ph-cpu"></i>
+        </button>
+    </div>
+  </dialog>
+  <!-- //////////////// -->
+  <!-- MAIN PAGE -->
+  <main>
+    <aside>
+      <div class="site navbar toggle" id="btn-div-s">
+        <button onclick="navBigS()" id="btn-big-s">
+          <i class="ph-duotone ph-mask-sad" id="i-big-s"></i>
+        </button>
+      </div>
+      
+      <aside class="navbar bar site big" id="nav-big-s">
+        <section>
+          <nav>
+              <div><a href="/" class="title">Home</a></div>
+              <div><a href="../" class="subtitle">Magnus Archives</a></div>
+              <div><a href="/tmagp/" class="subtitle">Magnus Protocol</a></div>
+          </nav>
+        </section>
+        <section>
+          <h6>TMA</h6>
+          <nav>
+              <div><a href="../season/" class="title">Seasons</a></div>
+              <div class="subtitle">The Institute's Personnel</div>
+              <div><a href="recurring" class="subtitle">Recurring Characters</a></div>
+              <div><a href="minor" class="subtitle">Minor Characters</a></div>
+          </nav>
+        </section>
+      </aside>
+      <aside class="navbar bar big page" id="nav-big-p">
+        <section>
+          <h6></h6>
+          <nav>
+            <div><a href="#Employees" class="title">Employees</a></div>
+            <div><a href="#Major-Formers" class="subtitle">Major Former Employees</a></div>
+            <div><a href="#Former" class="subtitle">Former Employees</a></div>
+          </nav>
+        </section>
+      </aside>
+    </aside>
+
+    <article>
+      <section class="synopsis">
+        <h4>Audio. Opperior. Vigilo.</h4>
+      </section>
+      <section>
+        <div id="Employees">
+          <h2>Employees</h2>
+        </div>
+      </section>
+      <section class="cardsel">
+        <div class="cardwrap">
+          <div class="cards">
+            <div class="cards-item">
+              <div class="card">
+                <button onclick="jonShow()">
+                  <div class="card-content">
+                    <div class="card-text">
+                      <span class="names"><p class="name">Jonathan Sims</p></span>
+                      <p class="ds">the Archive<span class="hsh">-/-</span>he/him</p>
+                        <hr>
+                      <p class="lm">learn more.</p>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardwrap">
+          <div class="cards">
+            <div class="cards-item">
+              <div class="card">
+                <button onclick="martinShow()">
+                  <div class="card-content">
+                    <div class="card-text">
+                      <span class="names"><p class="name">Martin Blackwood</p></span>
+                      <p class="ds">Archival assistant<span class="hsh">-/-</span>he/him</p>
+                        <hr>
+                      <p class="lm">learn more.</p>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardwrap">
+          <div class="cards">
+            <div class="cards-item">
+              <div class="card">
+                <button onclick="eliasShow()">
+                  <div class="card-content">
+                    <div class="card-text">
+                      <span class="names"><p class="name">Elias Bouchard</p></span>
+                      <p class="ds">Head of Institute<span class="hsh">-/-</span>he/him</p>
+                        <hr>
+                      <p class="lm">learn more.</p>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardwrap">
+          <div class="cards">
+            <div class="cards-item">
+              <div class="card">
+                <button onclick="magnusShow()">
+                  <div class="card-content">
+                    <div class="card-text">
+                      <span class="names"><p class="name">Jonah Magnus</p></span>
+                      <p class="ds">the Heart & Founder<span class="hsh">-/-</span>he/him</p>
+                        <hr>
+                      <p class="lm">learn more.</p>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardwrap">
+          <div class="cards">
+            <div class="cards-item">
+              <div class="card">
+                <button onclick="daisyShow()">
+                  <div class="card-content">
+                    <div class="card-text">
+                      <span class="names"><p class="name">Alice Tonner</p></span>
+                      <p class="ds">Archival assistant<span class="hsh">-/-</span>she/her</p>
+                        <hr>
+                      <p class="lm">learn more.</p>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardwrap">
+          <div class="cards">
+            <div class="cards-item">
+              <div class="card">
+                <button onclick="basiraShow()">
+                  <div class="card-content">
+                    <div class="card-text">
+                      <span class="names"><p class="name">Basira Hussain</p></span>
+                      <p class="ds">Archival assistant<span class="hsh">-/-</span>she/her</p>
+                        <hr>
+                      <p class="lm">learn more.</p>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div id="Major-Formers">
+          <h2>Major Former Employees</h2>
+        </div>
+      </section>
+      <section class="cardsel">
+        <div class="cardwrap">
+          <div class="cards">
+            <div class="cards-item">
+              <div class="card">
+                <button onclick="timShow()">
+                  <div class="card-content">
+                    <div class="card-text">
+                      <span class="names"><p class="name">Timothy Stoker</p></span>
+                      <p class="ds">Archival assistant<span class="hsh">-/-</span>he/him</p>
+                        <hr>
+                      <p class="lm">learn more.</p>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardwrap">
+          <div class="cards">
+            <div class="cards-item">
+              <div class="card">
+                <button onclick="sashaShow()">
+                  <div class="card-content">
+                    <div class="card-text">
+                      <span class="names"><p class="name">Sasha James</p></span>
+                      <p class="ds">Archival assistant<span class="hsh">-/-</span>she/her</p>
+                        <hr>
+                      <p class="lm">learn more.</p>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardwrap">
+          <div class="cards">
+            <div class="cards-item">
+              <div class="card">
+                <button onclick="gertrudeShow()">
+                  <div class="card-content">
+                    <div class="card-text">
+                      <span class="names"><p class="name">Gertrude Robinson</p></span>
+                      <p class="ds">Archivist<span class="hsh">-/-</span>she/her</p>
+                        <hr>
+                      <p class="lm">learn more.</p>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardwrap">
+          <div class="cards">
+            <div class="cards-item">
+              <div class="card">
+                <button onclick="shelleyShow()">
+                  <div class="card-content">
+                    <div class="card-text">
+                      <span class="names"><p class="name">Michael Shelley</p></span>
+                      <p class="ds">Archival assistant<span class="hsh">-/-</span>he/him</p>
+                        <hr>
+                      <p class="lm">learn more.</p>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div id="Former">
+          <h2>Former Employees</h2>
+        </div>
+      </section>
+      <section class="cardsel">
+        <div class="cardwrap">
+          <div class="cards">
+            <div class="cards-item">
+              <div class="card">
+                <button onclick="delanoShow()">
+                  <div class="card-content">
+                    <div class="card-text">
+                      <span class="names"><p class="name">Eric Delano</p></span>
+                      <p class="ds">Archival assistant<span class="hsh">-/-</span>he/him</p>
+                        <hr>
+                      <p class="lm">learn more.</p>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="quote">
+        <h4>Make your statement, face your fear.</h4>
+      </section>
+    </article>
+  </main>
+
+  <script src="/js/global.js"></script>
+  <script src="/js/modalTMA.js"></script>
+</body>
+</html>
