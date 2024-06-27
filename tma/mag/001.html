@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html style="background-color: hsl(281, 46%, 14%);">
+<head>
+      <!-- general -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+    <meta charset="utf-8" />
+    <title>MAG001: Angler Fish</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+      <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Grenze+Gotisch:wght@100..900&family=Platypi:ital,wght@0,300..800;1,300..800&family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap" rel="stylesheet">
+      <!-- stylesheet -->
+    <link rel="stylesheet/less" type="text/css" href="/less/style.less">
+      <!-- LESS.js: lesscss.org -->
+    <script src="/framework/less.min.js" type="text/javascript"></script>
+      <!-- ICONS: phosphoricons.com -->
+      <link rel="stylesheet" type="text/css"
+      href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/duotone/style.css"/>
+</head>
+
+<body>
+  <header>
+    <section class="site navbar toggle">
+      <button onclick="navSmallS()" id="btn-small-s">
+        <i class="ph-duotone ph-mask-sad" id="i-small-s"></i>
+      </button>
+    </section>
+
+    <section>
+      <h1>mag<span class="nmbr">001</span>: Angler Fish</h1>
+    </section>
+    
+    <section class="page navbar toggle">
+      <button onclick="navSmallP()" id="btn-small-p">
+        <i class="ph-duotone ph-eye" id="i-small-p"></i>
+      </button>
+    </section>
+  </header>
+  
+  <aside class="navbar bar site small" id="nav-small-s">
+    <section>
+      <nav>
+        <div><a href="/" class="title">Home</a></div>
+        <div><a href="/tma/" class="subtitle">Magnus Archives</a></div>
+        <div><a href="../" class="subtitle">Magnus Protocol</a></div>
+      </nav>
+    </section>
+    <section>
+      <h6>TMA</h6>
+      <nav>
+        <div><a href="tma/season" class="title">Seasons</a></div>
+        <div><a href="tma/cast/" class="title">Characters</a></div>
+        <div class="subtitle"><s>Next Episode</s> Coming soon!</div>
+        <!--<div><a href="002" class="subtitle">Next Episode</a></div>-->
+      </nav>
+    </section>
+    <section class="legend">
+      <div>Legend</div>
+      <div>
+        <key-m>Mentioned only</key-m>. <key-i>Important</key-i>.
+      </div>
+    </section>
+  </aside>
+
+  <aside class="navbar bar page small" id="nav-small-p">
+    <section>
+      <h6>mag<span class="nmbr">001</span>: Angler Fish</h6>
+      <nav>
+        <div><a href="#Statement" class="title">The Statement</a></div>
+        <div><a href="#Statement-Summary" class="subtitle">Statement Summary</a></div>
+        <div><a href="#Statement-Entity" class="subtitle">Entity Influence</a></div>
+        <div><a href="#Statement-Assessment" class="subtitle">Archival Assessment</a></div>
+        <div><a href="#Statement-Significant" class="subtitle">Of Significance</a></div>
+          <hr>
+        <div><a href="#Not-Statement" class="title">Non-Statement</a></div>
+        <div><a href="#Event-Summary" class="subtitle">Event Summary</a></div>
+        <div><a href="#Significant" class="subtitle">Of Significance</a></div>
+      </nav>
+    </section>
+  </aside>
+  <div id="navhelper"></div>
+
+  <main>
+    <aside>
+      <div class="site navbar toggle" id="btn-div-s">
+        <button onclick="navBigS()" id="btn-big-s">
+          <i class="ph-duotone ph-mask-sad" id="i-big-s"></i>
+        </button>
+      </div>
+      
+      <aside class="navbar bar site big" id="nav-big-s">
+        <section>
+          <nav>
+              <div><a href="/" class="title">Home</a></div>
+              <div><a href="/tma/" class="subtitle">Magnus Archives</a></div>
+              <div><a href="../" class="subtitle">Magnus Protocol</a></div>
+          </nav>
+        </section>
+        <section>
+          <h6>TMA</h6>
+          <nav>
+              <div><a href="../season" class="title">Seasons</a></div>
+              <div><a href="../cast/" class="title">Characters</a></div>
+              <div class="subtitle"><s>Next Episode</s> Not yet!</div>
+              <!--<div><a href="002" class="subtitle">Next Episode</a></div>-->
+          </nav>
+        </section>
+      </aside>
+      <aside class="navbar bar big page" id="nav-big-p">
+        <section>
+          <h6>mag<span class="nmbr">001</span>: Angler Fish</h6>
+          <nav>
+            <div><a href="#Statement" class="title">The Statement</a></div>
+            <div><a href="#Statement-Summary" class="subtitle">Statement Summary</a></div>
+            <div><a href="#Statement-Entity" class="subtitle">Entity Influence</a></div>
+            <div><a href="#Statement-Assessment" class="subtitle">Archival Assessment</a></div>
+            <div><a href="#Statement-Significant" class="subtitle">Of Significance</a></div>
+              <hr>
+            <div><a href="#Not-Statement" class="title">Non-Statement</a></div>
+            <div><a href="#Event-Summary" class="subtitle">Event Summary</a></div>
+            <div><a href="#Significant" class="subtitle">Of Significance</a></div>
+          </nav>
+        </section>
+        <section class="legend">
+          <div>Legend</div>
+          <div>
+            <key-m>Mentioned only</key-m>. <key-i>Important</key-i>.
+          </div>
+        </section>
+      </aside>
+    </aside>
+
+    <article>
+      <section class="synopsis">
+        <h4>Statement of Nathan Watts, regarding an encounter on Old Fishmarket Close, Edinburgh.</h4>
+      </section>
+      <section>
+        <div id="Statement">
+          <h2>
+            <span tooltip="Statement Begins" tooltip-position="bottom">
+             Statement Begins
+            </span>
+          </h2>
+        </div>
+      </section>
+      <section class="cluster">
+        <div class="pair">
+          <h3 class="prompt">
+            <span tooltip="Case File" tooltip-position="right">
+              case file:
+            </span>
+          </h3>
+          <p>
+            #0122204
+          </p>
+        </div>
+        <div class="pair">
+          <h3 class="prompt">
+            <span tooltip="Statement Of" tooltip-position="right">
+              statement of:
+            </span>
+          </h3>
+          <p>
+            Nathan Watts.
+          </p>
+        </div>
+        <div class="pair">
+          <h3 class="prompt">
+            <span tooltip="Reader" tooltip-position="right">
+              reader:
+            </span>
+          </h3>
+          <p>
+            Jonathan Sims.
+          </p>
+        </div>
+      </section>
+      <section class="cluster">
+        <div class="pair">
+          <h3 class="prompt">
+            <span tooltip="Appearances" tooltip-position="right">
+              appearances:
+            </span>
+          </h3>
+          <p>
+            <key-i>The Angler Fish</key-i>. Nathan Watts. <key-m>Michael MacAulay</key-m>. <key-m>John Fellowes</key-m>.
+          </p>
+        </div>
+        <div class="pair">
+          <h3 class="prompt">
+            <span tooltip="Locations" tooltip-position="right">
+              locations:
+            </span>
+          </h3>
+          <p>
+            <key-m>University of Edinburgh</key-m>. <key-m>The Albanach</key-m>. Old Fishmarket Close.
+          </p>
+        </div>
+      </section>
+      <section class="cluster">
+        <div id="Statement-Summary">
+          <h3 class="prompt">
+            <span tooltip="Statement Summarized" tooltip-position="right">
+              statement summarized:
+            </span>
+          </h3>
+          <div class="analysis">
+            <p class="analysis">
+              Within his statement, <b>Nathan Watts</b> starts off with what will soon become statement-typical exposition, adding details for context; Once that's finished, he begins to get into it. Watts had gotten too drunk at a party he and some peers were throwing to celebrate a friend, <b>Michael MacAulay's,</b> achievements. He had drank so much he felt sick, and decided to leave the Albanach&#8205;&#8212;the local pub the party took place at&#8205;&#8212;which is about a half hour walk walk from his flat; Whilst drunkenly walking, he tripped on the narrow streets of <b>Old Fishmarket Close.</b> Shaken up from the fall, he had decided to stop for a quick smoke to calm his nerves. In a dark, narrow alleyway&#8205;&#8212;opposite of where Watts had stood&#8205;&#8212;with no source of light aside from a single fixture placed near the very entrance, <b>he heard a voice, uttering: &ldquo;Can I have a cigarette?&rdquo;</b> There was a figure, swaying ever so slightly, atop a short stairway which lead up, which startled Nathan out of his lone thoughts. Once he had lit his own cigarette, he offered his tobacco out to the figure without approaching. They flatly asked it again, &ldquo;Can I have a cigarette?&rdquo; <b>This was when he noticed the figures face lacked any expression</b> and that their skin looked <b>sunken, almost sickly; Their swaying had also become more pronounced.</b> He held the now-rolled cigarette in their direction, but did not approach.
+            </p>
+            <p class="analysis">
+              <b>It was at this point he had thought of anglerfish&#8205;&#8212;</b>a creature that lures their prey in with a dangling light, one which obscured the danger waiting within the shadows. He was asked one last time, &ldquo;Can I have a cigarette?&rdquo; It was this time he noticed the figure he had thought was speaking to him was not moving their mouth when they spoke; concluding that it was something else asking the question. Not only that, but he also noted how their feet were not touching the ground. As if it were being dangled to lure him in. Watts attempted to shine his phones flashlight on the figure, but before he could, it seemingly folded away. When he tried to investigate the spot the next day, he found nothing of note&#8205;&#8212;that is, <b>except a Marlboro Red cigarette, unsmoked, on the ground below the burned out light fixture.</b> The following week, Watts saw missing persons posters being put up for one of his peers, John Fellowes; He had been at the same party as Nathan, and was still there when he left. <b>The most striking detail to Nathan, though, was that in the pictures used of John Fellowes on the missing poster, there was a pack of Marlboro Red cigarettes in his pocket.</b>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="cluster">
+        <div id="Statement-Entity">
+          <h3 class="prompt">
+            <span tooltip="Entity Influence" tooltip-position="right">
+              entity influence:
+            </span>
+          </h3>
+          <div class="analysis">
+            <p class="analysis">
+              <b>The Stranger.</b> Not only are the Angler Fish servants of I Do Not Know You, but this episode, well, aside from being the first statement, when the Fears aren't as narratively developed, aligns with many themes of the Stranger; an unknown threat hiding, waiting for you to let your guard down, and a general, eerie feeling of something being &ldquo;off&rdquo;.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="cluster">
+        <div id="Statement-Assessment">
+          <h3 class="prompt">
+            <span tooltip="Archival Assessment" tooltip-position="right">
+              archival assessment:
+            </span>
+          </h3>
+          <div class="analysis">
+            <p class="analysis">
+              Jon mentions how the investigation at the time the statement was made, and the follow-up the Archival team have done the past few days, show no evidence supporting Watts&rsquo; account. He mentions creating a &ldquo;Discredited&rdquo; section of the Archive, of which he was planning to place this statement in, but mentions how <b>Sasha</b> found police reports from 2005&ndash;2010, around the same time-frame where the events in Nathan Watts&rsquo; statement took place, about disappearances in&mdash;and around the general area of&mdash;the Old Fishmarket Close. The disappearances being: <b>Jessica McEwen,</b> <i>Nov. 2005</i>; <b>Sarah Baldwin,</b> <i>Aug. 2006</i>; <b>Daniel Rawlings,</b> <i>Dec. 2006</i>; <b>Ashley Dobson,</b> <i>May 2008</i>; <b>Megan Shaw,</b> <i>Jun. 2008</i>; and, as Watts said in his statement, John Fellowes <i>Mar. 2010</i>; All of which remain unsolved.
+            </p>
+            <p class="analysis">
+              Something else Sasha found was a copy of the last picture taken by Ashley Dobson&rsquo;s phone that has a caption on it, saying &ldquo;check out this drunk creeper lol,&rdquo; the picture being of the alleyway described in Watts&rsquo; statement, with what appears to be no one in it. Though, Sasha put the image in a photo editing program and messed with the contrast level, which indeed shows an outline of a long, thin hand, in the shadows.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="cluster">
+        <div id="Statement-Significant">
+          <h3 class="prompt">
+            <span tooltip="Of Significance" tooltip-position="right">
+              of significance:
+            </span>
+          </h3>
+          <div class="analysis">
+            <p class="analysis">
+              The Angler Fish; while not important in the whole narrative of the podcast, it is the first we see of an Entities servants. Something to note is Jon&rsquo;s instinct to, well, discredit these statements; this is behavior that will repeat for some time.
+            </p>
+            <p class="analysis">
+              In the assessment, Jon mentioned names of some characters who are bound to return in further statements: Sarah Baldwin, and Daniel Rawlings, both of whom play minor roles.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div id="Not-Statement">
+          <h2>
+            <span tooltip="Statement Ends" tooltip-position="bottom">
+             Statement Ends
+            </span>
+          </h2>
+        </div>
+      </section>
+      <section class="cluster">
+        <div class="pair">
+          <h3 class="prompt">
+            <span tooltip="Appearances" tooltip-position="right">
+              appearances:
+            </span>
+          </h3>
+          <p>
+            Jonathan Sims.
+          </p>
+        </div>
+        <div class="pair">
+          <h3 class="prompt">
+            <span tooltip="Locations" tooltip-position="right">
+              locations:
+            </span>
+          </h3>
+          <p>
+            The Magnus Institute&rsquo;s Archive.
+          </p>
+        </div>
+      </section>
+      <section class="cluster">
+        <div id="Event-Summary">
+          <h3 class="prompt">
+            <span tooltip="Events Summarized" tooltip-position="right">
+              events summarized:
+            </span>
+          </h3>
+          <p class="analysis">
+            As it's his first day working as Head Archivist, Jon simply introduces himself and gives some exposition to the world of The Magnus Archives. He became Head Archivist of The Magnus Institute, London, since his predescessor, <b>Gertrude Robinson,</b> recently died. Prior to this, Jon was working in the Research department of the Institute for the past four years. He mentions how most cases reach dead-ends due to their supernatural nature, and how they &ldquo;tend to resist easy conclusions.&rdquo; When an investigation goes as far as it can, it gets transferred to the Archives. He continues with complaints about how much of a mess the Archives are, and how Gertrude must've not been a very good archivist.
+          </p>
+          <p class="analysis">
+            After he lays out all the gripes he has with the current state of the Archive, Jon mentions how he brought on three researchers to assist him in the Archive; <b>Timothy Stoker,</b> <b>Sasha James,</b> and <b>Martin Blackwood.</b> He hesitates on admitting it's three, though, as he really does not like Martin. Those three will generally assist with organization, as well as supplementary investigations. That aside, Jon goes on to mention his plans to digitise all the files, as well as provide audio versions for them, <b>noting there are statements that are seemingly prone to audio distortion which will have to be recorded using tape recorder.</b>
+          </p>
+        </div>
+      </section>
+      <section class="cluster">
+        <div id="Significant">
+          <h3 class="prompt">
+            <span tooltip="Of Significance" tooltip-position="right">
+              of significance:
+            </span>
+          </h3>
+          <p class="analysis">
+            Nothing too outstanding, aside from simple building blocks for things we learn the true reasoning behind later on (Gertrude's death, audio distortions).
+          </p>
+        </div>
+      </section>
+      <section class="quote">
+        <h4>Can I have a cigarette?</h4>
+      </section>
+    </article>
+  </main>
+
+  <script src="/js/global.js"></script>
+  <script src="/js/definelement.js"></script>
+</body>
+</html>
