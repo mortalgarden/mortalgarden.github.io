@@ -1,0 +1,208 @@
+// out: ${workspaceFolder}/css/chart.css
+@import url(variables);
+
+svg.fears {
+  g[fear] {
+    circle, circle#EntityCircle {
+      fill: desaturate(@background, 15%);
+      stroke: @contentshadow;
+    }
+    text, text#EntityThe {
+      fill: @text;
+      font: bold .925rem @font[head];
+      user-select: none;
+    }
+    use {
+      &[href="#EntityCircle"] {
+        &:extend(svg.fears g[fear] circle);
+      }
+      &[href="#EntityThe"] {
+        &:extend(svg.fears g[fear] text);
+      }
+    }
+  }
+  svg#ThemeStar > g {
+    &[theme="inevitability abstract"] {
+      &:extend([theme="inevitability abstract"]);
+    }
+    &[theme="inevitability concrete"] {
+      &:extend([theme="inevitability concrete"]);
+    }
+    &[theme="intimacy invasive"] {
+      &:extend([theme="intimacy invasive"]);
+    }
+    &[theme="intimacy lack-thereof"] {
+      &:extend([theme="intimacy lack-thereof"]);
+    }
+    &[theme="things-lurk"] {
+      &:extend([theme="things-lurk"]);
+    }
+    &[theme="inherent-flaw"] {
+      &:extend([theme="inherent-flaw"]);
+    }
+    &[theme="oppressive-systems"] {
+      &:extend([theme="oppressive-systems"]);
+    }
+    &[theme="visible-threat"] {
+      &:extend([theme="visible threat"]);
+    }
+    &[theme="instability"] {
+      &:extend([theme="instability"]);
+    }
+    &[theme="mutilation"] {
+      &:extend([theme="mutilation"]);
+    }
+    &[theme="guilt"] {
+      &:extend([theme="guilt"]);
+    }
+    &[theme="natural-forces"] {
+      &:extend([theme="natural-forces"]);
+    }
+    &[theme="stagnance"] {
+      &:extend([theme="stagnance"]);
+    }
+    & > path {
+      fill: inherit;
+      stroke: inherit;
+    }
+  }
+  g[theme]:not(> .connector) {
+    &:extend(svg.fears svg#ThemeStar > g);
+    & > line {
+      &:extend(svg.fears svg#ThemeStar > g > path);
+    }
+    use {
+      &:extend(svg.fears svg#ThemeStar > g);
+    }
+  }
+}
+[theme="intimacy invasive"] {
+  fill: darken(@themes[@intmcy][y], 25%);
+  stroke: @themes[@intmcy][y];
+  .connector & {
+    & > line {
+      fill: none;
+      stroke: darken(@themes[@intmcy][y], 25%);
+    }
+  }
+}
+[theme="things-lurk"] {
+  fill: darken(@themes[lurk], 15%);
+  stroke: @themes[lurk];
+  .connector & {
+    & > line {
+      fill: none;
+      stroke: darken(@themes[lurk], 15%);
+    }
+  }
+}
+[theme="inherent-flaw"] {
+  fill: darken(@themes[flaw], 25%);
+  stroke: @themes[flaw];
+  .connector & {
+    & > line {
+      fill: none;
+      stroke: darken(@themes[flaw], 25%);
+    }
+  }
+}
+[theme="inevitability abstract"] {
+  fill: darken(@themes[@invtbl][a], 20%);
+  stroke: @themes[@invtbl][a];
+  .connector & {
+    & > line {
+      fill: none;
+      stroke: darken(@themes[@invtbl][a], 20%);
+    }
+  }
+}
+[theme="intimacy lack-thereof"] {
+  fill: darken(@themes[@intmcy][n], 30%);
+  stroke: @themes[@intmcy][n];
+  .connector & {
+    & > line {
+      fill: none;
+      stroke: darken(@themes[@intmcy][n], 30%);
+    }
+  }
+}
+[theme="stagnance"] {
+  fill: darken(@themes[stagnant], 30%);
+  stroke: @themes[stagnant];
+  .connector & {
+    & > line {
+      fill: none;
+      stroke: darken(@themes[stagnant], 30%);
+    }
+  }
+}
+[theme="guilt"] {
+  fill: darken(@themes[guilt], 20%);
+  stroke: @themes[guilt];
+  .connector & {
+    & > line {
+      fill: none;
+      stroke: darken(@themes[guilt], 20%);
+    }
+  }
+}
+[theme="inevitability concrete"] {
+  fill: darken(@themes[@invtbl][c], 30%);
+  stroke: @themes[@invtbl][c];
+  .connector & {
+    & > line {
+      fill: none;
+      stroke: darken(@themes[@invtbl][c], 30%);
+    }
+  }
+}
+[theme="instability"] {
+  fill: darken(@themes[instability], 30%);
+  stroke: @themes[instability];
+  .connector & {
+    & > line {
+      fill: none;
+      stroke: darken(@themes[instability], 30%);
+    }
+  }
+}
+[theme="oppressive-systems"] {
+  fill: darken(@themes[oppressive], 30%);
+  stroke: @themes[oppressive];
+  .connector & {
+    & > line {
+      fill: none;
+      stroke: darken(@themes[oppressive], 30%);
+    }
+  }
+}
+[theme="natural-forces"] {
+  fill: darken(@themes[nature], 20%);
+  stroke: @themes[nature];
+  .connector & {
+    & > line {
+      fill: none;
+      stroke: darken(@themes[nature], 20%);
+    }
+  }
+}
+[theme="visible-threat"] {
+  fill: darken(@themes[threat], 20%);
+  stroke: @themes[threat];
+  .connector & {
+    & > line {
+      fill: none;
+      stroke: darken(@themes[threat], 20%);
+    }
+  }
+}
+[theme="mutilation"] {
+  fill: darken(@themes[mutilation], 10%);
+  stroke: @themes[mutilation];
+  .connector & {
+    & > line {
+      fill: none;
+      stroke: darken(@themes[mutilation], 10%);
+    }
+  }
+}

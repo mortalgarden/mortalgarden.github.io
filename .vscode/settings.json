@@ -1,0 +1,8 @@
+{
+  "less.compile": {
+    "main": ["style.less", "chart.less"],
+    "out": "${workspaceFolder}/css/",
+    "relativeUrls": true,
+    "compress": true
+  }
+}

@@ -1,0 +1,226 @@
+@import url(mixins.less);
+@import url(variables.less);
+
+html {
+  font-size: 16px;
+  background-color: @background;
+}
+body {
+  font-family: @font[body];
+  font-size: 1rem;
+  font-weight: 500;
+  width: 93vw;
+  scrollbar-gutter: stable both-edges;
+              #padding.four(1.25rem, 1.25rem, 1.25rem, 1.75rem);
+  & > section > h1 {
+    text-align: end;
+              #margin.two(0, 1rem);
+  }
+  &.open-modal {
+    overflow: hidden!important;
+  }
+}
+// containing elements
+header {
+  align-items: last baseline;
+  justify-content: right;
+              .flex(row, nowrap); 
+              #margin.two(0, 1.5rem);
+}
+main {
+  gap: 1.5rem;
+              .flex(row, nowrap);
+              #margin.bottom(1rem);
+}
+aside > section, 
+aside section + section, 
+article {
+  background-color: @content;
+  color: @text;
+  box-shadow: 
+        0px 5px fade(@contentshadow, 40%), 
+        0px 10px fade(@contentshadow, 30%), 
+        0px 15px fade(@contentshadow, 20%), 
+        0px 20px  fade(@contentshadow, 10%), 
+        0px 25px fade(@contentshadow, 5%);
+  border: solid @border .15rem;
+              #radius.one(.75rem);
+}
+aside {
+  flex-basis: 20%;
+  gap: 1.25rem;
+  position: sticky;
+  top: 1.5rem;
+  height: 100%;
+              .flex(column, nowrap);
+  & > section, section + section {
+    text-align: center;
+              #padding.one(1.25rem);
+  }
+  h6 {
+    user-select: none;
+  }
+}
+article {
+  flex-basis: 80%;
+              .flex(column, nowrap);
+              #padding.one(1.5rem);
+}
+nav {
+  a {
+    text-decoration: none;
+    user-select: none;
+  }
+}
+// headings
+h1 {
+  font-size: 2.75rem;
+  text-transform: lowercase;
+  z-index: 99;
+  position: relative;
+  top: 1.25rem;
+              #margin.one(0rem);
+}
+h2 {
+  font-size: 1.85rem;
+  text-decoration: .025rem underline @text;
+  text-underline-offset: .25rem;
+  text-align: center;
+              #margin.bottom(.5rem);
+}
+h6 {
+  font-size: .8rem;
+}
+h1, h4 {
+  font-family: @font[title];
+  font-variation-settings: 
+               "SOFT" 100,
+                 "WONK" 1;
+}
+h1, h2 {
+  color: @heading-12;
+  user-select: none;
+}
+h2, h3 {
+  font-family: @font[head];
+}
+h2, h3, h4, h5, h6 {
+  font-variant: small-caps;
+  cursor: default;
+              #margin.one(0rem);
+}
+h3, h4, h5, h6 {
+  color: @heading-3456;
+}
+h5, h6, nav {
+  font-family: @font[nav];
+}
+// other text
+p {
+  color: @text;
+              #margin.one(0rem);
+}
+a {
+  color: @link;
+  text-decoration: solid .5rem @link;
+  transition-duration: .1s;
+  &:hover {
+    color: @hover;
+    cursor: pointer;
+    transition-duration: .1s;
+  }
+  &:active {
+    color: @active;
+    transition-duration: .1s;
+  }
+}
+b {
+  color: @bold;
+}
+i:not(button > i) {
+  color: @italic;
+}
+// buttons
+button {
+  color: @link;
+  border: none;
+  font-size: 2rem;
+  background-color: transparent;
+  transition-duration: .2s;
+  &:hover {
+    color: @hover;
+    cursor: pointer;
+    transition-duration: .1s;
+  }
+}
+// dividers
+hr {
+  color: @mentioned;
+  border-style: dashed;
+  width: 85%;
+              #padding.two(0, 1rem);
+}
+// dialog modal
+dialog {
+  color: @link;
+  background-color: @background;
+  border: solid .075rem @link;
+  width: 50%;
+  height: 75%;
+  overflow: hidden;
+  box-shadow: 
+      0px 5px fade(@contentshadow, 40%), 
+      0px 10px fade(@contentshadow, 30%), 
+      0px 15px fade(@contentshadow, 20%), 
+      0px 20px  fade(@contentshadow, 10%), 
+      0px 25px fade(@contentshadow, 5%);
+              #radius.one(.75rem);
+              #padding.one(.5rem);
+  &[open] {
+    animation: fadein .75s ease-in-out normal;
+  }
+  &[open]::backdrop {
+    animation: bg-in 1.5s ease-in-out normal;
+  }
+  button {
+    background-color: @content;
+    border: .125rem dotted @mentioned;
+    width: 3rem;
+    height: 3rem;
+    box-shadow: 
+        0px 2.5px fade(@contentshadow, 25%), 
+        0px 5px fade(@contentshadow, 15%);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+                #radius.four(0rem, 0rem, 1.5rem, 0rem);
+                #padding.one(.25rem);
+    &:hover {
+      background-color: @content;
+      transform: scale(1.025);
+      box-shadow: 
+          0px 2.5px fade(@contentshadow, 40%), 
+          0px 5px fade(@contentshadow, 30%);
+    }
+    & > i {
+      font-size: 1.5rem;
+    }
+    @link: @text;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+// images
+img {
+  width: 30rem;
+  height: auto;
+}
+// etc
+::selection {
+  color: @text;
+  background-color: @content;
+
+  @text: darken(@mentioned, 40%);
+  @content: desaturate(fade(lighten(@background, 25%), 75%), 15%);
+}

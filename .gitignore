@@ -7,9 +7,12 @@ tmagp/magp/000.html
 # ignore convinience snippets
 snippets/
 # unneeded
-less/themes.less
-less/global.less
 js/theme.js
+# temporary until fixed
+chart.html
+tma/fears.html
+less/chart.less
+css/chart.css
 # ignore tmagp episodes i havent done yet
 # season one
 tmagp/magp/001.html
@@ -32,9 +35,9 @@ tmagp/magp/017.html
 tmagp/magp/018.html
 tmagp/magp/019.html
 tmagp/magp/020.html
-# episodes that haven't come out yet
 tmagp/magp/021.html
 tmagp/magp/022.html
+# episodes that haven't come out yet
 tmagp/magp/023.html
 tmagp/magp/024.html
 tmagp/magp/025.html

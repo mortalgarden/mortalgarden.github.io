@@ -1,0 +1,502 @@
+@media @max[991] {
+  header {
+    justify-content: space-between;
+                #margin.two(auto, .5rem);
+  }
+  main {
+    justify-content: center;
+  }
+  aside > section, aside section + section {
+    box-shadow: 
+        5px 5px fade(@contentshadow, 40%), 
+        10px 10px fade(@contentshadow, 30%), 
+        15px 15px fade(@contentshadow, 20%), 
+        20px 20px  fade(@contentshadow, 10%), 
+        25px 25px fade(@contentshadow, 5%);
+  }
+  .navbar {
+    &.site {
+      &.toggle {
+        button {    
+          position: fixed;
+          top: 1rem;
+          right: 1rem;
+          &#btn-small-s {
+            display: inline;
+          }
+          &#btn-big-s {
+            display: none;
+          }
+        }
+      }
+    }
+    &.page {
+      &.bar {
+        &.big {
+          display: none;
+        }
+      }
+      &.toggle {
+        button {    
+          position: fixed;
+          top: 3rem;
+          right: 1rem;
+          &#btn-small-p {
+            display: inline;
+          }
+          &#btn-big-p {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  main > aside {
+    display: none;
+  }
+  .cardsel {
+    gap: 1rem;
+    justify-content: center;
+    
+                #margin.bottom(1rem);
+                #padding.two(auto, 0rem);
+  }
+  dialog {
+    border: solid .075rem @link;
+    width: 80%;
+    height: 75%;
+    .close-modal {
+      position: absolute;
+      top: -1.25rem;
+      left: -1.25rem;
+    }
+    button {
+      border: .125rem dotted @mentioned;
+      width: 3rem;
+      height: 3rem;
+      &:hover {
+        transform: scale(1.025);
+      }
+      & > i {
+        font-size: 1.5rem;
+      }
+    }
+    h3 {
+      z-index: 2;
+      &::after, &::before {
+        font-size: 3rem;
+      }
+      .nickname {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  div.searchbox {
+    input.page-search {
+                  #margin.left(5.5%);
+    }
+  }
+  p {
+    font-size: .95rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  .entitykey {
+    font-size: .9rem;
+    line-height: 1.25rem;
+  }
+  .keytitle {
+    font-size: 1rem;
+                #margin.top(0rem);
+  }
+  img {
+    width: 60%;
+    height: auto;
+  }
+  .fearBig {
+    display: none;
+  }
+  .fearSmall {
+    display: block;
+  }
+  .EntityChart {
+                #margin.two(.5rem, auto);
+  }
+  div {
+    &.pair.img {
+                  .flex(column, wrap)!important;
+    }
+    &.cluster div {
+      display: inline-flex;
+      justify-content: center;
+      #margin.bottom(.25rem);
+    }
+  }
+}
+@media @max[599] {
+  h1 {
+    font-size: 2.15rem;
+  }
+  h2 {
+    font-size: 1.35rem;
+  }
+  h3 {
+    font-size: 1.15rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: .95rem;
+  }
+  header {
+    justify-content: space-between;
+                #margin.two(auto, .75rem);
+  }
+  main {
+    justify-content: center;
+  }
+  body {
+                #padding.one(.5rem);
+  }
+  .synopsis {
+    h4 {
+      font-size: 1rem;
+    }
+  }
+  aside > section, aside section + section {
+    box-shadow: 
+        5px 5px fade(@contentshadow, 40%), 
+        10px 10px fade(@contentshadow, 30%), 
+        15px 15px fade(@contentshadow, 20%), 
+        20px 20px  fade(@contentshadow, 10%), 
+        25px 25px fade(@contentshadow, 5%);
+  }
+  .navbar {
+    &.site {
+      &.toggle {
+        button {    
+          &#btn-small-s {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            font-size: 1.75rem;
+            display: inline;
+          }
+          &#btn-big-s {
+            display: none;
+          }
+        }
+      }
+    }
+    &.page {
+      &.bar {
+        &.big {
+          display: none;
+        }
+      }
+      &.toggle {
+        button {    
+          &#btn-small-p {
+            position: fixed;
+            top: 3rem;
+            right: 1rem;
+            font-size: 1.75rem;
+            display: inline;
+          }
+          &#btn-big-p {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  main > aside {
+    display: none;
+  }
+  .cardsel {
+    gap: 1rem;
+    justify-content: center;
+                #margin.bottom(1rem);
+                #padding.two(auto, 0rem);
+  }
+  dialog {
+    border: solid .075rem @link;
+    width: 80%;
+    height: 75%;
+    .close-modal {
+      position: absolute;
+      top: -1.25rem;
+      left: -1.25rem;
+    }
+    button {
+      border: .125rem dotted @mentioned;
+      width: 3rem;
+      height: 3rem;
+      &:hover {
+        transform: scale(1.025);
+      }
+      & > i {
+        font-size: 1.5rem;
+      }
+    }
+    h3 {
+      z-index: 2;
+      &::after, &::before {
+        font-size: 3rem;
+      }
+      .nickname {
+        font-size: 1.1rem;
+      }
+    }
+  }
+  div.searchbox {
+    input.page-search {
+                  #margin.left(5.5%);
+    }
+  }
+  div.analysis {
+                #padding.three(0rem, .5rem, auto);
+  }
+  p.analysis {
+    text-align: justify;
+    line-height: 1.5rem;
+                #padding.two(.25rem, auto);
+                #margin.bottom(0rem);
+    &::before {
+      content: '\2002\200E';
+    }
+  }
+  .entitykey {
+    font-size: .85rem;
+    line-height: 1.25rem;
+  }
+  .keytitle {
+    font-size: .95rem;
+                #margin.top(0rem);
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .fearBig {
+    display: none;
+  }
+  .fearSmall {
+    display: block;
+  }
+  .EntityChart {
+                #margin.two(.5rem, auto);
+  }
+  div {
+    &.pair.img {
+                  .flex(column, wrap)!important;
+    }
+    &.cluster div {
+      display: inline-flex;
+      justify-content: center;
+                  #margin.bottom(.25rem);
+    }
+  }
+}
+@media @max[479] {
+  h1 {
+    font-size: 1.5rem;
+                #margin.bottom(.5rem);
+  }
+  h2 {
+    font-size: 1.15rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+  p {
+    font-size: .9rem;
+  }
+  header {
+    justify-content: space-between;
+                #margin.two(auto, .5rem);
+  }
+  main {
+    justify-content: center;
+  }
+  body {
+    width: auto;
+                #padding.two(.25rem, .25rem);
+  }
+  .synopsis {
+                #padding.one(.5rem);
+    h4 {
+      font-size: .85rem;
+      width: 100%;
+    }
+  }
+  main > aside {
+    display: none;
+  }
+  aside > section, aside section + section {
+    box-shadow: 
+        5px 5px fade(@contentshadow, 40%), 
+        10px 10px fade(@contentshadow, 30%), 
+        15px 15px fade(@contentshadow, 20%), 
+        20px 20px  fade(@contentshadow, 10%), 
+        25px 25px fade(@contentshadow, 5%);
+  }
+  .navbar {
+    &.site {
+      &.toggle {
+        button {    
+          &#btn-small-s {
+            position: fixed;
+            top: 1rem;
+            right: .75rem;
+            font-size: 1.5rem;
+            display: inline;
+          }
+          &#btn-big-s {
+            display: none;
+          }
+        }
+      }
+    }
+    &.page {
+      &.bar {
+        &.big {
+          display: none;
+        }
+      }
+      &.toggle {
+        button {    
+          &#btn-small-p {
+            position: fixed;
+            top: 3rem;
+            right: .75rem;
+            font-size: 1.5rem;
+            display: inline;
+          }
+          &#btn-big-p {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  nav {
+    a {
+      &.title {
+        font-size: 1.15rem;
+      }
+      &.subtitle {
+        font-size: 1rem;
+      }
+    }
+  }
+  .cardsel {
+    gap: 1rem;
+    justify-content: center;
+                #margin.bottom(1rem);
+                #padding.two(auto, 0rem);
+    .hsh {
+      &::before {
+        content: '\2002';
+      }
+      &::after {
+        content: '\2002';
+      }
+    }
+  }
+  dialog {
+    border: solid .075rem @link;
+    width: 80%;
+    height: 75%;
+    .close-modal {
+      position: absolute;
+      top: -1.25rem;
+      left: -1.25rem;
+    }
+    button {
+      border: .125rem dotted @mentioned;
+      width: 3rem;
+      height: 3rem;
+      &:hover {
+        transform: scale(1.025);
+      }
+      & > i {
+        font-size: 1.5rem;
+      }
+    }
+    h3 {
+      justify-self: right;
+      display: inherit;
+      z-index: 2;
+      &::after, &::before {
+        font-size: 3rem;
+      }
+      .nickname {
+        font-size: 1.025rem;
+      }
+    }
+  }
+  div.searchbox {
+    input.page-search {
+                  #margin.left(5.5%);
+    }
+  }
+  [tooltip]::after {
+      content: attr(tooltip);
+      position: absolute;
+      left: 50%;
+      font-size: .75rem;
+      transition: .3s;
+                  #radius.one(.5rem);
+                  #padding.one(.5rem);
+  }
+  [tooltip-position='left']::before{
+    left: 5%;
+    transform: translatey(-50%) rotate(-90deg);
+  }
+  div.analysis {
+                #padding.three(0rem, .25rem, auto)
+  }
+  p.analysis {
+    text-align: justify;
+    line-height: 1.25rem;
+                #padding.two(.25rem, auto);
+                #margin.bottom(0rem);
+    &::before {
+      content: '\2002\200E';
+    }
+  }
+  .entitykey {
+    font-size: .75rem;
+    line-height: 1rem;
+  }
+  .keytitle {
+    font-size: .85rem;
+                #margin.top(0rem);
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .fearBig {
+    display: none;
+  }
+  .fearSmall {
+    display: block;
+  }
+  .EntityChart {
+    #margin.two(.5rem, auto);
+  }
+  div {
+    &.pair.img {
+      .flex(column, wrap)!important;
+    }
+    &.cluster div {
+      display: inline-flex;
+      justify-content: center;
+      #margin.bottom(.25rem);
+    }
+  }
+}

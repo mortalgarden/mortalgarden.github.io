@@ -5,23 +5,9 @@
             "type": "firefox",
             "request": "launch",
             "reAttach": true,
-            "name": "TMagP Skeleton",
-            "file": "${workspaceFolder}/tmagp/000.html"
-        },
-        {
-            "type": "firefox",
-            "request": "launch",
-            "reAttach": true,
-            "name": "TMA Skeleton",
-            "file": "${workspaceFolder}/tma/000.html"
-        },
-        {
-            "type": "firefox",
-            "request": "launch",
-            "reAttach": true,
-            "name": "Launch index.html",
-            "file": "${workspaceFolder}/index.html"
+            "name": "Launch site",
+            "url": "http://localhost:4000",
+            "webRoot": "${workspaceFolder}"
         }
-        
     ]
 }

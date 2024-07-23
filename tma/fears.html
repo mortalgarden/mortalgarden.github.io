@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="background-color: hsl(281, 46%, 14%);">
+<html>
 <head>
       <!-- general -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
@@ -11,10 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Grenze+Gotisch:wght@100..900&family=Platypi:ital,wght@0,300..800;1,300..800&family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap" rel="stylesheet">
       <!-- stylesheet -->
-    <link rel="stylesheet/less" type="text/css" href="../less/style.less">
-    <link rel="stylesheet/less" type="text/css" href="../less/fears.less">
-      <!-- LESS.js: lesscss.org -->
-    <script src="/framework/less.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
       <!-- ICONS: phosphoricons.com -->
       <link rel="stylesheet" type="text/css"
       href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/duotone/style.css"/>
@@ -88,126 +85,137 @@
   <!-- ENTITY MODALS -->
   <dialog id="Buried">
     <div class="modal">
-      <span class="h3"><h3>The Buried</h3></span>
-        <button class="close-modal" aria-label="Close modal" onclick="buriedClose()">
-          <i class="ph-duotone ph-cpu"></i>
-        </button>
-      <h5><i>also known as<b>:</b></i> <span class="nickname">The Centre</span>, <span class="nickname">Choke</span>, <span class="nickname">Too Close I Cannot Breathe</span>, <i>and</i> <span class="nickname">Forever Deep Below Creation</span>.</h5>
-
+      <div class="scroll">
+        <span class="h3"><h3>The Buried</h3></span>
+          <button class="close-modal" aria-label="Close modal" onclick="buriedClose()">
+            <i class="ph-duotone ph-cpu"></i>
+          </button>
+        <h5><i>also known as<b>:</b></i> <span class="nickname">The Centre</span>, <span class="nickname">Choke</span>, <span class="nickname">Too Close I Cannot Breathe</span>, <i>and</i> <span class="nickname">Forever Deep Below Creation</span>.</h5>
+      </div>
     </div>
   </dialog>
   <dialog id="Corruption">
     <div class="modal">
-      <span class="h3"><h3>The Corruption</h3></span>
-        <button class="close-modal" aria-label="Close modal" onclick="corruptionClose()">
-          <i class="ph-duotone ph-cpu"></i>
-        </button>
-      <h5><i>also known as<b>:</b></i> <span class="nickname">The Crawling Rot</span>, 
-        <span class="nickname">Filth</span> <i>and</i> 
-        <span class="nickname">Flesh Hive</span>.</h5>
-
+      <div class="scroll">
+        <span class="h3"><h3>The Corruption</h3></span>
+          <button class="close-modal" aria-label="Close modal" onclick="corruptionClose()">
+            <i class="ph-duotone ph-cpu"></i>
+          </button>
+        <h5><i>also known as<b>:</b></i> <span class="nickname">The Crawling Rot</span>, 
+          <span class="nickname">Saléte <i>[Filth]</i></span> <i>and</i> 
+          <span class="nickname">Flesh Hive</span>.</h5>
+      </div>
     </div>
   </dialog>
   <dialog id="Dark">
     <div class="modal">
-      <span class="h3"><h3>The Dark</h3></span>
-        <button class="close-modal" aria-label="Close modal" onclick="darkClose()">
-          <i class="ph-duotone ph-cpu"></i>
-        </button>
-      <h5><i>also known as<b>:</b></i> <span class="nickname">Mr. Pitch</span> <i>and</i> <span class="nickname">The Forever Blind</span>.</h5>
-
+      <div class="scroll">
+        <span class="h3"><h3>The Dark</h3></span>
+          <button class="close-modal" aria-label="Close modal" onclick="darkClose()">
+            <i class="ph-duotone ph-cpu"></i>
+          </button>
+        <h5><i>also known as<b>:</b></i> <span class="nickname">Mr. Pitch</span> <i>and</i> <span class="nickname">The Forever Blind</span>.</h5>
+      </div>
     </div>
   </dialog>
 <dialog id="Desolation">
   <div class="modal">
-    <span class="h3"><h3>The Desolation</h3></span>
-      <button class="close-modal" aria-label="Close modal" onclick="desolationClose()">
-        <i class="ph-duotone ph-cpu"></i>
-      </button>
-    <h5><i>also known as<b>:</b></i> <span class="nickname">Asag</span>, 
-      <span class="nickname">The Blackened Earth</span>,
-      <span class="nickname">The Devastation</span>,
-      <span class="nickname">The Lightless Flame</span>, 
-      <span class="nickname">The Ravening Burn</span>, <i>and</i>
-      <span class="nickname">The Torturing Flame</span>.</h5>
-
+    <div class="scroll">
+      <span class="h3"><h3>The Desolation</h3></span>
+        <button class="close-modal" aria-label="Close modal" onclick="desolationClose()">
+          <i class="ph-duotone ph-cpu"></i>
+        </button>
+      <h5><i>also known as<b>:</b></i> <span class="nickname">Asag</span>, 
+        <span class="nickname">The Blackened Earth</span>,
+        <span class="nickname">The Devastation</span>,
+        <span class="nickname">The Lightless Flame</span>, 
+        <span class="nickname">The Ravening Burn</span>, <i>and</i>
+        <span class="nickname">The Torturing Flame</span>.</h5>
+    </div>
   </div>
 </dialog>
 <dialog id="End">
   <div class="modal">
-    <span class="h3"><h3>The End</h3></span>
-      <button class="close-modal" aria-label="Close modal" onclick="endClose()">
-        <i class="ph-duotone ph-cpu"></i>
-      </button>
-    <h5><i>also known as<b>:</b></i> <span class="nickname">Death</span>, 
-      <span class="nickname">The Coming End That Waits For All And Cannot Be Ignored</span>, 
-      <span class="nickname">The Termination of All Life</span>, <i>and</i> 
-      <span class="nickname">Terminus</span>.</h5>
-
+    <div class="scroll">
+      <span class="h3"><h3>The End</h3></span>
+        <button class="close-modal" aria-label="Close modal" onclick="endClose()">
+          <i class="ph-duotone ph-cpu"></i>
+        </button>
+      <h5><i>also known as<b>:</b></i> <span class="nickname">Death</span>, 
+        <span class="nickname">The Coming End That Waits For All And Cannot Be Ignored</span>, 
+        <span class="nickname">The Termination of All Life</span>, <i>and</i> 
+        <span class="nickname">Terminus</span>.</h5>
+    </div>
   </div>
 </dialog>
 <dialog id="Eye">
   <div class="modal">
-    <span class="h3"><h3>The Eye</h3></span>
-      <button class="close-modal" aria-label="Close modal" onclick="eyeClose()">
-        <i class="ph-duotone ph-cpu"></i>
-      </button>
-    <h5><i>also known as<b>:</b></i> <span class="nickname">Beholding</span>,
-       <span class="nickname">The Ceaseless Watcher</span>, 
-       <span class="nickname">The Great Eye that Watches All Who Linger in Terror and Gorges Itself on the Sufferings of those Under its Unrelenting Stuporous Gaze</span>, 
-       <i>and</i> <span class="nickname">It Knows You</span>.</h5>
-
+    <div class="scroll">
+      <span class="h3"><h3>The Eye</h3></span>
+        <button class="close-modal" aria-label="Close modal" onclick="eyeClose()">
+          <i class="ph-duotone ph-cpu"></i>
+        </button>
+      <h5><i>also known as<b>:</b></i> <span class="nickname">Beholding</span>,
+        <span class="nickname">The Ceaseless Watcher</span>, 
+        <span class="nickname">The Great Eye that Watches All Who Linger in Terror and Gorges Itself on the Sufferings of those Under its Unrelenting Stuporous Gaze</span>, 
+        <i>and</i> <span class="nickname">It Knows You</span>.</h5>
+    </div>
   </div>
 </dialog>
 </dialog>
 <dialog id="Flesh">
   <div class="modal">
-    <span class="h3"><h3>The Flesh</h3></span>
-      <button class="close-modal" aria-label="Close modal" onclick="fleshClose()">
-        <i class="ph-duotone ph-cpu"></i>
-      </button>
-    <h5><i>also known as<b>:</b></i> <span class="nickname">Viscera</span>.</h5>
-
+    <div class="scroll">
+      <span class="h3"><h3>The Flesh</h3></span>
+        <button class="close-modal" aria-label="Close modal" onclick="fleshClose()">
+          <i class="ph-duotone ph-cpu"></i>
+        </button>
+      <h5><i>also known as<b>:</b></i> <span class="nickname">Viscera</span>.</h5>
+    </div>
   </div>
 </dialog>
 <dialog id="Hunt">
   <div class="modal">
-    <span class="h3"><h3>The Hunt</h3></span>
-      <button class="close-modal" aria-label="Close modal" onclick="huntClose()">
-        <i class="ph-duotone ph-cpu"></i>
-      </button>
-    <h5><i>also known as<b>:</b></i> <span class="nickname">Blood</span>.</h5>
-
+    <div class="scroll">
+      <span class="h3"><h3>The Hunt</h3></span>
+        <button class="close-modal" aria-label="Close modal" onclick="huntClose()">
+          <i class="ph-duotone ph-cpu"></i>
+        </button>
+      <h5><i>also known as<b>:</b></i> <span class="nickname">Blood</span>.</h5>
+    </div>
   </div>
 </dialog>
 <dialog id="Lonely">
   <div class="modal">
-    <span class="h3"><h3>The Lonely</h3></span>
-      <button class="close-modal" aria-label="Close modal" onclick="lonelyClose()">
-        <i class="ph-duotone ph-cpu"></i>
-      </button>
-    <h5><i>also known as<b>:</b></i> <span class="nickname">Foresaken</span> <i>and</i> <span class="nickname">The One Alone</span>.</h5>
-
+    <div class="scroll">
+      <span class="h3"><h3>The Lonely</h3></span>
+        <button class="close-modal" aria-label="Close modal" onclick="lonelyClose()">
+          <i class="ph-duotone ph-cpu"></i>
+        </button>
+      <h5><i>also known as<b>:</b></i> <span class="nickname">Foresaken</span> <i>and</i> <span class="nickname">The One Alone</span>.</h5>
+    </div>
   </div>
 </dialog>
 <dialog id="Slaughter">
   <div class="modal">
-    <span class="h3"><h3>The Slaughter</h3></span>
-      <button class="close-modal" aria-label="Close modal" onclick="slaughterClose()">
-        <i class="ph-duotone ph-cpu"></i>
-      </button>
-    <h5><i>this Fear has no known aliases</i>.</h5>
-
+    <div class="scroll">
+      <span class="h3"><h3>The Slaughter</h3></span>
+        <button class="close-modal" aria-label="Close modal" onclick="slaughterClose()">
+          <i class="ph-duotone ph-cpu"></i>
+        </button>
+      <h5><i>this Fear has no known aliases</i>.</h5>
+    </div>
   </div>
 </dialog>
 <dialog id="Spiral">
   <div class="modal">
-    <span class="h3"><h3>The Spiral</h3></span>
-      <button class="close-modal" aria-label="Close modal" onclick="spiralClose()">
-        <i class="ph-duotone ph-cpu"></i>
-      </button>
-    <h5><i>also known as<b>:</b></i> <span class="nickname">Es Mentiras <i>[It Is Lies]</i></span>, <span class="nickname">It Is Not What It Is</span>,<i>and</i> <span class="nickname">The Twisting Deceit</span>.</h5>
-
+    <div class="scroll">
+      <span class="h3"><h3>The Spiral</h3></span>
+        <button class="close-modal" aria-label="Close modal" onclick="spiralClose()">
+          <i class="ph-duotone ph-cpu"></i>
+        </button>
+      <h5><i>also known as<b>:</b></i> <span class="nickname">Es Mentiras <i>[It Is Lies]</i></span>, <span class="nickname">It Is Not What It Is</span>,<i>and</i> <span class="nickname">The Twisting Deceit</span>.</h5>
+    </div>
   </div>
 </dialog>
 <dialog id="Stranger">
@@ -303,38 +311,41 @@
 </dialog>
 <dialog id="Vast">
   <div class="modal">
-    <span class="h3"><h3>The Vast</h3></span>
-      <button class="close-modal" aria-label="Close modal" onclick="vastClose()">
-        <i class="ph-duotone ph-cpu"></i>
-      </button>
-    <h5><i>also known as<b>:</b></i> <span class="nickname">The Falling Titan</span>.</h5>
-
+    <div class="scroll">
+      <span class="h3"><h3>The Vast</h3></span>
+        <button class="close-modal" aria-label="Close modal" onclick="vastClose()">
+          <i class="ph-duotone ph-cpu"></i>
+        </button>
+      <h5><i>also known as<b>:</b></i> <span class="nickname">The Falling Titan</span>.</h5>
+    </div>
   </div>
 </dialog>
 <dialog id="Web">
   <div class="modal">
-    <span class="h3"><h3>The Web</h3></span>
-      <button class="close-modal" aria-label="Close modal" onclick="webClose()">
-        <i class="ph-duotone ph-cpu"></i>
-      </button>
-    <h5><i>also known as<b>:</b></i> <span class="nickname">The Great Spider,</span> 
-      <span class="nickname">The Hidden Machination</span>, 
-      <span class="nickname">The Mother</span>, <span class="nickname">The Mother of Puppets</span>, 
-      <span class="nickname">The Spider</span>, <i>and</i> 
-      <span class="nickname">The Spinner of Schemes</span>.</h5>
-
+    <div class="scroll">
+      <span class="h3"><h3>The Web</h3></span>
+        <button class="close-modal" aria-label="Close modal" onclick="webClose()">
+          <i class="ph-duotone ph-cpu"></i>
+        </button>
+      <h5><i>also known as<b>:</b></i> <span class="nickname">The Great Spider,</span> 
+        <span class="nickname">The Hidden Machination</span>, 
+        <span class="nickname">The Mother</span>, <span class="nickname">The Mother of Puppets</span>, 
+        <span class="nickname">The Spider</span>, <i>and</i> 
+        <span class="nickname">The Spinner of Schemes</span>.</h5>
+    </div>
   </div>
 </dialog>
 <dialog id="Extinction">
   <div class="modal">
-    <span class="h3"><h3>The Extinction</h3></span>
-      <button class="close-modal" aria-label="Close modal" onclick="extinctionClose()">
-        <i class="ph-duotone ph-cpu"></i>
-      </button>
-    <h5><i>also known as<b>:</b></i> <span class="nickname">The Future Without Us</span>, 
-      <span class="nickname">The Terrible Change</span>, <i>and</i> 
-      <span class="nickname">The World Is Always Ending</span>.</h5>
-
+    <div class="scroll">
+      <span class="h3"><h3>The Extinction</h3></span>
+        <button class="close-modal" aria-label="Close modal" onclick="extinctionClose()">
+          <i class="ph-duotone ph-cpu"></i>
+        </button>
+      <h5><i>also known as<b>:</b></i> <span class="nickname">The Future Without Us</span>, 
+        <span class="nickname">The Terrible Change</span>, <i>and</i> 
+        <span class="nickname">The World Is Always Ending</span>.</h5>
+    </div>
   </div>
 </dialog>
 

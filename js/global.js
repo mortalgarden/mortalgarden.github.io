@@ -60,4 +60,3 @@
         iBig.classList.replace("ph-mask-happy", "ph-mask-sad");
       }
   }
-
